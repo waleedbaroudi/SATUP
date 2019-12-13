@@ -47,6 +47,9 @@
                     <navigationItem key="navigationItem" id="xE4-vv-lkC">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="list.dash" catalog="system" style="done" id="OvS-z3-GmB">
                             <color key="tintColor" red="1" green="0.76073193550109863" blue="0.024616790935397148" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="didTapSideMenu:" destination="BYZ-38-t0r" id="23i-QR-7Ah"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
