@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE3A30BF23A41D1400CC0C9F /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */; };
+		CE3A30C423A43C4700CC0C9F /* SlideAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A30C323A43C4700CC0C9F /* SlideAction.swift */; };
 		CE859E9023A4045C0070BD95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE859E8F23A4045C0070BD95 /* AppDelegate.swift */; };
 		CE859E9223A4045C0070BD95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE859E9123A4045C0070BD95 /* SceneDelegate.swift */; };
 		CE859E9423A4045C0070BD95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE859E9323A4045C0070BD95 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		CE3A30C323A43C4700CC0C9F /* SlideAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideAction.swift; sourceTree = "<group>"; };
 		CE859E8C23A4045C0070BD95 /* SATUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SATUP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE859E8F23A4045C0070BD95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE859E9123A4045C0070BD95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE3A30C223A4260A00CC0C9F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CE3A30C323A43C4700CC0C9F /* SlideAction.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		CE859E8323A4045C0070BD95 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +70,7 @@
 		CE859E8E23A4045C0070BD95 /* SATUP */ = {
 			isa = PBXGroup;
 			children = (
+				CE3A30C223A4260A00CC0C9F /* Utils */,
 				CE859EA323A40C230070BD95 /* ViewControllers */,
 				CE859E8F23A4045C0070BD95 /* AppDelegate.swift */,
 				CE859E9123A4045C0070BD95 /* SceneDelegate.swift */,
@@ -74,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				CE859EA623A40C920070BD95 /* info.swift */,
+				CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -152,6 +166,8 @@
 				CE859E9423A4045C0070BD95 /* ViewController.swift in Sources */,
 				CE859EA723A40C920070BD95 /* info.swift in Sources */,
 				CE859E9023A4045C0070BD95 /* AppDelegate.swift in Sources */,
+				CE3A30C423A43C4700CC0C9F /* SlideAction.swift in Sources */,
+				CE3A30BF23A41D1400CC0C9F /* SideMenuViewController.swift in Sources */,
 				CE859E9223A4045C0070BD95 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

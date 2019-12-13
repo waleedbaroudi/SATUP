@@ -8,14 +8,39 @@
 
 import UIKit
 
+extension ViewController : UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source:
+        UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        transition.isPresenting = true
+        return transition
+    }
+    func animationController(forDismissed dismissed: UIViewController)
+        -> UIViewControllerAnimatedTransitioning? {
+            
+        transition.isPresenting = false
+        return transition
+    }
+}
+
 class ViewController: UIViewController {
 
+    let transition = SlideAction()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        title = ""
+
     }
-
-
+    @IBAction func didTapSideMenu(_ sender: UIBarButtonItem) {
+        guard let sideMenuViewController = storyboard?.instantiateViewController(withIdentifier:
+            "SideMenuViewController") else { return }
+        
+        sideMenuViewController.modalPresentationStyle = .overCurrentContext
+        sideMenuViewController.transitioningDelegate = self
+        present(sideMenuViewController, animated: true)
+        
+    }
 }
+
 
