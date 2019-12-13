@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+/*
 extension ViewController : UIViewControllerTransitioningDelegate {
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source:
         UIViewController) -> UIViewControllerAnimatedTransitioning? {
@@ -22,10 +22,10 @@ extension ViewController : UIViewControllerTransitioningDelegate {
         return transition
     }
 }
-
+*/
 class ViewController: UIViewController {
 
-    let transition = SlideAction()
+  //  let transition = SlideAction()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +36,8 @@ class ViewController: UIViewController {
         guard let sideMenuViewController = storyboard?.instantiateViewController(withIdentifier:
             "SideMenuViewController") else { return }
         
-        sideMenuViewController.modalPresentationStyle = .overCurrentContext
-        sideMenuViewController.transitioningDelegate = self
+    //    sideMenuViewController.modalPresentationStyle = .overCurrentContext
+     //   sideMenuViewController.transitioningDelegate = self
         present(sideMenuViewController, animated: true)
         
     }
