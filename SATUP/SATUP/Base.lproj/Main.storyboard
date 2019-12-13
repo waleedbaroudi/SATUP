@@ -59,14 +59,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1n-2b-YEk">
-                                <rect key="frame" x="368" y="19.5" width="33" height="30"/>
+                                <rect key="frame" x="341" y="19.5" width="60" height="30"/>
                                 <state key="normal" title="DISMISS"/>
                                 <connections>
                                     <action selector="dismissButton:" destination="Xb1-TW-wZ9" eventType="touchUpInside" id="jY6-sk-g0W"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Satup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rcz-jo-bEb">
-                                <rect key="frame" x="159" y="24" width="96" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About SATUP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rcz-jo-bEb">
+                                <rect key="frame" x="155" y="24" width="104" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -84,9 +84,9 @@
                             <constraint firstItem="EVB-qd-f84" firstAttribute="bottom" secondItem="jc4-iL-S8w" secondAttribute="bottom" id="CiN-MA-gFl"/>
                             <constraint firstItem="jc4-iL-S8w" firstAttribute="leading" secondItem="EVB-qd-f84" secondAttribute="leading" constant="20" id="DOD-tx-UcK"/>
                             <constraint firstItem="z1n-2b-YEk" firstAttribute="centerY" secondItem="Rcz-jo-bEb" secondAttribute="centerY" id="JOZ-wc-w5s"/>
+                            <constraint firstItem="z1n-2b-YEk" firstAttribute="leading" secondItem="Rcz-jo-bEb" secondAttribute="trailing" constant="82" id="frU-Uv-yRa"/>
                             <constraint firstItem="Rcz-jo-bEb" firstAttribute="centerX" secondItem="EVB-qd-f84" secondAttribute="centerX" id="gch-Ic-wfu"/>
                             <constraint firstItem="EVB-qd-f84" firstAttribute="trailing" secondItem="z1n-2b-YEk" secondAttribute="trailing" constant="13" id="hhg-8C-EWB"/>
-                            <constraint firstItem="z1n-2b-YEk" firstAttribute="leading" secondItem="Rcz-jo-bEb" secondAttribute="trailing" constant="113" id="i5K-dt-4F6"/>
                             <constraint firstItem="Rcz-jo-bEb" firstAttribute="top" secondItem="EVB-qd-f84" secondAttribute="top" constant="24" id="q1y-d7-xLj"/>
                             <constraint firstItem="jc4-iL-S8w" firstAttribute="top" secondItem="Rcz-jo-bEb" secondAttribute="bottom" constant="8" id="sjc-Yu-Dg6"/>
                             <constraint firstItem="EVB-qd-f84" firstAttribute="trailing" secondItem="jc4-iL-S8w" secondAttribute="trailing" constant="20" id="wZh-DP-GIF"/>
