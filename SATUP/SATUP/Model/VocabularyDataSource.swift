@@ -16,7 +16,7 @@ class VocabularyDataSource{
     var delegate: VocabularyDataSourceDelegate?
     func loadVocabulary(){
         let session = URLSession.shared
-        if let vocabURL = URL(string: Network.URL){
+        if let vocabURL = URL(string: Network.VocabURL){
             var request = URLRequest(url: vocabURL)
             request.httpMethod = "GET"
             request.addValue("application/json", forHTTPHeaderField: "Content-type")
