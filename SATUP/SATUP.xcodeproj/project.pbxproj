@@ -18,6 +18,7 @@
 		CE859EA723A40C920070BD95 /* info.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE859EA623A40C920070BD95 /* info.swift */; };
 		CE859EBD23A4649A0070BD95 /* Vocab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE859EBC23A4649A0070BD95 /* Vocab.swift */; };
 		CE859EC123A464DA0070BD95 /* Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE859EC023A464DA0070BD95 /* Reading.swift */; };
+		CE86171223A515C800095A9E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86171123A515C800095A9E /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		CE859EA623A40C920070BD95 /* info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = info.swift; sourceTree = "<group>"; };
 		CE859EBC23A4649A0070BD95 /* Vocab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocab.swift; sourceTree = "<group>"; };
 		CE859EC023A464DA0070BD95 /* Reading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reading.swift; sourceTree = "<group>"; };
+		CE86171123A515C800095A9E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				CE3A30C323A43C4700CC0C9F /* SlideAction.swift */,
+				CE86171123A515C800095A9E /* Colors.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE859E9423A4045C0070BD95 /* ViewController.swift in Sources */,
+				CE86171223A515C800095A9E /* Colors.swift in Sources */,
 				CE859EA723A40C920070BD95 /* info.swift in Sources */,
 				CE859EC123A464DA0070BD95 /* Reading.swift in Sources */,
 				CE859E9023A4045C0070BD95 /* AppDelegate.swift in Sources */,
