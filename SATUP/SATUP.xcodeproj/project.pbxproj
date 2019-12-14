@@ -19,6 +19,10 @@
 		CE859EBD23A4649A0070BD95 /* Vocab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE859EBC23A4649A0070BD95 /* Vocab.swift */; };
 		CE859EC123A464DA0070BD95 /* Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE859EC023A464DA0070BD95 /* Reading.swift */; };
 		CE86171223A515C800095A9E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86171123A515C800095A9E /* Colors.swift */; };
+		CE86171423A5444400095A9E /* VocabularyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86171323A5444400095A9E /* VocabularyViewController.swift */; };
+		CE86171723A544C500095A9E /* VocabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86171623A544C500095A9E /* VocabCell.swift */; };
+		CE86171923A5492100095A9E /* VocabularyDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86171823A5492100095A9E /* VocabularyDataSource.swift */; };
+		CE86171B23A54A5900095A9E /* Netwok.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86171A23A54A5900095A9E /* Netwok.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		CE859EBC23A4649A0070BD95 /* Vocab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocab.swift; sourceTree = "<group>"; };
 		CE859EC023A464DA0070BD95 /* Reading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reading.swift; sourceTree = "<group>"; };
 		CE86171123A515C800095A9E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		CE86171323A5444400095A9E /* VocabularyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyViewController.swift; sourceTree = "<group>"; };
+		CE86171623A544C500095A9E /* VocabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabCell.swift; sourceTree = "<group>"; };
+		CE86171823A5492100095A9E /* VocabularyDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyDataSource.swift; sourceTree = "<group>"; };
+		CE86171A23A54A5900095A9E /* Netwok.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netwok.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			children = (
 				CE3A30C323A43C4700CC0C9F /* SlideAction.swift */,
 				CE86171123A515C800095A9E /* Colors.swift */,
+				CE86171A23A54A5900095A9E /* Netwok.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -77,6 +86,7 @@
 		CE859E8E23A4045C0070BD95 /* SATUP */ = {
 			isa = PBXGroup;
 			children = (
+				CE86171523A5446D00095A9E /* Cells */,
 				CE859EBB23A464290070BD95 /* Model */,
 				CE3A30C223A4260A00CC0C9F /* Utils */,
 				CE859EA323A40C230070BD95 /* ViewControllers */,
@@ -96,6 +106,7 @@
 			children = (
 				CE859EA623A40C920070BD95 /* info.swift */,
 				CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */,
+				CE86171323A5444400095A9E /* VocabularyViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -105,8 +116,17 @@
 			children = (
 				CE859EBC23A4649A0070BD95 /* Vocab.swift */,
 				CE859EC023A464DA0070BD95 /* Reading.swift */,
+				CE86171823A5492100095A9E /* VocabularyDataSource.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CE86171523A5446D00095A9E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE86171623A544C500095A9E /* VocabCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,14 +200,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE86171B23A54A5900095A9E /* Netwok.swift in Sources */,
+				CE86171923A5492100095A9E /* VocabularyDataSource.swift in Sources */,
 				CE859E9423A4045C0070BD95 /* ViewController.swift in Sources */,
 				CE86171223A515C800095A9E /* Colors.swift in Sources */,
 				CE859EA723A40C920070BD95 /* info.swift in Sources */,
 				CE859EC123A464DA0070BD95 /* Reading.swift in Sources */,
 				CE859E9023A4045C0070BD95 /* AppDelegate.swift in Sources */,
+				CE86171723A544C500095A9E /* VocabCell.swift in Sources */,
 				CE859EBD23A4649A0070BD95 /* Vocab.swift in Sources */,
 				CE3A30C423A43C4700CC0C9F /* SlideAction.swift in Sources */,
 				CE3A30BF23A41D1400CC0C9F /* SideMenuViewController.swift in Sources */,
+				CE86171423A5444400095A9E /* VocabularyViewController.swift in Sources */,
 				CE859E9223A4045C0070BD95 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

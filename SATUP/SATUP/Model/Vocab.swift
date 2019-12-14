@@ -7,13 +7,15 @@
 //
 
 import Foundation
-class Vocab{
+class Vocab: Codable{
     var word: String
     var type: String
     var audioFile: String
-    init(word: String, type: String, audioFile: String) {
+    var example: String
+    init(word: String, type: String, audioFile: String, example: String) {
         self.word = word
         self.type = type
         self.audioFile = audioFile
+        self.example = example
     }
 }
