@@ -29,7 +29,6 @@ class SlideAction: NSObject, UIViewControllerAnimatedTransitioning {
         let finalHeight = toViewController.view.bounds.height
         
         if isPresenting {
-            
             containerView.addSubview(toViewController.view)
 
             toViewController.view.frame = CGRect(x: -finalWidth, y: 0, width: finalWidth, height:
@@ -49,7 +48,7 @@ class SlideAction: NSObject, UIViewControllerAnimatedTransitioning {
         UIView.animate(withDuration: duration, animations: {
             self.isPresenting ? transform() : identity()
         }) { (_) in
-            transitionContext.completeTransition(!isCancelled )
+            transitionContext.completeTransition(!isCancelled)
     
         }
     }

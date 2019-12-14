@@ -24,17 +24,14 @@ extension ViewController : UIViewControllerTransitioningDelegate {
 }
 
 class ViewController: UIViewController {
-
     let transition = SlideAction()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
     }
     
     @IBAction func didTapSideMenu(_ sender: UIBarButtonItem) {
-        
         guard let sideMenuViewController = storyboard?.instantiateViewController(withIdentifier:
                 "SideMenuViewController") else { return }
             
@@ -44,7 +41,6 @@ class ViewController: UIViewController {
             
     }
 
-    
 }
 
 
