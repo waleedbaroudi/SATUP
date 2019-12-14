@@ -15,6 +15,12 @@ class SideMenuViewController: UITableViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        dismiss(animated: true){}
+        
+    }
+}
     /*
     // MARK: - Navigation
 
@@ -25,4 +31,4 @@ class SideMenuViewController: UITableViewController {
     }
     */
 
-}
+
