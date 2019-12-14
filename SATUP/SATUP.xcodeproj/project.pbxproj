@@ -16,6 +16,8 @@
 		CE859E9923A4045D0070BD95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE859E9823A4045D0070BD95 /* Assets.xcassets */; };
 		CE859E9C23A4045D0070BD95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE859E9A23A4045D0070BD95 /* LaunchScreen.storyboard */; };
 		CE859EA723A40C920070BD95 /* info.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE859EA623A40C920070BD95 /* info.swift */; };
+		CE859EBD23A4649A0070BD95 /* Vocab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE859EBC23A4649A0070BD95 /* Vocab.swift */; };
+		CE859EC123A464DA0070BD95 /* Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE859EC023A464DA0070BD95 /* Reading.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		CE859E9B23A4045D0070BD95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE859E9D23A4045D0070BD95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE859EA623A40C920070BD95 /* info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = info.swift; sourceTree = "<group>"; };
+		CE859EBC23A4649A0070BD95 /* Vocab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocab.swift; sourceTree = "<group>"; };
+		CE859EC023A464DA0070BD95 /* Reading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reading.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +74,7 @@
 		CE859E8E23A4045C0070BD95 /* SATUP */ = {
 			isa = PBXGroup;
 			children = (
-				CE859EBB23A464290070BD95 /* New Group */,
+				CE859EBB23A464290070BD95 /* Model */,
 				CE3A30C223A4260A00CC0C9F /* Utils */,
 				CE859EA323A40C230070BD95 /* ViewControllers */,
 				CE859E8F23A4045C0070BD95 /* AppDelegate.swift */,
@@ -93,11 +97,13 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		CE859EBB23A464290070BD95 /* New Group */ = {
+		CE859EBB23A464290070BD95 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE859EBC23A4649A0070BD95 /* Vocab.swift */,
+				CE859EC023A464DA0070BD95 /* Reading.swift */,
 			);
-			path = "New Group";
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +179,9 @@
 			files = (
 				CE859E9423A4045C0070BD95 /* ViewController.swift in Sources */,
 				CE859EA723A40C920070BD95 /* info.swift in Sources */,
+				CE859EC123A464DA0070BD95 /* Reading.swift in Sources */,
 				CE859E9023A4045C0070BD95 /* AppDelegate.swift in Sources */,
+				CE859EBD23A4649A0070BD95 /* Vocab.swift in Sources */,
 				CE3A30C423A43C4700CC0C9F /* SlideAction.swift in Sources */,
 				CE3A30BF23A41D1400CC0C9F /* SideMenuViewController.swift in Sources */,
 				CE859E9223A4045C0070BD95 /* SceneDelegate.swift in Sources */,
