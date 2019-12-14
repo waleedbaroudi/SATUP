@@ -8,5 +8,5 @@
 
 import Foundation
 struct Colors{
-    static let BLACK: String = "#ffffff"
+    static let BLACK: String = "#000000"
 }
