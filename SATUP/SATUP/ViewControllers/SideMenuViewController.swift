@@ -16,6 +16,9 @@ class SideMenuViewController: UITableViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func dismissSideMenu(_ sender: Any) {
+         dismiss(animated: true){}
+    }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         dismiss(animated: true){}
         

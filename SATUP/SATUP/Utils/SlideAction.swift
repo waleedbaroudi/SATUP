@@ -11,6 +11,8 @@ import UIKit
 class SlideAction: NSObject, UIViewControllerAnimatedTransitioning {
     
     var isPresenting = false
+    let dimmingView = UIView()
+    
     //Returns the animation duration.
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.15
@@ -29,6 +31,11 @@ class SlideAction: NSObject, UIViewControllerAnimatedTransitioning {
         let finalHeight = toViewController.view.bounds.height
         
         if isPresenting {
+            dimmingView.backgroundColor = .black
+            dimmingView.alpha = 0.0
+            containerView.addSubview(dimmingView)
+            dimmingView.frame = containerView.bounds
+            
             containerView.addSubview(toViewController.view)
 
             toViewController.view.frame = CGRect(x: -finalWidth, y: 0, width: finalWidth, height:
@@ -36,10 +43,12 @@ class SlideAction: NSObject, UIViewControllerAnimatedTransitioning {
         }
         // The position of the side menu after transition.
         let transform = {
+            self.dimmingView.alpha = 0.5
             toViewController.view.transform = CGAffineTransform(translationX: finalWidth, y: 0)
         }
         // The position of the side menu before transition (original position).
         let identity = {
+            self.dimmingView.alpha = 0.0
             fromViewController.view.transform = .identity
         }
         let duration = transitionDuration(using: transitionContext)
