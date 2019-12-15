@@ -15,14 +15,11 @@ class VocabPopupViewController: UIViewController {
         wordLabel.text = word
         // Do any additional setup after loading the view.
     }
-    
- 
     @IBOutlet weak var wordLabel: UILabel!
     var word: String?
     @IBAction func dismissButton(_ sender: Any) {
         self.dismiss(animated: true)
     }
-    
     /*
     // MARK: - Navigation
 

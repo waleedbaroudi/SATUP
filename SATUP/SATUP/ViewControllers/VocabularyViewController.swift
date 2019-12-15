@@ -30,9 +30,6 @@ extension VocabularyViewController: UITableViewDataSource{
         return cell
     }
     
-    
-    
-    
 }
 
 class VocabularyViewController: UIViewController {

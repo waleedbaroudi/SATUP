@@ -26,9 +26,18 @@ extension ViewController : UIViewControllerTransitioningDelegate {
 class ViewController: UIViewController {
     let transition = SlideAction()
     
+    @IBOutlet weak var readingButton: UIButton!
+    @IBOutlet weak var writingButton: UIButton!
+    @IBOutlet weak var mathButton: UIButton!
+    @IBOutlet weak var vocabularyButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        setButtonShadow(button: readingButton)
+        setButtonShadow(button: writingButton)
+        setButtonShadow(button: mathButton)
+        setButtonShadow(button: vocabularyButton)
     }
     
     @IBAction func didTapSideMenu(_ sender: UIBarButtonItem) {
@@ -40,7 +49,12 @@ class ViewController: UIViewController {
             present(sideMenuViewController, animated: true)
             
     }
-
+    
+    func setButtonShadow (button: UIButton) {
+            button.layer.shadowColor = UIColor.black.cgColor
+            button.layer.shadowRadius = 4
+            button.layer.shadowOpacity = 0.5
+            button.layer.shadowOffset = CGSize(width: 0, height: 4)
 }
-
+}
 
