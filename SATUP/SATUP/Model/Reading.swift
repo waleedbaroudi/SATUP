@@ -7,17 +7,17 @@
 //
 
 import Foundation
-class Reading{
-    var title: String
-    var passage: String
-    var exercises: [String]
-    var answersExercise1: [String]
-    var answersExercise2: [String]
-    var answersExercise3: [String]
-    var correctAnswers: [Int]
-    var link: String
+class Reading: Codable{
+    let title: String
+    let passage: String
+    let exercises: [String]
+    let answersExercise1: [String]
+    let answersExercise2: [String]
+    let answersExercise3: [String]
+    let correctAnswers: [Int]
+    let videoLink: String
     
-    init(title: String, passage: String, exercises: [String], answersExercise1: [String], answersExercise2: [String], answersExercise3: [String], correctAnswers: [Int], link:String) {
+    init(title: String, passage: String, exercises: [String], answersExercise1: [String], answersExercise2: [String], answersExercise3: [String], correctAnswers: [Int], videoLink:String) {
         self.title = title
         self.passage = passage
         self.exercises = exercises
@@ -25,6 +25,6 @@ class Reading{
         self.answersExercise2 = answersExercise2
         self.answersExercise3 = answersExercise3
         self.correctAnswers = correctAnswers
-        self.link = link
+        self.videoLink = videoLink
     }
 }

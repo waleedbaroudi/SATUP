@@ -34,34 +34,16 @@ extension VocabularyViewController: UITableViewDataSource{
 
 class VocabularyViewController: UIViewController {
     var vocabList: [Vocab] = []
-    var vocabSections = [String]()
-    var vocabDictionary = [String:[Vocab]]()
     @IBOutlet weak var vocabTableView: UITableView!
     let vocabDataSource = VocabularyDataSource()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        generateVocabDictionary()
         vocabDataSource.delegate = self
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
         vocabDataSource.loadVocabulary()
-    }
-    
-    func generateVocabDictionary(){
-        for vocab in vocabList{
-            let word = vocab.word
-            let letter = "\(word[word.startIndex])"
-            if var letterVocabs = vocabDictionary[letter]{
-                letterVocabs.append(vocab)
-                vocabDictionary[letter] = letterVocabs
-            }
-            else {
-                vocabDictionary[letter] = [vocab]
-            }
-        }
-        vocabSections = [String](vocabDictionary.keys).sorted()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

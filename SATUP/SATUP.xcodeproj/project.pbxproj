@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0275A023A68F2000131699 /* WritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02759F23A68F2000131699 /* WritingViewController.swift */; };
+		CE0275A223A6901B00131699 /* Writing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0275A123A6901B00131699 /* Writing.swift */; };
+		CE0275A423A692DA00131699 /* WritingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0275A323A692DA00131699 /* WritingDataSource.swift */; };
+		CE0275A623A697F900131699 /* WritingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0275A523A697F900131699 /* WritingCell.swift */; };
 		CE3A30BF23A41D1400CC0C9F /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */; };
 		CE3A30C423A43C4700CC0C9F /* SlideAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A30C323A43C4700CC0C9F /* SlideAction.swift */; };
 		CE859E9023A4045C0070BD95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE859E8F23A4045C0070BD95 /* AppDelegate.swift */; };
@@ -27,6 +31,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE02759F23A68F2000131699 /* WritingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingViewController.swift; sourceTree = "<group>"; };
+		CE0275A123A6901B00131699 /* Writing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Writing.swift; sourceTree = "<group>"; };
+		CE0275A323A692DA00131699 /* WritingDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingDataSource.swift; sourceTree = "<group>"; };
+		CE0275A523A697F900131699 /* WritingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingCell.swift; sourceTree = "<group>"; };
 		CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		CE3A30C323A43C4700CC0C9F /* SlideAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideAction.swift; sourceTree = "<group>"; };
 		CE859E8C23A4045C0070BD95 /* SATUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SATUP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +116,7 @@
 			children = (
 				CE859EA623A40C920070BD95 /* info.swift */,
 				CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */,
+				CE02759F23A68F2000131699 /* WritingViewController.swift */,
 				CE86171323A5444400095A9E /* VocabularyViewController.swift */,
 				CE86171C23A5960100095A9E /* VocabPopupViewController.swift */,
 			);
@@ -119,7 +128,9 @@
 			children = (
 				CE859EBC23A4649A0070BD95 /* Vocab.swift */,
 				CE859EC023A464DA0070BD95 /* Reading.swift */,
+				CE0275A123A6901B00131699 /* Writing.swift */,
 				CE86171823A5492100095A9E /* VocabularyDataSource.swift */,
+				CE0275A323A692DA00131699 /* WritingDataSource.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -128,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				CE86171623A544C500095A9E /* VocabCell.swift */,
+				CE0275A523A697F900131699 /* WritingCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -213,9 +225,13 @@
 				CE859E9023A4045C0070BD95 /* AppDelegate.swift in Sources */,
 				CE86171723A544C500095A9E /* VocabCell.swift in Sources */,
 				CE859EBD23A4649A0070BD95 /* Vocab.swift in Sources */,
+				CE0275A423A692DA00131699 /* WritingDataSource.swift in Sources */,
+				CE0275A023A68F2000131699 /* WritingViewController.swift in Sources */,
 				CE3A30C423A43C4700CC0C9F /* SlideAction.swift in Sources */,
+				CE0275A223A6901B00131699 /* Writing.swift in Sources */,
 				CE3A30BF23A41D1400CC0C9F /* SideMenuViewController.swift in Sources */,
 				CE86171423A5444400095A9E /* VocabularyViewController.swift in Sources */,
+				CE0275A623A697F900131699 /* WritingCell.swift in Sources */,
 				CE859E9223A4045C0070BD95 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
