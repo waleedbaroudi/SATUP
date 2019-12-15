@@ -70,7 +70,9 @@ class VocabularyViewController: UIViewController {
             let vocab = vocabList[indexPath.row]
             let destination = segue.destination as! VocabPopupViewController
             destination.word = vocab.word
-//            destination.word.text = vocab.word
+            destination.type = vocab.type
+            destination.meaning = vocab.meaning
+            destination.example = vocab.example
         }
     }
 

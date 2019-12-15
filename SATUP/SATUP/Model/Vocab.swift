@@ -10,12 +10,16 @@ import Foundation
 class Vocab: Codable{
     var word: String
     var type: String
-    var audioFile: String
     var example: String
-    init(word: String, type: String, audioFile: String, example: String) {
+    var meaning: String
+    init(word: String, type: String, audioFile: String, example: String, meaning:String) {
         self.word = word
         self.type = type
-        self.audioFile = audioFile
         self.example = example
+        self.meaning = meaning
+    }
+    
+    func audioFileName() -> String {
+        return "\(word.lowercased()).mp3"
     }
 }

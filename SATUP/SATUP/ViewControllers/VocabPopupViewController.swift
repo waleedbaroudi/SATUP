@@ -13,10 +13,19 @@ class VocabPopupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         wordLabel.text = word
+        typeLabel.text = type
+        meaningLabel.text = meaning
+        exampleLabel.text = example
         // Do any additional setup after loading the view.
     }
     @IBOutlet weak var wordLabel: UILabel!
+    @IBOutlet weak var typeLabel: UILabel!
+    @IBOutlet weak var meaningLabel: UILabel!
+    @IBOutlet weak var exampleLabel: UILabel!
     var word: String?
+    var type: String?
+    var meaning: String?
+    var example: String?
     @IBAction func dismissButton(_ sender: Any) {
         self.dismiss(animated: true)
     }
