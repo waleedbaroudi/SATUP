@@ -16,11 +16,18 @@ class VocabCell: UITableViewCell {
     }
 
     @IBOutlet weak var word: UILabel!
+    @IBOutlet weak var type: UILabel!
+    @IBOutlet weak var bookmarkButton: UIButton!
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
+    @IBAction func bookMark(_ sender: Any) {
+
+    }
+    
+    
 
 }

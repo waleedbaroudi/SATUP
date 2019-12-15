@@ -27,6 +27,7 @@ extension VocabularyViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "vocabCell") as! VocabCell
             cell.word.text = vocabList[indexPath.row].word
+            cell.type.text = vocabList[indexPath.row].type
         return cell
     }
     
