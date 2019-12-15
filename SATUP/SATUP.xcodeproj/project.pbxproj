@@ -23,6 +23,7 @@
 		CE86171723A544C500095A9E /* VocabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86171623A544C500095A9E /* VocabCell.swift */; };
 		CE86171923A5492100095A9E /* VocabularyDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86171823A5492100095A9E /* VocabularyDataSource.swift */; };
 		CE86171B23A54A5900095A9E /* Netwok.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86171A23A54A5900095A9E /* Netwok.swift */; };
+		CE86171D23A5960100095A9E /* VocabPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86171C23A5960100095A9E /* VocabPopupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		CE86171623A544C500095A9E /* VocabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabCell.swift; sourceTree = "<group>"; };
 		CE86171823A5492100095A9E /* VocabularyDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyDataSource.swift; sourceTree = "<group>"; };
 		CE86171A23A54A5900095A9E /* Netwok.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netwok.swift; sourceTree = "<group>"; };
+		CE86171C23A5960100095A9E /* VocabPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabPopupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				CE859EA623A40C920070BD95 /* info.swift */,
 				CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */,
 				CE86171323A5444400095A9E /* VocabularyViewController.swift */,
+				CE86171C23A5960100095A9E /* VocabPopupViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				CE86171B23A54A5900095A9E /* Netwok.swift in Sources */,
 				CE86171923A5492100095A9E /* VocabularyDataSource.swift in Sources */,
 				CE859E9423A4045C0070BD95 /* ViewController.swift in Sources */,
+				CE86171D23A5960100095A9E /* VocabPopupViewController.swift in Sources */,
 				CE86171223A515C800095A9E /* Colors.swift in Sources */,
 				CE859EA723A40C920070BD95 /* info.swift in Sources */,
 				CE859EC123A464DA0070BD95 /* Reading.swift in Sources */,

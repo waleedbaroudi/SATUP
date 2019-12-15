@@ -66,6 +66,16 @@ class VocabularyViewController: UIViewController {
         }
         vocabSections = [String](vocabDictionary.keys).sorted()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! VocabCell
+        if let indexPath = vocabTableView.indexPath(for: cell){
+            let vocab = vocabList[indexPath.row]
+            let destination = segue.destination as! VocabPopupViewController
+            destination.word = vocab.word
+//            destination.word.text = vocab.word
+        }
+    }
 
     /*
     // MARK: - Navigation
