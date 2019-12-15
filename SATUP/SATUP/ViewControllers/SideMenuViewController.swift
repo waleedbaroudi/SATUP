@@ -9,13 +9,15 @@
 import UIKit
 
 class SideMenuViewController: UITableViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
+
+    @IBAction func aboutIsClicked(_ sender: Any) {
+
+    }
     @IBAction func dismissSideMenu(_ sender: Any) {
          dismiss(animated: true){}
     }
