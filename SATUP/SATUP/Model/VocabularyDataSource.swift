@@ -15,12 +15,11 @@ protocol VocabularyDataSourceDelegate {
 class VocabularyDataSource{
     var delegate: VocabularyDataSourceDelegate?
     func loadVocabulary(){
-        let session = URLSession.shared
         if let vocabURL = URL(string: Network.VocabURL){
             var request = URLRequest(url: vocabURL)
             request.httpMethod = "GET"
             request.addValue("application/json", forHTTPHeaderField: "Content-type")
-            let dataTask = session.dataTask(with: vocabURL) { (data, response, error) in
+            let dataTask = Network.session.dataTask(with: request) { (data, response, error) in
                 var vocabList: [Vocab] = []
                 do {vocabList = try Network.decoder.decode([Vocab].self, from: data!)} catch{}//TODO: HANDLE THIS
                 DispatchQueue.main.async {

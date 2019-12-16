@@ -10,20 +10,20 @@ import Foundation
 class Reading: Codable{
     let title: String
     let passage: String
-    let exercises: [String]
-    let answersExercise1: [String]
-    let answersExercise2: [String]
-    let answersExercise3: [String]
+    let excercises: [String]
+    let answersExcercise1: [String] //  EDIT NAMING
+    let answersExcercise2: [String] //  EDIT NAMING
+    let answersExcercise3: [String] //  EDIT NAMING
     let correctAnswers: [Int]
     let videoLink: String
     
-    init(title: String, passage: String, exercises: [String], answersExercise1: [String], answersExercise2: [String], answersExercise3: [String], correctAnswers: [Int], videoLink:String) {
+    init(title: String, passage: String, excercises: [String], answersExercise1: [String], answersExercise2: [String], answersExercise3: [String], correctAnswers: [Int], videoLink:String) {
         self.title = title
         self.passage = passage
-        self.exercises = exercises
-        self.answersExercise1 = answersExercise1
-        self.answersExercise2 = answersExercise2
-        self.answersExercise3 = answersExercise3
+        self.excercises = excercises
+        self.answersExcercise1 = answersExercise1
+        self.answersExcercise2 = answersExercise2
+        self.answersExcercise3 = answersExercise3
         self.correctAnswers = correctAnswers
         self.videoLink = videoLink
     }

@@ -15,6 +15,9 @@
 		CE3A30C423A43C4700CC0C9F /* SlideAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A30C323A43C4700CC0C9F /* SlideAction.swift */; };
 		CE600D4E23A7B374009A0B1E /* SectionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE600D4D23A7B374009A0B1E /* SectionDetailViewController.swift */; };
 		CE600D5223A82328009A0B1E /* WritingItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE600D5123A82328009A0B1E /* WritingItemViewController.swift */; };
+		CE600D5823A83D02009A0B1E /* ReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE600D5723A83D02009A0B1E /* ReadingViewController.swift */; };
+		CE600D5A23A83D44009A0B1E /* ReadingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE600D5923A83D44009A0B1E /* ReadingDataSource.swift */; };
+		CE600D5C23A840AC009A0B1E /* ReadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE600D5B23A840AC009A0B1E /* ReadingCell.swift */; };
 		CE859E9023A4045C0070BD95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE859E8F23A4045C0070BD95 /* AppDelegate.swift */; };
 		CE859E9223A4045C0070BD95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE859E9123A4045C0070BD95 /* SceneDelegate.swift */; };
 		CE859E9423A4045C0070BD95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE859E9323A4045C0070BD95 /* ViewController.swift */; };
@@ -41,6 +44,9 @@
 		CE3A30C323A43C4700CC0C9F /* SlideAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideAction.swift; sourceTree = "<group>"; };
 		CE600D4D23A7B374009A0B1E /* SectionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDetailViewController.swift; sourceTree = "<group>"; };
 		CE600D5123A82328009A0B1E /* WritingItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingItemViewController.swift; sourceTree = "<group>"; };
+		CE600D5723A83D02009A0B1E /* ReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingViewController.swift; sourceTree = "<group>"; };
+		CE600D5923A83D44009A0B1E /* ReadingDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingDataSource.swift; sourceTree = "<group>"; };
+		CE600D5B23A840AC009A0B1E /* ReadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingCell.swift; sourceTree = "<group>"; };
 		CE859E8C23A4045C0070BD95 /* SATUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SATUP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE859E8F23A4045C0070BD95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE859E9123A4045C0070BD95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +87,39 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		CE600D5323A83AEA009A0B1E /* Math ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Math ViewControllers";
+			sourceTree = "<group>";
+		};
+		CE600D5423A83B03009A0B1E /* Vocabulary ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE86171323A5444400095A9E /* VocabularyViewController.swift */,
+				CE86171C23A5960100095A9E /* VocabPopupViewController.swift */,
+			);
+			path = "Vocabulary ViewControllers";
+			sourceTree = "<group>";
+		};
+		CE600D5523A83C96009A0B1E /* Writing ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE02759F23A68F2000131699 /* WritingViewController.swift */,
+				CE600D5123A82328009A0B1E /* WritingItemViewController.swift */,
+			);
+			path = "Writing ViewControllers";
+			sourceTree = "<group>";
+		};
+		CE600D5623A83CBD009A0B1E /* Reading ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE600D5723A83D02009A0B1E /* ReadingViewController.swift */,
+			);
+			path = "Reading ViewControllers";
+			sourceTree = "<group>";
+		};
 		CE859E8323A4045C0070BD95 = {
 			isa = PBXGroup;
 			children = (
@@ -117,14 +156,14 @@
 		CE859EA323A40C230070BD95 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE600D5623A83CBD009A0B1E /* Reading ViewControllers */,
+				CE600D5523A83C96009A0B1E /* Writing ViewControllers */,
+				CE600D5423A83B03009A0B1E /* Vocabulary ViewControllers */,
+				CE600D5323A83AEA009A0B1E /* Math ViewControllers */,
 				CE859E9323A4045C0070BD95 /* ViewController.swift */,
 				CE859EA623A40C920070BD95 /* info.swift */,
 				CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */,
-				CE02759F23A68F2000131699 /* WritingViewController.swift */,
-				CE86171323A5444400095A9E /* VocabularyViewController.swift */,
-				CE86171C23A5960100095A9E /* VocabPopupViewController.swift */,
 				CE600D4D23A7B374009A0B1E /* SectionDetailViewController.swift */,
-				CE600D5123A82328009A0B1E /* WritingItemViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -137,6 +176,7 @@
 				CE0275A123A6901B00131699 /* Writing.swift */,
 				CE86171823A5492100095A9E /* VocabularyDataSource.swift */,
 				CE0275A323A692DA00131699 /* WritingDataSource.swift */,
+				CE600D5923A83D44009A0B1E /* ReadingDataSource.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -146,6 +186,7 @@
 			children = (
 				CE86171623A544C500095A9E /* VocabCell.swift */,
 				CE0275A523A697F900131699 /* WritingCell.swift */,
+				CE600D5B23A840AC009A0B1E /* ReadingCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -222,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE600D5223A82328009A0B1E /* WritingItemViewController.swift in Sources */,
+				CE600D5A23A83D44009A0B1E /* ReadingDataSource.swift in Sources */,
 				CE86171B23A54A5900095A9E /* Netwok.swift in Sources */,
+				CE600D5C23A840AC009A0B1E /* ReadingCell.swift in Sources */,
 				CE86171923A5492100095A9E /* VocabularyDataSource.swift in Sources */,
 				CE859E9423A4045C0070BD95 /* ViewController.swift in Sources */,
 				CE86171D23A5960100095A9E /* VocabPopupViewController.swift in Sources */,
@@ -241,6 +284,7 @@
 				CE86171423A5444400095A9E /* VocabularyViewController.swift in Sources */,
 				CE0275A623A697F900131699 /* WritingCell.swift in Sources */,
 				CE859E9223A4045C0070BD95 /* SceneDelegate.swift in Sources */,
+				CE600D5823A83D02009A0B1E /* ReadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
