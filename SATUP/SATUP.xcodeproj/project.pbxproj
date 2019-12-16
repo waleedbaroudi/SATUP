@@ -14,6 +14,7 @@
 		CE3A30BF23A41D1400CC0C9F /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */; };
 		CE3A30C423A43C4700CC0C9F /* SlideAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A30C323A43C4700CC0C9F /* SlideAction.swift */; };
 		CE600D4E23A7B374009A0B1E /* SectionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE600D4D23A7B374009A0B1E /* SectionDetailViewController.swift */; };
+		CE600D5223A82328009A0B1E /* WritingItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE600D5123A82328009A0B1E /* WritingItemViewController.swift */; };
 		CE859E9023A4045C0070BD95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE859E8F23A4045C0070BD95 /* AppDelegate.swift */; };
 		CE859E9223A4045C0070BD95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE859E9123A4045C0070BD95 /* SceneDelegate.swift */; };
 		CE859E9423A4045C0070BD95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE859E9323A4045C0070BD95 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 		CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		CE3A30C323A43C4700CC0C9F /* SlideAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideAction.swift; sourceTree = "<group>"; };
 		CE600D4D23A7B374009A0B1E /* SectionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDetailViewController.swift; sourceTree = "<group>"; };
+		CE600D5123A82328009A0B1E /* WritingItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingItemViewController.swift; sourceTree = "<group>"; };
 		CE859E8C23A4045C0070BD95 /* SATUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SATUP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE859E8F23A4045C0070BD95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE859E9123A4045C0070BD95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				CE86171323A5444400095A9E /* VocabularyViewController.swift */,
 				CE86171C23A5960100095A9E /* VocabPopupViewController.swift */,
 				CE600D4D23A7B374009A0B1E /* SectionDetailViewController.swift */,
+				CE600D5123A82328009A0B1E /* WritingItemViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE600D5223A82328009A0B1E /* WritingItemViewController.swift in Sources */,
 				CE86171B23A54A5900095A9E /* Netwok.swift in Sources */,
 				CE86171923A5492100095A9E /* VocabularyDataSource.swift in Sources */,
 				CE859E9423A4045C0070BD95 /* ViewController.swift in Sources */,

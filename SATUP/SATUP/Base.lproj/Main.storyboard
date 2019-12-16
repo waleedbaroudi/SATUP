@@ -65,7 +65,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="eEH-Ry-5kC" kind="show" id="imH-kV-wj5"/>
+                                    <segue destination="VTR-Qm-b9M" kind="show" id="2k9-54-6H5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrp-BN-M9W">
@@ -202,11 +202,11 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.24313725490196078" green="0.32156862745098036" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.27419033710000001" green="0.39792912699999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="NcI-2t-RJh" firstAttribute="top" secondItem="0NB-wg-rCL" secondAttribute="top" id="0uL-7W-p8w"/>
-                            <constraint firstItem="0NB-wg-rCL" firstAttribute="trailing" secondItem="NcI-2t-RJh" secondAttribute="trailing" id="C0f-CH-y3x"/>
-                            <constraint firstItem="NcI-2t-RJh" firstAttribute="leading" secondItem="0NB-wg-rCL" secondAttribute="leading" id="DGq-yA-qpa"/>
+                            <constraint firstAttribute="trailing" secondItem="NcI-2t-RJh" secondAttribute="trailing" id="C0f-CH-y3x"/>
+                            <constraint firstItem="NcI-2t-RJh" firstAttribute="leading" secondItem="Ioh-UL-uLb" secondAttribute="leading" id="DGq-yA-qpa"/>
                             <constraint firstItem="0NB-wg-rCL" firstAttribute="bottom" secondItem="NcI-2t-RJh" secondAttribute="bottom" id="NW7-OY-8zh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0NB-wg-rCL"/>
@@ -436,7 +436,76 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Eh-Tq-PVJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="1477"/>
+            <point key="canvasLocation" x="132" y="1505"/>
+        </scene>
+        <!--Geometry-->
+        <scene sceneID="hzv-m6-obh">
+            <objects>
+                <viewController id="YSr-k2-iQK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="teL-Ih-5mV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.27419033710000001" green="0.39792912699999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="Why-14-3aY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Geometry" image="cube" catalog="system" id="VDo-62-ysC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pgD-ON-ydX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="1505"/>
+        </scene>
+        <!--Advanced Math-->
+        <scene sceneID="o67-er-maE">
+            <objects>
+                <viewController id="ppp-1s-WUf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v1m-MJ-7Nz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.27419033710000001" green="0.39792912699999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="n7f-tR-HPw"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Advanced Math" image="x.squareroot" catalog="system" id="Lgf-Z5-fIB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9JR-xB-4BC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1700" y="1505"/>
+        </scene>
+        <!--Algebra-->
+        <scene sceneID="i2R-tS-FCC">
+            <objects>
+                <viewController id="Hdf-SA-BGH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tph-hp-N0o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.27419033710000001" green="0.39792912699999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="21c-Ip-Eo8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Algebra" image="divide.square" catalog="system" id="cu1-uE-bV4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6D2-3Y-gvh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1701" y="805"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="AT8-kG-LzU">
+            <objects>
+                <tabBarController id="VTR-Qm-b9M" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dps-Y9-REx"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EAO-Z3-eLQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.76073193549999996" blue="0.024616790940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.27419033710000001" green="0.39792912699999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Hdf-SA-BGH" kind="relationship" relationship="viewControllers" id="e1S-it-tVJ"/>
+                        <segue destination="YSr-k2-iQK" kind="relationship" relationship="viewControllers" id="gEn-iz-PWx"/>
+                        <segue destination="ppp-1s-WUf" kind="relationship" relationship="viewControllers" id="on1-uv-rkk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mqV-9W-P5a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="805"/>
         </scene>
         <!--Writing View Controller-->
         <scene sceneID="NxU-hA-8vI">
@@ -611,7 +680,11 @@
                         <viewLayoutGuide key="safeArea" id="md1-8L-lDf"/>
                     </view>
                     <connections>
+                        <outlet property="card" destination="wEq-6K-7lc" id="2SJ-QF-WK6"/>
+                        <outlet property="divider" destination="FMA-9Q-T8Q" id="Kby-S8-O08"/>
+                        <outlet property="exampleHeaderLabel" destination="RsZ-0H-xa8" id="cJd-PX-n4R"/>
                         <outlet property="exampleLabel" destination="FAF-CX-pGC" id="38u-LP-Xzp"/>
+                        <outlet property="meaningHeaderLabel" destination="Imo-IE-T6V" id="EC4-Ew-GeN"/>
                         <outlet property="meaningLabel" destination="DxQ-j9-T6F" id="Y1V-Ib-i9g"/>
                         <outlet property="typeLabel" destination="Jo8-G7-MjL" id="o7f-Yz-hoe"/>
                         <outlet property="wordLabel" destination="clD-xQ-Wc0" id="KUF-U5-x0o"/>
@@ -621,24 +694,24 @@
             </objects>
             <point key="canvasLocation" x="1812" y="127"/>
         </scene>
-        <!--View Controller-->
+        <!--Writing Item View Controller-->
         <scene sceneID="PQy-zl-Qjp">
             <objects>
-                <viewController id="eEH-Ry-5kC" sceneMemberID="viewController">
+                <viewController id="eEH-Ry-5kC" customClass="WritingItemViewController" customModule="SATUP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aIp-F0-dKd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Very Long Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfI-aq-v9a">
-                                <rect key="frame" x="20" y="109" width="374" height="37"/>
+                                <rect key="frame" x="20" y="65" width="374" height="37"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.76073193549999996" blue="0.024616790940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.49653175719999998" green="0.70136201529999997" blue="0.87064732509999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzA-tE-cNc">
-                                <rect key="frame" x="0.0" y="154" width="414" height="708"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gzA-tE-cNc">
+                                <rect key="frame" x="0.0" y="110" width="414" height="752"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TSj-Gg-7ZC">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1640"/>
@@ -672,7 +745,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="TSj-Gg-7ZC" firstAttribute="width" secondItem="aIp-F0-dKd" secondAttribute="width" id="0b9-Vo-v0E"/>
+                            <constraint firstItem="TSj-Gg-7ZC" firstAttribute="width" secondItem="gzA-tE-cNc" secondAttribute="width" id="0b9-Vo-v0E"/>
                             <constraint firstItem="gzA-tE-cNc" firstAttribute="top" secondItem="LfI-aq-v9a" secondAttribute="bottom" constant="8" id="5TW-6L-V6Q"/>
                             <constraint firstItem="Aib-wa-loZ" firstAttribute="trailing" secondItem="LfI-aq-v9a" secondAttribute="trailing" constant="20" id="Vwf-D1-In9"/>
                             <constraint firstItem="LfI-aq-v9a" firstAttribute="leading" secondItem="Aib-wa-loZ" secondAttribute="leading" constant="20" id="WDd-78-Rkb"/>
@@ -684,6 +757,10 @@
                         <viewLayoutGuide key="safeArea" id="Aib-wa-loZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="Cvn-R2-K4w"/>
+                    <connections>
+                        <outlet property="backView" destination="TSj-Gg-7ZC" id="jK4-sY-wqN"/>
+                        <outlet property="text" destination="9xB-zI-MuT" id="mL0-s7-cAL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IUN-wp-elh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -726,13 +803,16 @@
     </scenes>
     <resources>
         <image name="background2" width="2500" height="2732"/>
-        <image name="bookmark" width="32" height="32"/>
         <image name="bookmark" catalog="system" width="56" height="64"/>
+        <image name="bookmark" width="32" height="32"/>
+        <image name="cube" catalog="system" width="64" height="62"/>
+        <image name="divide.square" catalog="system" width="64" height="56"/>
         <image name="info.circle" catalog="system" width="64" height="60"/>
         <image name="information" width="32" height="32"/>
         <image name="list.dash" catalog="system" width="64" height="42"/>
         <image name="moon" width="32" height="32"/>
         <image name="sunny" width="32" height="32"/>
+        <image name="x.squareroot" catalog="system" width="64" height="48"/>
         <image name="xmark" catalog="system" width="64" height="56"/>
     </resources>
     <color key="tintColor" red="1" green="0.76073193550109863" blue="0.024616790935397148" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

@@ -44,6 +44,8 @@ class VocabularyViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
+        vocabTableView.backgroundColor = Colors.borderColor()
+        self.view.backgroundColor = Colors.borderColor()
         vocabDataSource.loadVocabulary()
     }
     

@@ -39,11 +39,9 @@ class ViewController: UIViewController {
         setButtonShadow(button: mathButton)
         setButtonShadow(button: vocabularyButton)
     }
-    
     @IBAction func didTapSideMenu(_ sender: UIBarButtonItem) {
         guard let sideMenuViewController = storyboard?.instantiateViewController(withIdentifier:
                 "SideMenuViewController") else { return }
-            
             sideMenuViewController.modalPresentationStyle = .overCurrentContext
             sideMenuViewController.transitioningDelegate = self
             present(sideMenuViewController, animated: true)
@@ -56,5 +54,6 @@ class ViewController: UIViewController {
             button.layer.shadowOpacity = 0.5
             button.layer.shadowOffset = CGSize(width: 0, height: 4)
 }
+    
 }
 
