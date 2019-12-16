@@ -104,7 +104,6 @@
 				CE859EA323A40C230070BD95 /* ViewControllers */,
 				CE859E8F23A4045C0070BD95 /* AppDelegate.swift */,
 				CE859E9123A4045C0070BD95 /* SceneDelegate.swift */,
-				CE859E9323A4045C0070BD95 /* ViewController.swift */,
 				CE859E9523A4045C0070BD95 /* Main.storyboard */,
 				CE859E9823A4045D0070BD95 /* Assets.xcassets */,
 				CE859E9A23A4045D0070BD95 /* LaunchScreen.storyboard */,
@@ -116,6 +115,7 @@
 		CE859EA323A40C230070BD95 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE859E9323A4045C0070BD95 /* ViewController.swift */,
 				CE859EA623A40C920070BD95 /* info.swift */,
 				CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */,
 				CE02759F23A68F2000131699 /* WritingViewController.swift */,

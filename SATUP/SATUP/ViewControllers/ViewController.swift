@@ -7,8 +7,8 @@
 //
 
 import UIKit
-
 extension ViewController : UIViewControllerTransitioningDelegate {
+
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source:
         UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
@@ -25,7 +25,6 @@ extension ViewController : UIViewControllerTransitioningDelegate {
 
 class ViewController: UIViewController {
     let transition = SlideAction()
-    
     @IBOutlet weak var readingButton: UIButton!
     @IBOutlet weak var writingButton: UIButton!
     @IBOutlet weak var mathButton: UIButton!
@@ -33,7 +32,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationController?.navigationBar.barTintColor = Colors.borderColor()
+        view.backgroundColor = Colors.borderColor()
         setButtonShadow(button: readingButton)
         setButtonShadow(button: writingButton)
         setButtonShadow(button: mathButton)
