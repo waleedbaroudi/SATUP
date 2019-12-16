@@ -44,6 +44,12 @@ class WritingViewController: UIViewController {
         super.viewDidLoad()
         writingDataSource.delegate = self
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! SectionDetailViewController
+        destination.sectionTitle = "Writing"
+    }
+    
  /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cell = sender as! VocabCell
