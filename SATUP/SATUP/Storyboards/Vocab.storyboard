@@ -110,10 +110,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJc-vJ-tgM">
-                                <rect key="frame" x="20" y="251" width="374" height="442.5"/>
+                                <rect key="frame" x="20" y="251" width="374" height="445"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuT-eK-THn">
-                                        <rect key="frame" x="8" y="194" width="358" height="54.5"/>
+                                        <rect key="frame" x="8" y="194" width="358" height="57"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="45"/>
                                         <color key="textColor" red="1" green="0.76073193549999996" blue="0.024616790940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -137,13 +137,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZy-l7-lnU">
-                                        <rect key="frame" x="177" y="370.5" width="28" height="26"/>
-                                        <state key="normal" image="speaker.1.fill" catalog="system">
+                                        <rect key="frame" x="177" y="370.5" width="28" height="28.5"/>
+                                        <state key="normal" image="speaker.3.fill" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7J-bs-4aD">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="442.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="445"/>
                                         <connections>
                                             <action selector="flip:" destination="mJJ-AK-Q6F" eventType="touchUpInside" id="Wdl-S5-sYe"/>
                                         </connections>
@@ -320,7 +320,7 @@
     </scenes>
     <resources>
         <image name="bookmark" catalog="system" width="56" height="64"/>
-        <image name="speaker.1.fill" catalog="system" width="64" height="58"/>
+        <image name="speaker.3.fill" catalog="system" width="64" height="44"/>
         <image name="square.on.square" catalog="system" width="64" height="56"/>
         <image name="xmark" catalog="system" width="64" height="56"/>
     </resources>
