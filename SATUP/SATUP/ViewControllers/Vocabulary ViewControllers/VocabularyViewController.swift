@@ -62,7 +62,8 @@ class VocabularyViewController: UIViewController {
         }
         else if(segue.identifier == "toFlashCard"){
             let destination = segue.destination as! FlashCardViewController
-            destination.word = vocabList[Int.random(in: 0...(vocabList.count-1))].word
+            destination.word = vocabList[Int.random(in: 0...(vocabList.count-1))]
+            destination.vocabList = vocabList
         }
     }
 
