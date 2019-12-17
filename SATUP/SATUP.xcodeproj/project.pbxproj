@@ -39,6 +39,7 @@
 		CE86171923A5492100095A9E /* VocabularyDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86171823A5492100095A9E /* VocabularyDataSource.swift */; };
 		CE86171B23A54A5900095A9E /* Netwok.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86171A23A54A5900095A9E /* Netwok.swift */; };
 		CE86171D23A5960100095A9E /* VocabPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86171C23A5960100095A9E /* VocabPopupViewController.swift */; };
+		CED6391923A96CB30061499E /* ReadingSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6391823A96CB30061499E /* ReadingSubViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		CE86171823A5492100095A9E /* VocabularyDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyDataSource.swift; sourceTree = "<group>"; };
 		CE86171A23A54A5900095A9E /* Netwok.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netwok.swift; sourceTree = "<group>"; };
 		CE86171C23A5960100095A9E /* VocabPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabPopupViewController.swift; sourceTree = "<group>"; };
+		CED6391823A96CB30061499E /* ReadingSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingSubViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				CE600D5723A83D02009A0B1E /* ReadingViewController.swift */,
+				CED6391823A96CB30061499E /* ReadingSubViewController.swift */,
 			);
 			path = "Reading ViewControllers";
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				CE0B2D6D23A95E37001F8934 /* FlashCardViewController.swift in Sources */,
 				CE3A30C423A43C4700CC0C9F /* SlideAction.swift in Sources */,
 				CE0275A223A6901B00131699 /* Writing.swift in Sources */,
+				CED6391923A96CB30061499E /* ReadingSubViewController.swift in Sources */,
 				CE600D4E23A7B374009A0B1E /* SectionDetailViewController.swift in Sources */,
 				CE3A30BF23A41D1400CC0C9F /* SideMenuViewController.swift in Sources */,
 				CE86171423A5444400095A9E /* VocabularyViewController.swift in Sources */,
