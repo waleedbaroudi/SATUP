@@ -11,6 +11,7 @@
 		CE0275A223A6901B00131699 /* Writing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0275A123A6901B00131699 /* Writing.swift */; };
 		CE0275A423A692DA00131699 /* WritingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0275A323A692DA00131699 /* WritingDataSource.swift */; };
 		CE0275A623A697F900131699 /* WritingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0275A523A697F900131699 /* WritingCell.swift */; };
+		CE0B2D6D23A95E37001F8934 /* FlashCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B2D6C23A95E37001F8934 /* FlashCardViewController.swift */; };
 		CE3A30BF23A41D1400CC0C9F /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */; };
 		CE3A30C423A43C4700CC0C9F /* SlideAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A30C323A43C4700CC0C9F /* SlideAction.swift */; };
 		CE41E79423A8FF5A00C74155 /* Math.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE41E79323A8FF5A00C74155 /* Math.storyboard */; };
@@ -45,6 +46,7 @@
 		CE0275A123A6901B00131699 /* Writing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Writing.swift; sourceTree = "<group>"; };
 		CE0275A323A692DA00131699 /* WritingDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingDataSource.swift; sourceTree = "<group>"; };
 		CE0275A523A697F900131699 /* WritingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingCell.swift; sourceTree = "<group>"; };
+		CE0B2D6C23A95E37001F8934 /* FlashCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardViewController.swift; sourceTree = "<group>"; };
 		CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		CE3A30C323A43C4700CC0C9F /* SlideAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideAction.swift; sourceTree = "<group>"; };
 		CE41E79323A8FF5A00C74155 /* Math.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Math.storyboard; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			children = (
 				CE86171323A5444400095A9E /* VocabularyViewController.swift */,
 				CE86171C23A5960100095A9E /* VocabPopupViewController.swift */,
+				CE0B2D6C23A95E37001F8934 /* FlashCardViewController.swift */,
 			);
 			path = "Vocabulary ViewControllers";
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				CE859EBD23A4649A0070BD95 /* Vocab.swift in Sources */,
 				CE0275A423A692DA00131699 /* WritingDataSource.swift in Sources */,
 				CE0275A023A68F2000131699 /* WritingViewController.swift in Sources */,
+				CE0B2D6D23A95E37001F8934 /* FlashCardViewController.swift in Sources */,
 				CE3A30C423A43C4700CC0C9F /* SlideAction.swift in Sources */,
 				CE0275A223A6901B00131699 /* Writing.swift in Sources */,
 				CE600D4E23A7B374009A0B1E /* SectionDetailViewController.swift in Sources */,

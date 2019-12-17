@@ -50,14 +50,19 @@ class VocabularyViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let cell = sender as! VocabCell
-        if let indexPath = vocabTableView.indexPath(for: cell){
-            let vocab = vocabList[indexPath.row]
-            let destination = segue.destination as! VocabPopupViewController
-            destination.word = vocab.word
-            destination.type = vocab.type
-            destination.meaning = vocab.meaning
-            destination.example = vocab.example
+        if(segue.identifier == "toVocabCard"){
+            let cell = sender as! VocabCell
+            if let indexPath = vocabTableView.indexPath(for: cell){
+                let vocab = vocabList[indexPath.row]
+                let destination = segue.destination as! VocabPopupViewController
+                destination.word = vocab.word
+                destination.type = vocab.type
+                destination.meaning = vocab.meaning
+                destination.example = vocab.example}
+        }
+        else if(segue.identifier == "toFlashCard"){
+            let destination = segue.destination as! FlashCardViewController
+            destination.word = vocabList[Int.random(in: 0...(vocabList.count-1))].word
         }
     }
 

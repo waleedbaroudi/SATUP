@@ -66,7 +66,7 @@
                                             <outlet property="bookmarkButton" destination="USw-gq-L7L" id="FE7-i3-lPT"/>
                                             <outlet property="type" destination="8Xe-Oc-En3" id="Tju-fk-8ej"/>
                                             <outlet property="word" destination="yGF-1P-D7F" id="nDw-Ci-4S2"/>
-                                            <segue destination="5Ih-mN-8yD" kind="presentation" id="q6s-ip-mgz"/>
+                                            <segue destination="5Ih-mN-8yD" kind="presentation" identifier="toVacabCard" id="q6s-ip-mgz"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -86,7 +86,11 @@
                         <viewLayoutGuide key="safeArea" id="kUe-t5-prK"/>
                     </view>
                     <navigationItem key="navigationItem" id="Oko-0l-Z3W">
-                        <barButtonItem key="rightBarButtonItem" image="square.on.square" catalog="system" style="plain" id="7fs-r0-Gum"/>
+                        <barButtonItem key="rightBarButtonItem" image="square.on.square" catalog="system" style="plain" id="7fs-r0-Gum">
+                            <connections>
+                                <segue destination="mJJ-AK-Q6F" kind="show" identifier="toFlashCard" id="naf-ic-zpx"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
@@ -96,6 +100,62 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4W4-1r-xOa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="915.94202898550736" y="126.5625"/>
+        </scene>
+        <!--Flash Card View Controller-->
+        <scene sceneID="Oxz-pd-qyA">
+            <objects>
+                <viewController id="mJJ-AK-Q6F" customClass="FlashCardViewController" customModule="SATUP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZWt-wy-NPV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJc-vJ-tgM">
+                                <rect key="frame" x="20" y="251" width="374" height="448"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuT-eK-THn">
+                                        <rect key="frame" x="8" y="194" width="358" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
+                                        <color key="textColor" red="1" green="0.76073193549999996" blue="0.024616790940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7J-bs-4aD">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="448"/>
+                                        <connections>
+                                            <action selector="flip:" destination="mJJ-AK-Q6F" eventType="touchUpInside" id="Wdl-S5-sYe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cyan="0.46000000000000002" magenta="0.029999999999999999" yellow="0.0" black="0.34000000000000002" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="uuT-eK-THn" firstAttribute="top" secondItem="TJc-vJ-tgM" secondAttribute="top" constant="194" id="67k-dS-sx8"/>
+                                    <constraint firstAttribute="bottom" secondItem="A7J-bs-4aD" secondAttribute="bottom" id="6mV-ex-Igo"/>
+                                    <constraint firstItem="A7J-bs-4aD" firstAttribute="leading" secondItem="TJc-vJ-tgM" secondAttribute="leading" id="A5E-27-INM"/>
+                                    <constraint firstItem="A7J-bs-4aD" firstAttribute="top" secondItem="TJc-vJ-tgM" secondAttribute="top" id="ETi-UO-cbL"/>
+                                    <constraint firstAttribute="trailing" secondItem="uuT-eK-THn" secondAttribute="trailing" constant="8" id="WfF-UB-0vY"/>
+                                    <constraint firstAttribute="bottom" secondItem="uuT-eK-THn" secondAttribute="bottom" constant="194" id="X0J-yC-Rld"/>
+                                    <constraint firstAttribute="trailing" secondItem="A7J-bs-4aD" secondAttribute="trailing" id="ch0-qt-wFp"/>
+                                    <constraint firstItem="uuT-eK-THn" firstAttribute="leading" secondItem="TJc-vJ-tgM" secondAttribute="leading" constant="8" id="iiD-4F-2CD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TJc-vJ-tgM" firstAttribute="leading" secondItem="pEN-Cv-o0T" secondAttribute="leading" constant="20" id="1gV-vp-EI5"/>
+                            <constraint firstItem="pEN-Cv-o0T" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="TJc-vJ-tgM" secondAttribute="bottom" constant="25" id="W6r-7L-NdQ"/>
+                            <constraint firstItem="TJc-vJ-tgM" firstAttribute="top" secondItem="pEN-Cv-o0T" secondAttribute="top" constant="163" id="dbG-x3-b9y"/>
+                            <constraint firstItem="pEN-Cv-o0T" firstAttribute="trailing" secondItem="TJc-vJ-tgM" secondAttribute="trailing" constant="20" id="kSn-cL-oVg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pEN-Cv-o0T"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pQp-an-3If"/>
+                    <connections>
+                        <outlet property="card" destination="TJc-vJ-tgM" id="L8e-5g-azA"/>
+                        <outlet property="wordLabel" destination="uuT-eK-THn" id="dn7-eL-3Z7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6hD-kf-63S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1689.8550724637682" y="-132.58928571428572"/>
         </scene>
         <!--Vocab Popup View Controller-->
         <scene sceneID="Tqg-gu-dhb">
@@ -214,7 +274,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nHd-gA-BIe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1700" y="127"/>
+            <point key="canvasLocation" x="1691" y="533"/>
         </scene>
     </scenes>
     <resources>
