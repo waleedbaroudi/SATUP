@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zcm-fW-znQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Section Detail View Controller-->
+        <scene sceneID="fHq-Cg-5xW">
+            <objects>
+                <viewController id="zcm-fW-znQ" customClass="SectionDetailViewController" customModule="SATUP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yAL-Q4-4MU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About the Writing Part in the SAT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xT5-GH-9Uq">
+                                <rect key="frame" x="20" y="70" width="374" height="73"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.76073193549999996" blue="0.024616790940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.49653175719999998" green="0.70136201529999997" blue="0.87064732509999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xT5-GH-9Uq" firstAttribute="leading" secondItem="VOY-v4-qZb" secondAttribute="leading" constant="20" id="RQM-H7-mvP"/>
+                            <constraint firstItem="xT5-GH-9Uq" firstAttribute="top" secondItem="VOY-v4-qZb" secondAttribute="top" constant="26" id="YAA-Nd-NrU"/>
+                            <constraint firstItem="VOY-v4-qZb" firstAttribute="trailing" secondItem="xT5-GH-9Uq" secondAttribute="trailing" constant="20" id="wbA-zV-YEI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VOY-v4-qZb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4WX-SU-aF1"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="xT5-GH-9Uq" id="ufZ-am-Kdt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhu-aj-MxK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1812" y="-1207"/>
+        </scene>
+    </scenes>
+</document>

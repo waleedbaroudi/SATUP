@@ -13,6 +13,11 @@
 		CE0275A623A697F900131699 /* WritingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0275A523A697F900131699 /* WritingCell.swift */; };
 		CE3A30BF23A41D1400CC0C9F /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */; };
 		CE3A30C423A43C4700CC0C9F /* SlideAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A30C323A43C4700CC0C9F /* SlideAction.swift */; };
+		CE41E79423A8FF5A00C74155 /* Math.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE41E79323A8FF5A00C74155 /* Math.storyboard */; };
+		CE41E79623A8FF8200C74155 /* Vocab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE41E79523A8FF8200C74155 /* Vocab.storyboard */; };
+		CE41E79823A8FF8C00C74155 /* Writing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE41E79723A8FF8C00C74155 /* Writing.storyboard */; };
+		CE41E79A23A8FF9A00C74155 /* Reading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE41E79923A8FF9A00C74155 /* Reading.storyboard */; };
+		CE41E79C23A9505100C74155 /* SectionDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE41E79B23A9505100C74155 /* SectionDetails.storyboard */; };
 		CE600D4E23A7B374009A0B1E /* SectionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE600D4D23A7B374009A0B1E /* SectionDetailViewController.swift */; };
 		CE600D5223A82328009A0B1E /* WritingItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE600D5123A82328009A0B1E /* WritingItemViewController.swift */; };
 		CE600D5823A83D02009A0B1E /* ReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE600D5723A83D02009A0B1E /* ReadingViewController.swift */; };
@@ -42,6 +47,11 @@
 		CE0275A523A697F900131699 /* WritingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingCell.swift; sourceTree = "<group>"; };
 		CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		CE3A30C323A43C4700CC0C9F /* SlideAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideAction.swift; sourceTree = "<group>"; };
+		CE41E79323A8FF5A00C74155 /* Math.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Math.storyboard; sourceTree = "<group>"; };
+		CE41E79523A8FF8200C74155 /* Vocab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vocab.storyboard; sourceTree = "<group>"; };
+		CE41E79723A8FF8C00C74155 /* Writing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Writing.storyboard; sourceTree = "<group>"; };
+		CE41E79923A8FF9A00C74155 /* Reading.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reading.storyboard; sourceTree = "<group>"; };
+		CE41E79B23A9505100C74155 /* SectionDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SectionDetails.storyboard; sourceTree = "<group>"; };
 		CE600D4D23A7B374009A0B1E /* SectionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDetailViewController.swift; sourceTree = "<group>"; };
 		CE600D5123A82328009A0B1E /* WritingItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingItemViewController.swift; sourceTree = "<group>"; };
 		CE600D5723A83D02009A0B1E /* ReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +95,19 @@
 				CE86171A23A54A5900095A9E /* Netwok.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		CE41E79223A8FF1800C74155 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CE41E79323A8FF5A00C74155 /* Math.storyboard */,
+				CE41E79523A8FF8200C74155 /* Vocab.storyboard */,
+				CE41E79723A8FF8C00C74155 /* Writing.storyboard */,
+				CE41E79923A8FF9A00C74155 /* Reading.storyboard */,
+				CE859E9523A4045C0070BD95 /* Main.storyboard */,
+				CE41E79B23A9505100C74155 /* SectionDetails.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		CE600D5323A83AEA009A0B1E /* Math ViewControllers */ = {
@@ -145,7 +168,7 @@
 				CE859EA323A40C230070BD95 /* ViewControllers */,
 				CE859E8F23A4045C0070BD95 /* AppDelegate.swift */,
 				CE859E9123A4045C0070BD95 /* SceneDelegate.swift */,
-				CE859E9523A4045C0070BD95 /* Main.storyboard */,
+				CE41E79223A8FF1800C74155 /* Storyboards */,
 				CE859E9823A4045D0070BD95 /* Assets.xcassets */,
 				CE859E9A23A4045D0070BD95 /* LaunchScreen.storyboard */,
 				CE859E9D23A4045D0070BD95 /* Info.plist */,
@@ -249,8 +272,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE41E79A23A8FF9A00C74155 /* Reading.storyboard in Resources */,
+				CE41E79423A8FF5A00C74155 /* Math.storyboard in Resources */,
+				CE41E79823A8FF8C00C74155 /* Writing.storyboard in Resources */,
+				CE41E79C23A9505100C74155 /* SectionDetails.storyboard in Resources */,
 				CE859E9C23A4045D0070BD95 /* LaunchScreen.storyboard in Resources */,
 				CE859E9923A4045D0070BD95 /* Assets.xcassets in Resources */,
+				CE41E79623A8FF8200C74155 /* Vocab.storyboard in Resources */,
 				CE859E9723A4045C0070BD95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vyE-30-GPI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Writing View Controller-->
+        <scene sceneID="exL-fc-Ftv">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JvA-2k-Lff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="vyE-30-GPI" customClass="WritingViewController" customModule="SATUP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2gY-yz-N7m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3fF-BL-GuL">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="writingCell" rowHeight="104" id="AeA-P2-xdk" customClass="WritingCell" customModule="SATUP" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="104"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AeA-P2-xdk" id="Tnc-ZY-VIT">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCG-SW-PUf">
+                                                    <rect key="frame" x="28" y="39" width="358" height="26.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="NCG-SW-PUf" firstAttribute="centerY" secondItem="Tnc-ZY-VIT" secondAttribute="centerY" id="4qj-ba-uYE"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="NCG-SW-PUf" secondAttribute="trailing" constant="8" id="PH4-T3-X2E"/>
+                                                <constraint firstItem="NCG-SW-PUf" firstAttribute="centerX" secondItem="Tnc-ZY-VIT" secondAttribute="centerX" id="WtX-WL-hOh"/>
+                                                <constraint firstItem="NCG-SW-PUf" firstAttribute="leading" secondItem="Tnc-ZY-VIT" secondAttribute="leadingMargin" constant="8" id="pvN-tZ-iL8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="writingSelectionLabel" destination="NCG-SW-PUf" id="LVR-d9-FRg"/>
+                                            <segue destination="ZFP-1d-2aZ" kind="show" id="Rg5-bY-NEB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vyE-30-GPI" id="3yc-jH-9zb"/>
+                                    <outlet property="delegate" destination="vyE-30-GPI" id="7Og-AV-tEC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3fF-BL-GuL" firstAttribute="top" secondItem="NLg-L7-dfD" secondAttribute="top" id="0by-a8-Feg"/>
+                            <constraint firstItem="NLg-L7-dfD" firstAttribute="bottom" secondItem="3fF-BL-GuL" secondAttribute="bottom" id="2WO-V2-5vf"/>
+                            <constraint firstItem="NLg-L7-dfD" firstAttribute="trailing" secondItem="3fF-BL-GuL" secondAttribute="trailing" id="TdK-RA-3cs"/>
+                            <constraint firstItem="3fF-BL-GuL" firstAttribute="leading" secondItem="NLg-L7-dfD" secondAttribute="leading" id="gTo-L6-faG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NLg-L7-dfD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Jq-Oh-V3f">
+                        <barButtonItem key="rightBarButtonItem" image="info.circle" catalog="system" style="plain" id="4Nh-oC-zLM">
+                            <connections>
+                                <segue destination="EyR-fp-aqI" kind="show" id="9cP-zu-U0U"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="writingTableView" destination="3fF-BL-GuL" id="xii-24-gba"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="916" y="-549"/>
+        </scene>
+        <!--Writing Item View Controller-->
+        <scene sceneID="l5E-LJ-f5n">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z4A-lq-HTx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="ZFP-1d-2aZ" customClass="WritingItemViewController" customModule="SATUP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rqS-jt-wKO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Very Long Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBy-TJ-PrP">
+                                <rect key="frame" x="20" y="109" width="374" height="37"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.76073193549999996" blue="0.024616790940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.49653175719999998" green="0.70136201529999997" blue="0.87064732509999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yzO-GA-Jma">
+                                <rect key="frame" x="0.0" y="154" width="414" height="708"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fB-A6-KUG">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1640"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5Y-E1-A9y">
+                                                <rect key="frame" x="16" y="16" width="382" height="1582.5"/>
+                                                <string key="text">a very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long text</string>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="P5Y-E1-A9y" secondAttribute="trailing" constant="16" id="MJw-Si-0kA"/>
+                                            <constraint firstItem="P5Y-E1-A9y" firstAttribute="top" secondItem="6fB-A6-KUG" secondAttribute="top" constant="16" id="TkP-wp-Ul2"/>
+                                            <constraint firstAttribute="bottom" secondItem="P5Y-E1-A9y" secondAttribute="bottom" constant="41.5" id="gTO-Om-BAg"/>
+                                            <constraint firstItem="P5Y-E1-A9y" firstAttribute="leading" secondItem="6fB-A6-KUG" secondAttribute="leading" constant="16" id="tzd-TY-yv0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="6fB-A6-KUG" secondAttribute="bottom" id="Wy1-00-6KI"/>
+                                    <constraint firstItem="6fB-A6-KUG" firstAttribute="top" secondItem="yzO-GA-Jma" secondAttribute="top" id="k8o-51-h9l"/>
+                                    <constraint firstItem="6fB-A6-KUG" firstAttribute="leading" secondItem="yzO-GA-Jma" secondAttribute="leading" id="kbW-f1-jir"/>
+                                    <constraint firstAttribute="trailing" secondItem="6fB-A6-KUG" secondAttribute="trailing" id="xE9-y0-FdU"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="4EV-lD-faT"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="NgC-A2-9DL"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="EBy-TJ-PrP" firstAttribute="leading" secondItem="oRC-ja-SSr" secondAttribute="leading" constant="20" id="2wM-So-cBT"/>
+                            <constraint firstItem="oRC-ja-SSr" firstAttribute="trailing" secondItem="EBy-TJ-PrP" secondAttribute="trailing" constant="20" id="BLw-Tq-Mca"/>
+                            <constraint firstItem="yzO-GA-Jma" firstAttribute="top" secondItem="EBy-TJ-PrP" secondAttribute="bottom" constant="8" id="QnP-hT-3a7"/>
+                            <constraint firstItem="oRC-ja-SSr" firstAttribute="bottom" secondItem="yzO-GA-Jma" secondAttribute="bottom" id="Qt3-hG-KTh"/>
+                            <constraint firstItem="6fB-A6-KUG" firstAttribute="width" secondItem="yzO-GA-Jma" secondAttribute="width" id="cH0-vF-jOq"/>
+                            <constraint firstItem="EBy-TJ-PrP" firstAttribute="top" secondItem="oRC-ja-SSr" secondAttribute="top" constant="21" id="ehM-KR-oKC"/>
+                            <constraint firstItem="yzO-GA-Jma" firstAttribute="trailing" secondItem="oRC-ja-SSr" secondAttribute="trailing" id="pCq-jY-mUF"/>
+                            <constraint firstItem="yzO-GA-Jma" firstAttribute="leading" secondItem="oRC-ja-SSr" secondAttribute="leading" id="wcR-57-myr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oRC-ja-SSr"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="odC-Co-ZnT"/>
+                    <connections>
+                        <outlet property="backView" destination="6fB-A6-KUG" id="bMV-hs-QUZ"/>
+                        <outlet property="text" destination="P5Y-E1-A9y" id="gnF-iO-g9z"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1700" y="-549"/>
+        </scene>
+        <!--SectionDetails-->
+        <scene sceneID="59U-BQ-T8Y">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SectionDetails" id="EyR-fp-aqI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="eia-Hk-R2M"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eht-k7-BYE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="-143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="info.circle" catalog="system" width="64" height="60"/>
+    </resources>
+    <color key="tintColor" red="1" green="0.76073193549999996" blue="0.024616790940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+</document>
