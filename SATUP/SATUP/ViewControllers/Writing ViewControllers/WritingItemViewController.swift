@@ -28,6 +28,7 @@ class WritingItemViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.view.backgroundColor = Colors.primaryColor()
         backView.backgroundColor = Colors.primaryColor()
+//        textLabel.font = UIFont(name: subjectLabel.font.fontName, size: 12)
 //        textLabel.textColor = Colors.textColor()
     }
     
