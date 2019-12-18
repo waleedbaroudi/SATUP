@@ -49,6 +49,19 @@ class ReadingViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         dataSource.loadReadings()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! ReadingCell
+        let destination = segue.destination as! ReadingSubViewController
+        if let indexPath = readingsTableView.indexPath(for: cell){
+            let reading = readingsList[indexPath.row]
+            destination.readingTitle = reading.title
+            destination.passageText = reading.passage
+            destination.question1 = reading.excercises[0]
+            destination.question2 = reading.excercises[1]
+            destination.question3 = reading.excercises[2]
+        }
+    }
 
     /*
     // MARK: - Navigation

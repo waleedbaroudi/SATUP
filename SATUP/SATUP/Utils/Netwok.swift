@@ -11,6 +11,6 @@ struct Network {
     static let session = URLSession.shared
     static let VocabURL = "https://api.nooyad.xyz/api/satupvocab"
     static let ReadingURL = "https://api.nooyad.xyz/api/satupreading"
-    static let WritingURL = "https://api.nooyad.xyz/api/"
+    static let WritingURL = "https://api.nooyad.xyz/api/satupwriting"
     static let decoder = JSONDecoder()
 }

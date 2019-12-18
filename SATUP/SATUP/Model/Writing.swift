@@ -10,16 +10,14 @@ import Foundation
 
 class Writing: Codable {
     
-    let title: String
-    let explanation: String
-    let examples: [String]
+    let subject: String
+    let content: String
     let videoLink: String
     
     
-    init (title: String, explanation: String, examples: [String], videoLink: String){
-        self.title = title
-        self.explanation = explanation
-        self.examples = examples
+    init (subject: String, content: String, videoLink: String){
+        self.subject = subject
+        self.content = content
         self.videoLink = videoLink
     }
     

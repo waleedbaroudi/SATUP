@@ -10,7 +10,6 @@
         <!--Writing View Controller-->
         <scene sceneID="exL-fc-Ftv">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JvA-2k-Lff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="vyE-30-GPI" customClass="WritingViewController" customModule="SATUP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2gY-yz-N7m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -30,7 +29,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCG-SW-PUf">
                                                     <rect key="frame" x="28" y="39" width="358" height="26.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                    <color key="textColor" red="1" green="0.76073193549999996" blue="0.024616790940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -43,7 +42,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="writingSelectionLabel" destination="NCG-SW-PUf" id="LVR-d9-FRg"/>
-                                            <segue destination="ZFP-1d-2aZ" kind="show" id="Rg5-bY-NEB"/>
+                                            <segue destination="ZFP-1d-2aZ" kind="show" identifier="toContentView" id="Rg5-bY-NEB"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -65,7 +64,7 @@
                     <navigationItem key="navigationItem" id="5Jq-Oh-V3f">
                         <barButtonItem key="rightBarButtonItem" image="info.circle" catalog="system" style="plain" id="4Nh-oC-zLM">
                             <connections>
-                                <segue destination="EyR-fp-aqI" kind="show" id="9cP-zu-U0U"/>
+                                <segue destination="EyR-fp-aqI" kind="show" identifier="toInfoView" id="9cP-zu-U0U"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -74,13 +73,13 @@
                         <outlet property="writingTableView" destination="3fF-BL-GuL" id="xii-24-gba"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JvA-2k-Lff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="916" y="-549"/>
         </scene>
         <!--Writing Item View Controller-->
         <scene sceneID="l5E-LJ-f5n">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="z4A-lq-HTx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="ZFP-1d-2aZ" customClass="WritingItemViewController" customModule="SATUP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rqS-jt-wKO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -98,21 +97,29 @@
                                 <rect key="frame" x="0.0" y="154" width="414" height="708"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fB-A6-KUG">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1640"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="78"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5Y-E1-A9y">
-                                                <rect key="frame" x="16" y="16" width="382" height="1582.5"/>
-                                                <string key="text">a very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long text</string>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5Y-E1-A9y">
+                                                <rect key="frame" x="16" y="16" width="382" height="20.5"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CS9-Vm-fkK">
+                                                <rect key="frame" x="166" y="48" width="84" height="22"/>
+                                                <state key="normal" title=" Button" image="video" catalog="system">
+                                                    <color key="titleColor" red="1" green="0.76073193549999996" blue="0.024616790940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="CS9-Vm-fkK" secondAttribute="bottom" constant="8" id="7kz-ga-0xP"/>
+                                            <constraint firstAttribute="trailing" secondItem="CS9-Vm-fkK" secondAttribute="trailing" constant="164" id="Gfh-7L-0aY"/>
                                             <constraint firstAttribute="trailing" secondItem="P5Y-E1-A9y" secondAttribute="trailing" constant="16" id="MJw-Si-0kA"/>
+                                            <constraint firstItem="CS9-Vm-fkK" firstAttribute="top" secondItem="P5Y-E1-A9y" secondAttribute="bottom" constant="11.5" id="SSj-M4-yVp"/>
                                             <constraint firstItem="P5Y-E1-A9y" firstAttribute="top" secondItem="6fB-A6-KUG" secondAttribute="top" constant="16" id="TkP-wp-Ul2"/>
-                                            <constraint firstAttribute="bottom" secondItem="P5Y-E1-A9y" secondAttribute="bottom" constant="41.5" id="gTO-Om-BAg"/>
+                                            <constraint firstItem="CS9-Vm-fkK" firstAttribute="leading" secondItem="6fB-A6-KUG" secondAttribute="leading" constant="166" id="szy-1O-9X7"/>
                                             <constraint firstItem="P5Y-E1-A9y" firstAttribute="leading" secondItem="6fB-A6-KUG" secondAttribute="leading" constant="16" id="tzd-TY-yv0"/>
                                         </constraints>
                                     </view>
@@ -143,9 +150,11 @@
                     <navigationItem key="navigationItem" id="odC-Co-ZnT"/>
                     <connections>
                         <outlet property="backView" destination="6fB-A6-KUG" id="bMV-hs-QUZ"/>
-                        <outlet property="text" destination="P5Y-E1-A9y" id="gnF-iO-g9z"/>
+                        <outlet property="subjectLabel" destination="EBy-TJ-PrP" id="nKC-Dc-osZ"/>
+                        <outlet property="textLabel" destination="P5Y-E1-A9y" id="z7a-z3-D4F"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z4A-lq-HTx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1700" y="-549"/>
         </scene>
@@ -162,6 +171,7 @@
     </scenes>
     <resources>
         <image name="info.circle" catalog="system" width="64" height="60"/>
+        <image name="video" catalog="system" width="64" height="40"/>
     </resources>
     <color key="tintColor" red="1" green="0.76073193549999996" blue="0.024616790940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>

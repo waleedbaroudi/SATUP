@@ -63,9 +63,24 @@ class ReadingSubViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setComponents()
         // Do any additional setup after loading the view.
     }
+    
+    
+    func setComponents(){
+        titleLabel.text = readingTitle
+        passage.text = passageText
+        firstQuestion.text = question1
+        secondQuestion.text = question2
+        thirdQuestion.text = question3
+    }
+    
+    var readingTitle: String?
+    var passageText: String?
+    var question1: String?
+    var question2: String?
+    var question3: String?
 
     /*
     // MARK: - Navigation
