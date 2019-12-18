@@ -15,7 +15,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sPQ-Yj-DPx">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="EXv-oP-gqB">
+                                <rect key="frame" x="188.5" y="456.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sPQ-Yj-DPx">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" red="1" green="0.76073193549999996" blue="0.024616790940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="sectionIndexBackgroundColor" red="0.24313725489999999" green="0.32156862749999998" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -80,6 +83,8 @@
                         <constraints>
                             <constraint firstItem="sPQ-Yj-DPx" firstAttribute="top" secondItem="kUe-t5-prK" secondAttribute="top" id="6lF-ah-Pjb"/>
                             <constraint firstItem="kUe-t5-prK" firstAttribute="bottom" secondItem="sPQ-Yj-DPx" secondAttribute="bottom" id="QSw-Rv-zlj"/>
+                            <constraint firstItem="EXv-oP-gqB" firstAttribute="centerY" secondItem="kUe-t5-prK" secondAttribute="centerY" id="Vb5-YA-jDf"/>
+                            <constraint firstItem="EXv-oP-gqB" firstAttribute="centerX" secondItem="kUe-t5-prK" secondAttribute="centerX" id="X4v-EV-KCk"/>
                             <constraint firstAttribute="trailing" secondItem="sPQ-Yj-DPx" secondAttribute="trailing" id="bTh-AF-rCv"/>
                             <constraint firstItem="sPQ-Yj-DPx" firstAttribute="leading" secondItem="Coi-lj-7Sm" secondAttribute="leading" id="fbm-8l-sDk"/>
                         </constraints>
@@ -94,6 +99,7 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="loadingIndicator" destination="EXv-oP-gqB" id="pGM-ee-OzK"/>
                         <outlet property="vocabTableView" destination="sPQ-Yj-DPx" id="QUg-qO-COo"/>
                     </connections>
                 </viewController>

@@ -11,6 +11,10 @@ import UIKit
 extension VocabularyViewController: VocabularyDataSourceDelegate{
     func vocabLoaded(vocabList: [Vocab]) {
         self.vocabList = vocabList
+        loadingIndicator.stopAnimating()
+        vocabTableView.isHidden = false
+        UIView.transition(with: vocabTableView, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: nil)
+        
         vocabTableView.reloadData()
     }
 }
@@ -36,6 +40,7 @@ extension VocabularyViewController: UITableViewDataSource{
 class VocabularyViewController: UIViewController {
     var vocabList: [Vocab] = []
     @IBOutlet weak var vocabTableView: UITableView!
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     let vocabDataSource = VocabularyDataSource()
     
     override func viewDidLoad() {
