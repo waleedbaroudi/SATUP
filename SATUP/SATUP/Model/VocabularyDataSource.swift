@@ -15,7 +15,7 @@ protocol VocabularyDataSourceDelegate {
 class VocabularyDataSource{
     var delegate: VocabularyDataSourceDelegate?
     func loadVocabulary(){
-        if let vocabURL = URL(string: Network.VocabURL){
+        if let vocabURL = URL(string: Network.VOCAB_URL){
             var request = URLRequest(url: vocabURL)
             request.httpMethod = "GET"
             request.addValue("application/json", forHTTPHeaderField: "Content-type")

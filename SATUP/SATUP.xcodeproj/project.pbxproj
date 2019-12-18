@@ -16,6 +16,7 @@
 		CE12951523AAC13500133DB5 /* MathItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12951423AAC13500133DB5 /* MathItemViewController.swift */; };
 		CE12951723AAC2A000133DB5 /* MathCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12951623AAC2A000133DB5 /* MathCell.swift */; };
 		CE12951923AADCC500133DB5 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12951823AADCC500133DB5 /* Math.swift */; };
+		CE12951D23AAE1E800133DB5 /* MathDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12951C23AAE1E800133DB5 /* MathDataSource.swift */; };
 		CE3A30BF23A41D1400CC0C9F /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */; };
 		CE3A30C423A43C4700CC0C9F /* SlideAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A30C323A43C4700CC0C9F /* SlideAction.swift */; };
 		CE41E79423A8FF5A00C74155 /* Math.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE41E79323A8FF5A00C74155 /* Math.storyboard */; };
@@ -56,6 +57,7 @@
 		CE12951423AAC13500133DB5 /* MathItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathItemViewController.swift; sourceTree = "<group>"; };
 		CE12951623AAC2A000133DB5 /* MathCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathCell.swift; sourceTree = "<group>"; };
 		CE12951823AADCC500133DB5 /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		CE12951C23AAE1E800133DB5 /* MathDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathDataSource.swift; sourceTree = "<group>"; };
 		CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		CE3A30C323A43C4700CC0C9F /* SlideAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideAction.swift; sourceTree = "<group>"; };
 		CE41E79323A8FF5A00C74155 /* Math.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Math.storyboard; sourceTree = "<group>"; };
@@ -213,10 +215,11 @@
 				CE859EBC23A4649A0070BD95 /* Vocab.swift */,
 				CE859EC023A464DA0070BD95 /* Reading.swift */,
 				CE0275A123A6901B00131699 /* Writing.swift */,
+				CE12951823AADCC500133DB5 /* Math.swift */,
 				CE86171823A5492100095A9E /* VocabularyDataSource.swift */,
 				CE0275A323A692DA00131699 /* WritingDataSource.swift */,
 				CE600D5923A83D44009A0B1E /* ReadingDataSource.swift */,
-				CE12951823AADCC500133DB5 /* Math.swift */,
+				CE12951C23AAE1E800133DB5 /* MathDataSource.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				CE859EA723A40C920070BD95 /* info.swift in Sources */,
 				CE859EC123A464DA0070BD95 /* Reading.swift in Sources */,
 				CE859E9023A4045C0070BD95 /* AppDelegate.swift in Sources */,
+				CE12951D23AAE1E800133DB5 /* MathDataSource.swift in Sources */,
 				CE86171723A544C500095A9E /* VocabCell.swift in Sources */,
 				CE859EBD23A4649A0070BD95 /* Vocab.swift in Sources */,
 				CE12951923AADCC500133DB5 /* Math.swift in Sources */,

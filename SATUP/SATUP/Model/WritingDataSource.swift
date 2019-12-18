@@ -15,7 +15,7 @@ protocol WritingDataSourceDelegate{
 class WritingDataSource {
     var delegate: WritingDataSourceDelegate?
     func loadWriting() {
-        if let writingURL = URL(string: Network.WritingURL){
+        if let writingURL = URL(string: Network.WRITING_URL){
             var request = URLRequest(url: writingURL)
             request.httpMethod = "GET"
             request.addValue("application/json", forHTTPHeaderField: "Content-type")

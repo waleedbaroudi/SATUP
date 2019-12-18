@@ -9,8 +9,9 @@
 import Foundation
 struct Network {
     static let session = URLSession.shared
-    static let VocabURL = "https://api.nooyad.xyz/api/satupvocab"
-    static let ReadingURL = "https://api.nooyad.xyz/api/satupreading"
-    static let WritingURL = "https://api.nooyad.xyz/api/satupwriting"
+    static let VOCAB_URL = "https://api.nooyad.xyz/api/satupvocab"
+    static let READING_URL = "https://api.nooyad.xyz/api/satupreading"
+    static let WRITING_URL = "https://api.nooyad.xyz/api/satupwriting"
+    static let MATH_URL = "https://api.nooyad.xyz/api/satupmath"
     static let decoder = JSONDecoder()
 }

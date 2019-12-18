@@ -7,11 +7,16 @@
 //
 
 import Foundation
-class Math {
+class Math: Codable {
     var subject: String?
     var explanation: String?
     var example: String?
     var videoLink: String?
-    
+    init(subject: String, explanation: String, example: String, videoLink: String) {
+        self.subject = subject
+        self.explanation = explanation
+        self.example = example
+        self.videoLink = videoLink
+    }
     
 }

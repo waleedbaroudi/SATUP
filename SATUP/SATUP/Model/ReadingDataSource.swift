@@ -16,7 +16,7 @@ class ReadingDataSource{
     var delegate: ReadingDataSourceDelegate?
     
     func loadReadings() {
-        if let readingURL = URL(string: Network.ReadingURL){
+        if let readingURL = URL(string: Network.READING_URL){
             var request = URLRequest(url: readingURL)
             request.httpMethod = "GET"
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
