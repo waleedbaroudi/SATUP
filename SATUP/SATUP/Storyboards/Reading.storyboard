@@ -168,7 +168,7 @@
                                                             <constraint firstAttribute="width" secondItem="OI7-aa-G2M" secondAttribute="height" multiplier="1:1" id="fLr-zL-FWh"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="has damaged 282 million acres ever since settlers first put the prairies and grasslands under the plow" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWb-Kl-Rad">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="most of the missing planes could contact with their base by their own special means until the very moment of disappearing" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWb-Kl-Rad">
                                                         <rect key="frame" x="35" y="2" width="326" height="71"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <color key="textColor" red="0.90196078430000004" green="0.90588235289999997" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

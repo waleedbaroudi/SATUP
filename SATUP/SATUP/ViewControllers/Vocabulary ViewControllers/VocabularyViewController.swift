@@ -12,6 +12,7 @@ extension VocabularyViewController: VocabularyDataSourceDelegate{
     func vocabLoaded(vocabList: [Vocab]) {
         self.vocabList = vocabList
         loadingIndicator.stopAnimating()
+        toFlashCardsButton.isEnabled = true
         vocabTableView.isHidden = false
         UIView.transition(with: vocabTableView, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: nil)
         
@@ -41,6 +42,7 @@ class VocabularyViewController: UIViewController {
     var vocabList: [Vocab] = []
     @IBOutlet weak var vocabTableView: UITableView!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var toFlashCardsButton: UIBarButtonItem!
     let vocabDataSource = VocabularyDataSource()
     
     override func viewDidLoad() {
@@ -49,6 +51,7 @@ class VocabularyViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
+        toFlashCardsButton.isEnabled = false
         vocabTableView.backgroundColor = Colors.borderColor()
         self.view.backgroundColor = Colors.borderColor()
         vocabDataSource.loadVocabulary()
