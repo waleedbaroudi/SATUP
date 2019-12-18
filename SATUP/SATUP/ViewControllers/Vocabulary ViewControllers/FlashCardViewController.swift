@@ -48,6 +48,13 @@ class FlashCardViewController: UIViewController {
         pronunciationButton.isHidden = !pronunciationButton.isHidden
         meaningLabel.isHidden = !meaningLabel.isHidden
     }
+    func setColors(){
+        wordLabel.textColor = Colors.secondaryColor()
+        upsideWordLabel.textColor = Colors.secondaryColor()
+        typeLabel.textColor = Colors.tertiaryColor()
+        meaningLabel.textColor = Colors.textColor()
+        pronunciationButton.tintColor = Colors.secondaryColor()
+    }
     
 
     /*
