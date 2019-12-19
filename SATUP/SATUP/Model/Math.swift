@@ -9,12 +9,12 @@
 import Foundation
 class Math: Codable {
     var subject: String?
-    var explanation: String?
+    var description: String?
     var example: String?
     var videoLink: String?
-    init(subject: String, explanation: String, example: String, videoLink: String) {
+    init(subject: String, description: String, example: String, videoLink: String) {
         self.subject = subject
-        self.explanation = explanation
+        self.description = description
         self.example = example
         self.videoLink = videoLink
     }

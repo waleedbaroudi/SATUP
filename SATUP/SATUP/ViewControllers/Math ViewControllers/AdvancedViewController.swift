@@ -1,45 +1,45 @@
 //
-//  AlgebraViewController.swift
+//  AdvancedViewController.swift
 //  SATUP
 //
-//  Created by user on 18.12.2019.
+//  Created by user on 19.12.2019.
 //  Copyright © 2019 wab. All rights reserved.
 //
 
 import UIKit
 
-extension AlgebraViewController: MathDataSourceDelegate{
+extension AdvancedViewController: MathDataSourceDelegate{
     func mathLoaded(mathList: [Math]) {
-        algebraList = mathList
-        algebraTable.reloadData()
+        advancedList = mathList
+        advancedTable.reloadData()
     }
     
     
 }
 
-extension AlgebraViewController: UITableViewDataSource{
+extension AdvancedViewController: UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return algebraList.count
+        print(advancedList.count)
+        return advancedList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AlgebraCell") as! MathCell
-        let algebra = algebraList[indexPath.row]
-        cell.subjectLabel.text = algebra.subject
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AdvancedCell") as! MathCell
+        let advanced = advancedList[indexPath.row]
+        cell.subjectLabel.text = advanced.subject
         return cell
     }
     
     
 }
 
-class AlgebraViewController: UIViewController {
-    
-    @IBOutlet weak var algebraTable: UITableView!
+class AdvancedViewController: UIViewController {
+    @IBOutlet weak var advancedTable: UITableView!
     var mathSource = MathDataSource()
-    var algebraList: [Math] = []
+    var advancedList: [Math] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         mathSource.delegate = self
@@ -47,19 +47,21 @@ class AlgebraViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        mathSource.loadMath(type: 0) //loading algebra filtered math data
+        mathSource.loadMath(type: 1) //loading advanced filtered math data
     }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cell = sender as! MathCell
-        if let indexPath = algebraTable.indexPath(for: cell){
+        if let indexPath = advancedTable.indexPath(for: cell){
             let destination = segue.destination as! MathItemViewController
-            let algebra = algebraList[indexPath.row]
-            destination.subject = algebra.subject
-            destination.subjectDescription = algebra.description
-            destination.example = algebra.example
+            let advanced = advancedList[indexPath.row]
+            destination.subject = advanced.subject
+            destination.subjectDescription = advanced.description
+            destination.example = advanced.example
         }
     }
+
 
     /*
     // MARK: - Navigation

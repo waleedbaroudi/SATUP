@@ -10,7 +10,7 @@
         <!--Data Analysis-->
         <scene sceneID="s7Y-aQ-VwJ">
             <objects>
-                <viewController id="qbp-9m-MyS" customClass="AlgebraViewController" customModule="SATUP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qbp-9m-MyS" customClass="DataAnalysisViewController" customModule="SATUP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="teL-ZU-AdM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="111" id="h2O-si-saM" customClass="MathCell" customModule="SATUP" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DataAnalysisCell" rowHeight="111" id="h2O-si-saM" customClass="MathCell" customModule="SATUP" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="111"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h2O-si-saM" id="KXn-db-3yS">
@@ -44,6 +44,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="qbp-9m-MyS" id="AHf-dP-UF4"/>
+                                    <outlet property="delegate" destination="qbp-9m-MyS" id="Qgs-pi-rbU"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.27419033710000001" green="0.39792912699999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -56,15 +60,18 @@
                         <viewLayoutGuide key="safeArea" id="7ag-OB-U7S"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Data Analysis" image="chart.bar" catalog="system" id="BnR-pC-Z3v"/>
+                    <connections>
+                        <outlet property="DataAnalysisTable" destination="5OL-Ng-0Qp" id="q1d-Fu-qPt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cgf-7Q-t4H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2083" y="745"/>
         </scene>
-        <!--View Controller-->
+        <!--Math Item View Controller-->
         <scene sceneID="IdG-3f-CNc">
             <objects>
-                <viewController id="Q7x-uX-wke" sceneMemberID="viewController">
+                <viewController id="Q7x-uX-wke" customClass="MathItemViewController" customModule="SATUP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CTf-iT-OFR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,7 +80,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TlK-aV-TNc">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="535"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUBJECT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uk-td-VyM">
                                                 <rect key="frame" x="8" y="23" width="398" height="36"/>
@@ -106,7 +113,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frK-SR-hIf">
-                                                <rect key="frame" x="30" y="783" width="354" height="22"/>
+                                                <rect key="frame" x="30" y="500" width="354" height="22"/>
                                                 <state key="normal" title="VIDEO" image="video" catalog="system">
                                                     <color key="titleColor" red="1" green="0.76073193549999996" blue="0.024616790940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
@@ -124,7 +131,7 @@
                                             <constraint firstItem="5eC-V1-KX1" firstAttribute="top" secondItem="0uk-td-VyM" secondAttribute="bottom" constant="45" id="Pow-DA-98d"/>
                                             <constraint firstAttribute="trailing" secondItem="0uk-td-VyM" secondAttribute="trailing" constant="8" id="ZSo-cs-FHe"/>
                                             <constraint firstItem="8Vd-CW-Eya" firstAttribute="top" secondItem="5du-jo-XlI" secondAttribute="bottom" constant="8" id="Zdr-n4-gQi"/>
-                                            <constraint firstItem="frK-SR-hIf" firstAttribute="top" secondItem="8Vd-CW-Eya" secondAttribute="bottom" constant="353" id="aA9-pW-Cry"/>
+                                            <constraint firstItem="frK-SR-hIf" firstAttribute="top" secondItem="8Vd-CW-Eya" secondAttribute="bottom" constant="70" id="aA9-pW-Cry"/>
                                             <constraint firstItem="5eC-V1-KX1" firstAttribute="leading" secondItem="TlK-aV-TNc" secondAttribute="leading" constant="30" id="bcv-xJ-qgh"/>
                                             <constraint firstAttribute="trailing" secondItem="5eC-V1-KX1" secondAttribute="trailing" constant="30" id="m1m-Ul-BVf"/>
                                             <constraint firstItem="1vZ-wy-ZBc" firstAttribute="top" secondItem="5eC-V1-KX1" secondAttribute="bottom" constant="32" id="qO1-ml-l0Y"/>
@@ -157,6 +164,14 @@
                         <viewLayoutGuide key="safeArea" id="ZUj-gO-I0V"/>
                     </view>
                     <navigationItem key="navigationItem" id="ixB-Ss-KJP"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="1vZ-wy-ZBc" id="m8X-0Z-hPD"/>
+                        <outlet property="exampleContent" destination="8Vd-CW-Eya" id="Lzw-b5-DdI"/>
+                        <outlet property="exampleLabel" destination="5du-jo-XlI" id="3ea-wV-pep"/>
+                        <outlet property="imageView" destination="5eC-V1-KX1" id="Ltp-we-bNT"/>
+                        <outlet property="subjectLabel" destination="0uk-td-VyM" id="tV9-Z7-eFo"/>
+                        <outlet property="videoButton" destination="frK-SR-hIf" id="MhH-vc-XQu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9WC-YZ-gcx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,7 +180,7 @@
         <!--Advanced Math-->
         <scene sceneID="DLI-Gj-DaU">
             <objects>
-                <viewController id="wqw-vO-NNZ" sceneMemberID="viewController">
+                <viewController id="wqw-vO-NNZ" customClass="AdvancedViewController" customModule="SATUP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SrW-aC-1ZE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -174,18 +189,35 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="152" id="fLR-1B-nFj">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AdvancedCell" rowHeight="152" id="fLR-1B-nFj" customClass="MathCell" customModule="SATUP" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="152"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fLR-1B-nFj" id="bJ5-b1-XGX">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="152"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tp-km-giH">
+                                                    <rect key="frame" x="173" y="58.5" width="68.5" height="35"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9Tp-km-giH" firstAttribute="centerY" secondItem="bJ5-b1-XGX" secondAttribute="centerY" id="6Nq-pk-oyk"/>
+                                                <constraint firstItem="9Tp-km-giH" firstAttribute="centerX" secondItem="bJ5-b1-XGX" secondAttribute="centerX" id="OKY-77-MZh"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="subjectLabel" destination="9Tp-km-giH" id="DSR-xS-vAi"/>
                                             <segue destination="Q7x-uX-wke" kind="show" id="TOI-b5-oEJ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="wqw-vO-NNZ" id="oeS-aG-ZDo"/>
+                                    <outlet property="delegate" destination="wqw-vO-NNZ" id="2cc-wv-IyQ"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.27419033710000001" green="0.39792912699999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -198,10 +230,13 @@
                         <viewLayoutGuide key="safeArea" id="VRr-zT-6eC"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Advanced Math" image="function" catalog="system" id="YFc-C7-Wtp"/>
+                    <connections>
+                        <outlet property="advancedTable" destination="5r2-dD-zLp" id="hob-RE-BVr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUA-7e-Jmb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2083" y="1392"/>
+            <point key="canvasLocation" x="2082.608695652174" y="1391.5178571428571"/>
         </scene>
         <!--Algebra-->
         <scene sceneID="tZQ-q3-7Lh">
@@ -215,23 +250,27 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" red="0.27419033710000001" green="0.39792912699999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AlgebraCell" rowHeight="82" id="R8e-Mk-psQ" customClass="MathCell" customModule="SATUP" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="82"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AlgebraCell" rowHeight="101" id="R8e-Mk-psQ" customClass="MathCell" customModule="SATUP" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R8e-Mk-psQ" id="YAv-gl-kPp">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="82"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="101"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lbl2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9z-C8-mpb">
-                                                    <rect key="frame" x="186" y="31" width="28" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lbl2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9z-C8-mpb">
+                                                    <rect key="frame" x="193" y="40.5" width="28" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="G9z-C8-mpb" firstAttribute="centerY" secondItem="YAv-gl-kPp" secondAttribute="centerY" id="Hff-kD-ph7"/>
+                                                <constraint firstItem="G9z-C8-mpb" firstAttribute="centerX" secondItem="YAv-gl-kPp" secondAttribute="centerX" id="Skp-Vr-z0B"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="subjectLabel" destination="G9z-C8-mpb" id="P0O-8g-Wgc"/>
                                             <segue destination="Q7x-uX-wke" kind="show" id="UCG-wz-51j"/>
                                         </connections>
                                     </tableViewCell>
@@ -252,10 +291,13 @@
                         <viewLayoutGuide key="safeArea" id="inZ-za-n6u"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Algebra" image="plus.slash.minus" catalog="system" id="fhe-Fq-JfA"/>
+                    <connections>
+                        <outlet property="algebraTable" destination="d1M-WR-glm" id="Zfe-3y-7lC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="13Y-ci-Av9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2083" y="90"/>
+            <point key="canvasLocation" x="2082.608695652174" y="89.732142857142847"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="rrk-bR-eCk">
@@ -287,7 +329,7 @@
         <image name="video" catalog="system" width="64" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="UCG-wz-51j"/>
+        <segue reference="cgX-V9-3Z2"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.76073193549999996" blue="0.024616790940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>

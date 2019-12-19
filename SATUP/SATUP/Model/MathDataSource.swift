@@ -38,6 +38,7 @@ class MathDataSource {
                 filtered.append(math)
             }
         }
+        
         return filtered
     }
 
