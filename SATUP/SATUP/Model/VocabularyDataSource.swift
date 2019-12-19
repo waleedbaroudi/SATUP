@@ -12,9 +12,21 @@ protocol VocabularyDataSourceDelegate {
     func vocabLoaded(vocabList: [Vocab])
 }
 
+extension VocabularyDataSource: BookmarksDataSourceDelegate{
+    func BookmarksLoaded(BookmarksList: [Vocab]) {
+        bookmarks = BookmarksList
+    }
+    
+    
+}
+
 class VocabularyDataSource{
+    var bookmarks: [Vocab] = []
+    var bookMarkDataSource = BookmarksDataSource()
     var delegate: VocabularyDataSourceDelegate?
     func loadVocabulary(){
+        bookMarkDataSource.delegate = self
+        bookMarkDataSource.loadBookmarks()
         if let vocabURL = URL(string: Network.VOCAB_URL){
             var request = URLRequest(url: vocabURL)
             request.httpMethod = "GET"
@@ -28,5 +40,15 @@ class VocabularyDataSource{
             }
             dataTask.resume()
         }
+    }
+    
+    func isBookmarked(vocab: Vocab) -> Bool {
+        for voc in bookmarks{
+            if vocab.word == voc.word{
+//                print("YESSS")
+                return true}
+        }
+//        print("NOOOO")
+        return false
     }
 }

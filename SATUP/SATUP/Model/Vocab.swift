@@ -12,7 +12,8 @@ class Vocab: Codable{
     var type: String
     var example: String
     var meaning: String
-    init(word: String, type: String, audioFile: String, example: String, meaning:String) {
+
+    init(word: String, type: String, example: String, meaning:String) {
         self.word = word
         self.type = type
         self.example = example
@@ -21,5 +22,9 @@ class Vocab: Codable{
     
     func audioFileName() -> String {
         return "\(word.lowercased()).mp3"
+    }
+    
+    func equals(vocab: Vocab) -> Bool{
+        return self.word == vocab.word
     }
 }

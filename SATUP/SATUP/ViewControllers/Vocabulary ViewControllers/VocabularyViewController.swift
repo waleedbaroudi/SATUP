@@ -31,8 +31,9 @@ extension VocabularyViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "vocabCell") as! VocabCell
-            cell.word.text = vocabList[indexPath.row].word
-            cell.type.text = vocabList[indexPath.row].type
+        let vocab = vocabList[indexPath.row]
+        cell.word.text = vocab.word
+        cell.type.text = vocab.type
         return cell
     }
     
@@ -66,7 +67,15 @@ class VocabularyViewController: UIViewController {
                 destination.word = vocab.word
                 destination.type = vocab.type
                 destination.meaning = vocab.meaning
-                destination.example = vocab.example}
+                destination.example = vocab.example
+                if vocabDataSource.isBookmarked(vocab: vocab) {
+                   destination.bookmarked = true
+                   destination.bookmarkIcon = UIImage(systemName: "bookmark.fill")
+                }else{
+                    destination.bookmarked = false
+                    destination.bookmarkIcon = UIImage(systemName: "bookmark")
+                }
+            }
         }
         else if(segue.identifier == "toFlashCard"){
             let destination = segue.destination as! FlashCardViewController
