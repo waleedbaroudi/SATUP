@@ -25,10 +25,10 @@ class VocabularyDataSource{
                 do {vocabList = try Network.decoder.decode([Vocab].self, from: data!)} catch{}//TODO: HANDLE THIS
                 if from == 1 {
                     self.bookmarks = vocabList
-                }
+                } else{
                 DispatchQueue.main.async {
                     self.delegate?.vocabLoaded(vocabList: self.associateBookmark(list: vocabList), to: from)
-                }
+                    }}
             }
             dataTask.resume()
         }

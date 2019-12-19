@@ -14,7 +14,8 @@ extension VocabularyViewController: VocabularyDataSourceDelegate{
 //            self.bookmarkedList = vocabList
         }
         else {
-            self.vocabList = vocabList
+            self.associatedVocabs = vocabList
+            self.vocabList = Array(vocabList.keys)
             loadingIndicator.stopAnimating()
             toFlashCardsButton.isEnabled = true
             vocabTableView.isHidden = false
@@ -35,12 +36,12 @@ extension VocabularyViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "vocabCell") as! VocabCell
-        let vocab = vocabList.keys[0]
+        let vocab = vocabList[indexPath.row]
         cell.word.text = vocab.word
         cell.type.text = vocab.type
-//        if isBookmarked(vocab: vocab){
-            
-//        }
+        if(associatedVocabs[vocab]!){
+            cell.bookmarkButton.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
+        }
         return cell
     }
     
@@ -48,7 +49,8 @@ extension VocabularyViewController: UITableViewDataSource{
 
 class VocabularyViewController: UIViewController {
     var bookmarkedList: [Vocab] = []
-    var vocabList: [Vocab : Bool] = [:]
+    var vocabList: [Vocab] = []
+    var associatedVocabs: [Vocab : Bool] = [:]
     @IBOutlet weak var vocabTableView: UITableView!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var toFlashCardsButton: UIBarButtonItem!
@@ -63,8 +65,9 @@ class VocabularyViewController: UIViewController {
         toFlashCardsButton.isEnabled = false
         vocabTableView.backgroundColor = Colors.borderColor()
         self.view.backgroundColor = Colors.borderColor()
-        vocabDataSource.loadVocabulary(from: 0) //loading all vocabs
         vocabDataSource.loadVocabulary(from: 1) // loading bookmarked vocabs
+        vocabDataSource.loadVocabulary(from: 0) //loading all vocabs
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
