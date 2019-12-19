@@ -18,7 +18,7 @@ class VocabularyDataSource{
         if let vocabURL = URL(string: Network.VOCAB_URL){
             var request = URLRequest(url: vocabURL)
             request.httpMethod = "GET"
-            request.addValue("application/json", forHTTPHeaderField: "Content-type")
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             let dataTask = Network.session.dataTask(with: request) { (data, response, error) in
                 var vocabList: [Vocab] = []
                 do {vocabList = try Network.decoder.decode([Vocab].self, from: data!)} catch{}//TODO: HANDLE THIS

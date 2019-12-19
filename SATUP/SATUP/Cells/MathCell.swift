@@ -15,6 +15,8 @@ class MathCell: UITableViewCell {
         // Initialization code
     }
 
+    @IBOutlet weak var subjectLabel: UILabel!
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

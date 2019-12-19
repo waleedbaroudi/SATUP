@@ -11,8 +11,6 @@ import UIKit
 extension WritingViewController: WritingDataSourceDelegate {
     func writingListLoaded(writingList: [Writing]) {
         self.writingList = writingList
-        print("LOADED IN WR")
-        print(writingList.count)
         self.writingTableView.reloadData()
     }
 }
