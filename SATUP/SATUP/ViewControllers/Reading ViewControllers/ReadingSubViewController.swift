@@ -13,6 +13,9 @@ class ReadingSubViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var passage: UILabel!
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var contentView: UIView!
+    
     //Questions views
     @IBOutlet weak var q1A1: UIView!
     @IBOutlet weak var q1A2: UIView!
@@ -234,7 +237,16 @@ class ReadingSubViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setComponents()
+        //Setting the colors
+        scrollView.backgroundColor = Colors.primaryColor()
+        contentView.backgroundColor = Colors.primaryColor()
+        titleLabel.textColor = Colors.textColor()
+        firstQuestion.textColor = Colors.textColor()
+        secondQuestion.textColor = Colors.textColor()
+        thirdQuestion.textColor = Colors.textColor()
         
+        
+        //_________________________________________________
         choiceViewArray = [q1A1, q1A2, q1A3, q1A4, q1A5, q2A1, q2A2, q2A3, q2A4, q2A5, q3A1, q3A2, q3A3, q3A4, q3A5]
         loadOrResetChoices(viewList: choiceViewArray)
         

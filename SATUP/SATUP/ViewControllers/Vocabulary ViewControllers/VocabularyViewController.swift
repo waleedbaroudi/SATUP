@@ -53,7 +53,7 @@ class VocabularyViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         toFlashCardsButton.isEnabled = false
-        vocabTableView.backgroundColor = Colors.borderColor()
+        vocabTableView.backgroundColor = Colors.primaryColor()
         self.view.backgroundColor = Colors.borderColor()
         vocabDataSource.loadVocabulary()
     }

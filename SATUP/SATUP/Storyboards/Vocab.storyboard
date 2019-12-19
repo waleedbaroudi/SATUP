@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BGG-Ex-eiR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BGG-Ex-eiR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -55,8 +55,8 @@
                                                 <constraint firstItem="8Xe-Oc-En3" firstAttribute="centerX" secondItem="yGF-1P-D7F" secondAttribute="centerX" id="wbN-Bm-ibh"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.38823529410000002" green="0.54901960780000003" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
+                                            <outlet property="cellBody" destination="7JK-Gc-H8q" id="I3n-0A-HZS"/>
                                             <outlet property="type" destination="8Xe-Oc-En3" id="Tju-fk-8ej"/>
                                             <outlet property="word" destination="yGF-1P-D7F" id="nDw-Ci-4S2"/>
                                             <segue destination="5Ih-mN-8yD" kind="presentation" identifier="toVocabCard" id="q6s-ip-mgz"/>
@@ -317,8 +317,11 @@
                         <viewLayoutGuide key="safeArea" id="Cf7-wv-2Wn"/>
                     </view>
                     <connections>
+                        <outlet property="audioButton" destination="dzR-Q2-O9O" id="cYR-fK-ax6"/>
                         <outlet property="bookmarkButton" destination="5t8-lG-0yh" id="5Qa-pr-GWB"/>
+                        <outlet property="bookmarksButton" destination="5t8-lG-0yh" id="xvB-pU-oLV"/>
                         <outlet property="card" destination="PX1-Jj-Yic" id="1qP-Hr-6xy"/>
+                        <outlet property="dismissCard" destination="hzZ-RN-03W" id="hqt-bK-BQO"/>
                         <outlet property="divider" destination="hRp-xE-Yie" id="UwQ-r5-5tS"/>
                         <outlet property="exampleHeaderLabel" destination="6Cm-tl-XLb" id="kCo-CD-KJ7"/>
                         <outlet property="exampleLabel" destination="Ptc-Vb-ncG" id="7Yr-Nd-V1w"/>

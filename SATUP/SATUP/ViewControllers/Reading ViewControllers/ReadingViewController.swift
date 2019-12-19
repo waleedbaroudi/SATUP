@@ -38,7 +38,9 @@ class ReadingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         dataSource.delegate = self
-        // Do any additional setup after loading the view.
+        //Setting colors
+        readingsTableView.backgroundColor = Colors.primaryColor()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

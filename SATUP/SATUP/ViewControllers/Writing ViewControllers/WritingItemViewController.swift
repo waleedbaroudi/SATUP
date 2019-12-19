@@ -12,6 +12,8 @@ class WritingItemViewController: UIViewController {
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var subjectLabel: UILabel!
+    @IBOutlet weak var videoButton: UIView!
+    
     var text: String?
     var subject: String?
     override func viewDidLoad() {
@@ -26,21 +28,14 @@ class WritingItemViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        //Setting colors
         self.view.backgroundColor = Colors.primaryColor()
         backView.backgroundColor = Colors.primaryColor()
-//        textLabel.font = UIFont(name: subjectLabel.font.fontName, size: 12)
-//        textLabel.textColor = Colors.textColor()
+        textLabel.textColor = Colors.textColor()
+        subjectLabel.textColor = Colors.secondaryColor()
+        
+        videoButton.tintColor = Colors.secondaryColor()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -31,7 +31,6 @@ extension DataAnalysisViewController: UITableViewDataSource{
         return cell
     }
     
-    
 }
 
 class DataAnalysisViewController: UIViewController {
@@ -42,7 +41,7 @@ class DataAnalysisViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         mathSource.delegate = self
-        // Do any additional setup after loading the view.
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -54,21 +53,14 @@ class DataAnalysisViewController: UIViewController {
         if let indexPath = DataAnalysisTable.indexPath(for: cell){
             let destination = segue.destination as! MathItemViewController
             let dataAnalysis = dataAnalysisList[indexPath.row]
+            if dataAnalysis.subject == "Scatterplots"{
+                let image = UIImage(named: "dat-Scatterplots")
+                destination.image = image
+            }
             destination.subject = dataAnalysis.subject
             destination.subjectDescription = dataAnalysis.description
             destination.example = dataAnalysis.example
         }
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

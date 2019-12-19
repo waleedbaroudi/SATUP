@@ -17,7 +17,7 @@ class MathItemViewController: UIViewController {
     @IBOutlet weak var videoButton: UIButton!
     
     var subject: String?
-    var image: UIImageView?
+    var image: UIImage?
     var subjectDescription: String?
     var example: String?
     override func viewDidLoad() {
@@ -25,6 +25,9 @@ class MathItemViewController: UIViewController {
         subjectLabel.text = subject
         descriptionLabel.text = subjectDescription
         exampleContent.text = example
+
+        imageView.image = image
+        
         // Do any additional setup after loading the view.
     }
     /*

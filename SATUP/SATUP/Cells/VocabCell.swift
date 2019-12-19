@@ -10,12 +10,16 @@ import UIKit
 
 class VocabCell: UITableViewCell {
 
+    @IBOutlet weak var cellBody: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        //Setting colors
         self.backgroundColor = Colors.primaryColor()
-        word.textColor = Colors.secondaryColor()
+        word.textColor = Colors.textColor()
         type.textColor = Colors.tertiaryColor()
-        // Initialization code
+        cellBody.backgroundColor = Colors.primaryColor()
+       
     }
     @IBOutlet weak var word: UILabel!
     @IBOutlet weak var type: UILabel!
@@ -28,7 +32,4 @@ class VocabCell: UITableViewCell {
     @IBAction func bookMark(_ sender: Any) {
 
     }
-    
-    
-
 }

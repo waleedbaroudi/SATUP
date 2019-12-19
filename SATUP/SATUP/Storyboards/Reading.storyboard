@@ -43,6 +43,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="cellBody" destination="r1a-Yd-CPj" id="lMN-WN-D8V"/>
                                             <outlet property="titleLabel" destination="Vkr-1z-fgW" id="4xp-to-hsx"/>
                                             <segue destination="rDC-g1-bh3" kind="show" id="c4t-rV-PKo"/>
                                         </connections>
@@ -788,6 +789,7 @@
                     <navigationItem key="navigationItem" id="xUf-TQ-wBD"/>
                     <size key="freeformSize" width="414" height="2000"/>
                     <connections>
+                        <outlet property="contentView" destination="MWK-Ro-srM" id="5GN-mS-iWG"/>
                         <outlet property="firstQuestion" destination="bbp-Qw-0ab" id="dOy-M7-qPJ"/>
                         <outlet property="firstQuestionChoiceA" destination="FwM-52-q9t" id="mGF-Fu-wfj"/>
                         <outlet property="firstQuestionChoiceB" destination="7BX-pS-Js0" id="VDf-lx-t2h"/>
@@ -815,6 +817,7 @@
                         <outlet property="q3A3" destination="esL-Uz-12h" id="j1E-BH-yKL"/>
                         <outlet property="q3A4" destination="c74-Lq-c4j" id="hza-uC-52B"/>
                         <outlet property="q3A5" destination="vlj-O5-nVz" id="JuC-JI-5mp"/>
+                        <outlet property="scrollView" destination="GJs-2v-61t" id="YEo-GD-SBU"/>
                         <outlet property="secondQuestion" destination="hdo-RV-Jkw" id="NHb-I3-zo0"/>
                         <outlet property="secondQuestionChoiceA" destination="9me-Vz-3rl" id="oHB-u7-e2d"/>
                         <outlet property="secondQuestionChoiceB" destination="HL6-8M-s2A" id="3os-aj-8Wc"/>

@@ -11,6 +11,10 @@ import UIKit
 class VocabPopupViewController: UIViewController {
     var bookmarksDataSource = BookmarksDataSource()
     
+    @IBOutlet weak var bookmarksButton: UIButton!
+    @IBOutlet weak var audioButton: UIButton!
+    @IBOutlet weak var dismissCard: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         wordLabel.text = word
@@ -44,12 +48,19 @@ class VocabPopupViewController: UIViewController {
         self.dismiss(animated: true)
     }
     func setColors(){
+        //Setting colors
         wordLabel.textColor = Colors.secondaryColor()
-        typeLabel.textColor = Colors.tertiaryColor()
         typeLabel.textColor = Colors.tertiaryColor()
         meaningLabel.textColor = Colors.textColor()
         card.backgroundColor = Colors.primaryColor()
-        divider.backgroundColor = Colors.secondaryColor()
+        divider.backgroundColor = Colors.borderColor()
+        exampleLabel.textColor = Colors.textColor()
+        meaningLabel.textColor = Colors.textColor()
+        
+        audioButton.tintColor = Colors.textColor()
+        dismissCard.tintColor = Colors.textColor()
+        bookmarksButton.tintColor = Colors.textColor()
+        
         divider.alpha = 0.35
         meaningHeaderLabel.textColor = Colors.secondaryColor()
         exampleHeaderLabel.textColor = Colors.secondaryColor()

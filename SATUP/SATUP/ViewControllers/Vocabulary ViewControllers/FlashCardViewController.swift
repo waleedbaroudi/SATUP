@@ -15,6 +15,7 @@ class FlashCardViewController: UIViewController {
     @IBOutlet weak var meaningLabel: UILabel!
     @IBOutlet weak var pronunciationButton: UIButton!
     @IBOutlet weak var card: UIView!
+    
     var word: Vocab?
     var vocabList: [Vocab] = []
     var upside: Bool = false
@@ -24,7 +25,7 @@ class FlashCardViewController: UIViewController {
         upsideWordLabel.text = word?.word
         typeLabel.text = word?.type
         meaningLabel.text = word?.meaning
-        // Do any additional setup after loading the view.
+
     }
     @IBAction func flip(_ sender: Any) {
         toggleVisibility()
@@ -56,15 +57,4 @@ class FlashCardViewController: UIViewController {
         pronunciationButton.tintColor = Colors.secondaryColor()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

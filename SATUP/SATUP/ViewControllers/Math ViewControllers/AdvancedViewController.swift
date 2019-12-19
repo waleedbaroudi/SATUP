@@ -51,6 +51,10 @@ class AdvancedViewController: UIViewController {
         if let indexPath = advancedTable.indexPath(for: cell){
             let destination = segue.destination as! MathItemViewController
             let advanced = advancedList[indexPath.row]
+            if advanced.subject == "Linear and quadratic systems"{
+                      let image = UIImage(named: "adv-Linear and quadratic systems")
+                      destination.image = image
+                  }
             destination.subject = advanced.subject
             destination.subjectDescription = advanced.description
             destination.example = advanced.example

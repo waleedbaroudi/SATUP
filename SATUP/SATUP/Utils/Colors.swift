@@ -18,8 +18,8 @@ class Colors{
     
     private static let lightPrimary: UIColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     private static let lightSecondary: UIColor = #colorLiteral(red: 1, green: 0.7401471734, blue: 0, alpha: 1)
-    private static let lightTertiary: UIColor = #colorLiteral(red: 0.966457665, green: 0.9375386238, blue: 0.7693856359, alpha: 1)
-    private static let lightText: UIColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+    private static let lightTertiary: UIColor = #colorLiteral(red: 0.4005752802, green: 0.4351987839, blue: 0.481564641, alpha: 1)
+    private static let lightText: UIColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
     private static let lightBorder: UIColor = #colorLiteral(red: 0.2355021834, green: 0.4021787941, blue: 0.5100710392, alpha: 1)
     
     private static let darkPrimary: UIColor = #colorLiteral(red: 0.9009854198, green: 0.9061080813, blue: 0.8669928908, alpha: 1)

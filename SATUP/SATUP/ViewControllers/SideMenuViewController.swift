@@ -23,7 +23,6 @@ class SideMenuViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
     }
 
     @IBAction func dismissSideMenu(_ sender: Any) {

@@ -41,7 +41,9 @@ class WritingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         writingDataSource.delegate = self
-    }
+        //settingColors
+        writingTableView.backgroundColor = Colors.primaryColor()
+            }
     
     override func viewWillAppear(_ animated: Bool) {
         writingDataSource.loadWriting()
@@ -61,24 +63,5 @@ class WritingViewController: UIViewController {
             }
         }
     }
-    
- /*
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let cell = sender as! VocabCell
-        if let indexPath = writingTableView.indexPath(for: cell){
-            let vocab = writingList[indexPath.row]
-            let destination = segue.destination as! <#type#>
-
-        }
-    }*/
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

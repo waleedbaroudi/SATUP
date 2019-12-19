@@ -90,7 +90,7 @@
                                                 <color key="textColor" red="1" green="0.76078431369999999" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="5eC-V1-KX1">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5eC-V1-KX1">
                                                 <rect key="frame" x="30" y="104" width="354" height="214.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="5eC-V1-KX1" secondAttribute="height" multiplier="71:43" id="gyb-QZ-YAx"/>
@@ -328,7 +328,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background2" width="2500" height="2732"/>
         <image name="chart.bar" catalog="system" width="64" height="44"/>
         <image name="function" catalog="system" width="64" height="34"/>
         <image name="plus.slash.minus" catalog="system" width="64" height="56"/>

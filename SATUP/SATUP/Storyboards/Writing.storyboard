@@ -41,6 +41,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="cellBody" destination="Tnc-ZY-VIT" id="vj7-p5-2Td"/>
                                             <outlet property="writingSelectionLabel" destination="NCG-SW-PUf" id="LVR-d9-FRg"/>
                                             <segue destination="ZFP-1d-2aZ" kind="show" identifier="toContentView" id="Rg5-bY-NEB"/>
                                         </connections>
@@ -152,6 +153,7 @@
                         <outlet property="backView" destination="6fB-A6-KUG" id="bMV-hs-QUZ"/>
                         <outlet property="subjectLabel" destination="EBy-TJ-PrP" id="nKC-Dc-osZ"/>
                         <outlet property="textLabel" destination="P5Y-E1-A9y" id="z7a-z3-D4F"/>
+                        <outlet property="videoButton" destination="6fB-A6-KUG" id="cbV-Iz-xJh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z4A-lq-HTx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

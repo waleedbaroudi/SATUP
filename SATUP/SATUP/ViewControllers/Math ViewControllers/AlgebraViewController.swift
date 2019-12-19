@@ -54,6 +54,10 @@ class AlgebraViewController: UIViewController {
         if let indexPath = algebraTable.indexPath(for: cell){
             let destination = segue.destination as! MathItemViewController
             let algebra = algebraList[indexPath.row]
+            if algebra.subject == "Graphing linear equations"{
+                let image = UIImage(named: "alg-Graphing linear equations")
+                destination.image = image
+            }
             destination.subject = algebra.subject
             destination.subjectDescription = algebra.description
             destination.example = algebra.example

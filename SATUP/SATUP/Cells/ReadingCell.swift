@@ -11,6 +11,7 @@ import UIKit
 class ReadingCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var cellBody: UIView!
     
     //TESTING ELEMENTS//
     @IBOutlet weak var L1: UILabel!
@@ -21,7 +22,9 @@ class ReadingCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        //Setting colors
+        titleLabel.textColor = Colors.textColor()
+        cellBody.backgroundColor = Colors.primaryColor()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

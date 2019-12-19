@@ -11,10 +11,14 @@ import UIKit
 class WritingCell: UITableViewCell {
 
     @IBOutlet weak var writingSelectionLabel: UILabel!
+    @IBOutlet weak var cellBody: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        //Setting colors
+        cellBody.backgroundColor = Colors.primaryColor()
+        writingSelectionLabel.textColor = Colors.textColor()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
