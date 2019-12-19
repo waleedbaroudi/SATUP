@@ -9,6 +9,7 @@
 import UIKit
 
 class VocabPopupViewController: UIViewController {
+    var bookmarksDataSource = BookmarksDataSource()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +17,7 @@ class VocabPopupViewController: UIViewController {
         typeLabel.text = type
         meaningLabel.text = meaning
         exampleLabel.text = example
+        bookmarkButton.setImage(bookmarkIcon, for: .normal)
         // Do any additional setup after loading the view.
     }
     
@@ -32,10 +34,12 @@ class VocabPopupViewController: UIViewController {
     @IBOutlet weak var meaningHeaderLabel: UILabel!
     @IBOutlet weak var exampleHeaderLabel: UILabel!
     
+    var bookmarked: Bool = false
     var word: String?
     var type: String?
     var meaning: String?
     var example: String?
+    var bookmarkIcon: UIImage?
     @IBAction func dismissButton(_ sender: Any) {
         self.dismiss(animated: true)
     }
@@ -51,6 +55,15 @@ class VocabPopupViewController: UIViewController {
         exampleHeaderLabel.textColor = Colors.secondaryColor()
     }
     @IBAction func bookmark(_ sender: Any) {
+        if bookmarked {
+            bookmarkButton.setImage(UIImage(systemName: "bookmark"), for: .normal)
+            bookmarksDataSource.deleteBookmark(word: word!)
+        }
+        else {
+            bookmarkButton.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
+            bookmarksDataSource.addBookmark(vocab: Vocab(word: word!, type: type!, example: example!, meaning: meaning!))
+        }
+        bookmarked = !bookmarked
     }
     
     

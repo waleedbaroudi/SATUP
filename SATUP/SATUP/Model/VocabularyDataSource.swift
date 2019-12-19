@@ -9,40 +9,46 @@
 import Foundation
 
 protocol VocabularyDataSourceDelegate {
-    func vocabLoaded(vocabList: [Vocab : Bool], to: Int)
+    func vocabLoaded(vocabList: [Vocab])
+}
+
+extension VocabularyDataSource: BookmarksDataSourceDelegate{
+    func BookmarksLoaded(BookmarksList: [Vocab]) {
+        bookmarks = BookmarksList
+    }
+    
+    
 }
 
 class VocabularyDataSource{
     var bookmarks: [Vocab] = []
+    var bookMarkDataSource = BookmarksDataSource()
     var delegate: VocabularyDataSourceDelegate?
-    func loadVocabulary(from: Int) {
-        if let vocabURL = URL(string: Network.VOCAB_URLS[from]!){
+    func loadVocabulary(){
+        bookMarkDataSource.delegate = self
+        bookMarkDataSource.loadBookmarks()
+        if let vocabURL = URL(string: Network.VOCAB_URL){
             var request = URLRequest(url: vocabURL)
             request.httpMethod = "GET"
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             let dataTask = Network.session.dataTask(with: request) { (data, response, error) in
                 var vocabList: [Vocab] = []
                 do {vocabList = try Network.decoder.decode([Vocab].self, from: data!)} catch{}//TODO: HANDLE THIS
-                if from == 1 {
-                    self.bookmarks = vocabList
-                } else{
                 DispatchQueue.main.async {
-                    self.delegate?.vocabLoaded(vocabList: self.associateBookmark(list: vocabList), to: from)
-                    }}
+                    self.delegate?.vocabLoaded(vocabList: vocabList)
+                }
             }
             dataTask.resume()
         }
     }
     
-    func associateBookmark(list: [Vocab]) -> [Vocab : Bool]{
-        var associated: [Vocab : Bool] = [:]
-        for vocab in list{
-            if bookmarks.contains(vocab){
-                associated[vocab] = true
-            } else {
-                associated[vocab] = false
-            }
+    func isBookmarked(vocab: Vocab) -> Bool {
+        for voc in bookmarks{
+            if vocab.word == voc.word{
+//                print("YESSS")
+                return true}
         }
-        return associated
+//        print("NOOOO")
+        return false
     }
 }

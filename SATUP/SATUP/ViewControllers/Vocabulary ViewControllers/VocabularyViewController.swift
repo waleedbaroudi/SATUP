@@ -9,19 +9,14 @@
 import UIKit
 
 extension VocabularyViewController: VocabularyDataSourceDelegate{
-    func vocabLoaded(vocabList: [Vocab : Bool], to: Int) {
-        if to == 1{
-//            self.bookmarkedList = vocabList
-        }
-        else {
-            self.associatedVocabs = vocabList
-            self.vocabList = Array(vocabList.keys)
-            loadingIndicator.stopAnimating()
-            toFlashCardsButton.isEnabled = true
-            vocabTableView.isHidden = false
-            UIView.transition(with: vocabTableView, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: nil)
-            
-            vocabTableView.reloadData()}
+    func vocabLoaded(vocabList: [Vocab]) {
+        self.vocabList = vocabList
+        loadingIndicator.stopAnimating()
+        toFlashCardsButton.isEnabled = true
+        vocabTableView.isHidden = false
+        UIView.transition(with: vocabTableView, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: nil)
+        
+        vocabTableView.reloadData()
     }
 }
 
@@ -39,18 +34,13 @@ extension VocabularyViewController: UITableViewDataSource{
         let vocab = vocabList[indexPath.row]
         cell.word.text = vocab.word
         cell.type.text = vocab.type
-        if(associatedVocabs[vocab]!){
-            cell.bookmarkButton.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
-        }
         return cell
     }
     
 }
 
 class VocabularyViewController: UIViewController {
-    var bookmarkedList: [Vocab] = []
     var vocabList: [Vocab] = []
-    var associatedVocabs: [Vocab : Bool] = [:]
     @IBOutlet weak var vocabTableView: UITableView!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var toFlashCardsButton: UIBarButtonItem!
@@ -65,9 +55,7 @@ class VocabularyViewController: UIViewController {
         toFlashCardsButton.isEnabled = false
         vocabTableView.backgroundColor = Colors.borderColor()
         self.view.backgroundColor = Colors.borderColor()
-        vocabDataSource.loadVocabulary(from: 1) // loading bookmarked vocabs
-        vocabDataSource.loadVocabulary(from: 0) //loading all vocabs
-        
+        vocabDataSource.loadVocabulary()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -79,7 +67,15 @@ class VocabularyViewController: UIViewController {
                 destination.word = vocab.word
                 destination.type = vocab.type
                 destination.meaning = vocab.meaning
-                destination.example = vocab.example}
+                destination.example = vocab.example
+                if vocabDataSource.isBookmarked(vocab: vocab) {
+                   destination.bookmarked = true
+                   destination.bookmarkIcon = UIImage(systemName: "bookmark.fill")
+                }else{
+                    destination.bookmarked = false
+                    destination.bookmarkIcon = UIImage(systemName: "bookmark")
+                }
+            }
         }
         else if(segue.identifier == "toFlashCard"){
             let destination = segue.destination as! FlashCardViewController
@@ -87,15 +83,15 @@ class VocabularyViewController: UIViewController {
             destination.vocabList = vocabList
         }
     }
-    
+
     /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }
