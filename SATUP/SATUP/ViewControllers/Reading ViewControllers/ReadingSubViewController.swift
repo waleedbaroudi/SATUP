@@ -61,12 +61,84 @@ class ReadingSubViewController: UIViewController {
     @IBOutlet weak var thirdQuestionChoiceD: UIButton!
     @IBOutlet weak var thirdQuestionChoiceE: UIButton!
     
+    @IBOutlet weak var submitButton: UIButton!
+    
+    var readingTitle: String?
+    var passageText: String?
+    var question1: String?
+    var question2: String?
+    var question3: String?
+    
+    var question1Choice1 : String?
+    var question1Choice2 : String?
+    var question1Choice3 : String?
+    var question1Choice4 : String?
+    var question1Choice5 : String?
+    
+    var question2Choice1 : String?
+    var question2Choice2 : String?
+    var question2Choice3 : String?
+    var question2Choice4 : String?
+    var question2Choice5 : String?
+    
+    var question3Choice1 : String?
+    var question3Choice2 : String?
+    var question3Choice3 : String?
+    var question3Choice4 : String?
+    var question3Choice5 : String?
+ 
+    //Choices constants
+    private let choiceA : Int = 0
+    private let choiceB : Int = 1
+    private let choiceC : Int = 2
+    private let choiceD : Int = 3
+    private let choiceE : Int = 4
+    
+    
+    
+    private var submittedAnswers : [Int] = [-1, -1 ,-1]
+
+    @IBAction func choiceAQuestion1Action(_ sender: Any) {
+      }
+    @IBAction func choiceBQuestion1Action(_ sender: Any) {
+      }
+    @IBAction func choiceCQuestion1Action(_ sender: Any) {
+      }
+    @IBAction func choiceDQuestion1Action(_ sender: Any) {
+      }
+    @IBAction func choiceEQuestion1Action(_ sender: Any) {
+      }
+    
+    @IBAction func choiceAQuestion2Action(_ sender: Any) {
+      }
+    @IBAction func choiceBQuestion2Action(_ sender: Any) {
+      }
+    @IBAction func choiceCQuestion2Action(_ sender: Any) {
+      }
+    @IBAction func choiceDQuestion2Action(_ sender: Any) {
+      }
+    @IBAction func choiceEQuestion2Action(_ sender: Any) {
+      }
+    
+    @IBAction func choiceAQuestion3Action(_ sender: Any) {
+      }
+    @IBAction func choiceBQuestion3Action(_ sender: Any) {
+      }
+    @IBAction func choiceCQuestion3Action(_ sender: Any) {
+      }
+    @IBAction func choiceDQuestion3Action(_ sender: Any) {
+      }
+    @IBAction func choiceEQuestion3Action(_ sender: Any) {
+      }
+    
+    @IBAction func submitAction(_ sender: Any) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setComponents()
-        // Do any additional setup after loading the view.
     }
-    
     
     func setComponents(){
         titleLabel.text = readingTitle
@@ -74,22 +146,23 @@ class ReadingSubViewController: UIViewController {
         firstQuestion.text = question1
         secondQuestion.text = question2
         thirdQuestion.text = question3
+        //Choices of first question
+        firstQuestionFirstChoice.text = question1Choice1
+        firstQuestionSecondChoice.text = question1Choice2
+        firstQuestionThirdChoice.text = question1Choice3
+        firstQuestionFourthChoice.text = question1Choice4
+        firstQuestionFifthChoice.text = question1Choice5
+        //Choices of second question
+        secondQuestionFirstChoice.text = question2Choice1
+        secondQuestionSecondChoice.text = question2Choice2
+        secondQuestionThirdChoice.text = question2Choice3
+        secondQuestionFourthChoice.text = question2Choice4
+        secondQuestionFifthChoice.text = question2Choice5
+        //Choices of third question
+        thirdQuestionFirstChoice.text = question3Choice1
+        thirdQuestionSecondChoice.text = question3Choice2
+        thirdQuestionThirdChoice.text = question3Choice3
+        thirdQuestionFourthChoice.text = question3Choice4
+        thirdQuestionFifthChoice.text = question3Choice5
     }
-    
-    var readingTitle: String?
-    var passageText: String?
-    var question1: String?
-    var question2: String?
-    var question3: String?
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

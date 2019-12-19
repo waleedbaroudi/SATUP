@@ -27,8 +27,6 @@ class MathItemViewController: UIViewController {
         exampleContent.text = example
         // Do any additional setup after loading the view.
     }
-    
-
     /*
     // MARK: - Navigation
 

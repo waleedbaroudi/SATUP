@@ -31,8 +31,7 @@ extension AlgebraViewController: UITableViewDataSource{
         cell.subjectLabel.text = algebra.subject
         return cell
     }
-    
-    
+
 }
 
 class AlgebraViewController: UIViewController {

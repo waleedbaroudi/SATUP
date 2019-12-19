@@ -13,8 +13,6 @@ extension AdvancedViewController: MathDataSourceDelegate{
         advancedList = mathList
         advancedTable.reloadData()
     }
-    
-    
 }
 
 extension AdvancedViewController: UITableViewDataSource{
@@ -32,8 +30,6 @@ extension AdvancedViewController: UITableViewDataSource{
         cell.subjectLabel.text = advanced.subject
         return cell
     }
-    
-    
 }
 
 class AdvancedViewController: UIViewController {
@@ -49,7 +45,6 @@ class AdvancedViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         mathSource.loadMath(type: 1) //loading advanced filtered math data
     }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cell = sender as! MathCell

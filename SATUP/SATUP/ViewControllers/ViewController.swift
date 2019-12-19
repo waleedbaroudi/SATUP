@@ -11,13 +11,11 @@ extension ViewController : UIViewControllerTransitioningDelegate {
 
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source:
         UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        
         transition.isPresenting = true
         return transition
     }
     func animationController(forDismissed dismissed: UIViewController)
         -> UIViewControllerAnimatedTransitioning? {
-            
         transition.isPresenting = false
         return transition
     }
@@ -33,7 +31,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.barTintColor = Colors.borderColor()
-        view.backgroundColor = Colors.borderColor()
+        view.backgroundColor = Colors.primaryColor()
         setButtonShadow(button: readingButton)
         setButtonShadow(button: writingButton)
         setButtonShadow(button: mathButton)
@@ -50,9 +48,9 @@ class ViewController: UIViewController {
     
     func setButtonShadow (button: UIButton) {
             button.layer.shadowColor = UIColor.black.cgColor
-            button.layer.shadowRadius = 4
-            button.layer.shadowOpacity = 0.5
-            button.layer.shadowOffset = CGSize(width: 0, height: 4)
+            button.layer.shadowRadius = 3
+            button.layer.shadowOpacity = 0.3
+            button.layer.shadowOffset = CGSize(width: 0, height: 3)
 }
     
 }
