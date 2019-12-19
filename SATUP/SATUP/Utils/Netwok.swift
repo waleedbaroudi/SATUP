@@ -9,7 +9,7 @@
 import Foundation
 struct Network {
     static let session = URLSession.shared
-    static let VOCAB_URL = "https://api.nooyad.xyz/api/satupvocab"
+    static let VOCAB_URLS: [Int : String] = [0 : "https://api.nooyad.xyz/api/satupvocab", 1 : "https://api.nooyad.xyz/api/satupvocabbookmarks"]
     static let READING_URL = "https://api.nooyad.xyz/api/satupreading"
     static let WRITING_URL = "https://api.nooyad.xyz/api/satupwriting"
     static let MATH_URL = "https://api.nooyad.xyz/api/satupmath"

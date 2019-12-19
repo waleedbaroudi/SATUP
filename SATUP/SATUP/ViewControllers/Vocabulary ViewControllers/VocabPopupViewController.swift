@@ -22,6 +22,7 @@ class VocabPopupViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         setColors()
     }
+    @IBOutlet weak var bookmarkButton: UIButton!
     @IBOutlet weak var wordLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var meaningLabel: UILabel!
@@ -49,6 +50,10 @@ class VocabPopupViewController: UIViewController {
         meaningHeaderLabel.textColor = Colors.secondaryColor()
         exampleHeaderLabel.textColor = Colors.secondaryColor()
     }
+    @IBAction func bookmark(_ sender: Any) {
+    }
+    
+    
     /*
      // MARK: - Navigation
      
