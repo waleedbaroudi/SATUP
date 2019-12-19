@@ -11,10 +11,15 @@ import UIKit
 class Colors{
     static var isDark = false;
     
-    private static let lightPrimary: UIColor = #colorLiteral(red: 0.8822657466, green: 0.8824140429, blue: 0.8822461963, alpha: 1)
+    
+    private static let questionSelected: UIColor = #colorLiteral(red: 0.581476748, green: 0.6084197164, blue: 0.5917012095, alpha: 1)
+    private static let wrongAnswer: UIColor = #colorLiteral(red: 0.9590492845, green: 0.1828987002, blue: 0.2148449123, alpha: 1)
+    private static let correctAnswer: UIColor = #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)
+    
+    private static let lightPrimary: UIColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     private static let lightSecondary: UIColor = #colorLiteral(red: 1, green: 0.7401471734, blue: 0, alpha: 1)
     private static let lightTertiary: UIColor = #colorLiteral(red: 0.966457665, green: 0.9375386238, blue: 0.7693856359, alpha: 1)
-    private static let lightText: UIColor = #colorLiteral(red: 0.9009854198, green: 0.9061080813, blue: 0.8669928908, alpha: 1)
+    private static let lightText: UIColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
     private static let lightBorder: UIColor = #colorLiteral(red: 0.2355021834, green: 0.4021787941, blue: 0.5100710392, alpha: 1)
     
     private static let darkPrimary: UIColor = #colorLiteral(red: 0.9009854198, green: 0.9061080813, blue: 0.8669928908, alpha: 1)
@@ -26,7 +31,17 @@ class Colors{
     static func toggleDark(){
         isDark = !isDark
     }
-    
+    // Questions colors
+    static func questionaSelectedColor() -> UIColor{
+        return questionSelected
+    }
+    static func answerIsWrong() -> UIColor{
+          return wrongAnswer
+      }
+    static func answerIsCorrect() -> UIColor{
+          return correctAnswer
+      }
+    //Theme colors
     static func primaryColor() -> UIColor{
         if isDark {return darkPrimary}
         return lightPrimary

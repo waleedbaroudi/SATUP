@@ -97,8 +97,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="Submit"/>
                                                 <connections>
-                                                    <action selector="submitAction:" destination="rDC-g1-bh3" eventType="touchUpInside" id="gGC-ej-2JH"/>
-                                                    <action selector="test:" destination="rDC-g1-bh3" eventType="touchUpInside" id="L9D-WR-MtD"/>
+                                                    <action selector="submitAction:" destination="rDC-g1-bh3" eventType="touchUpInside" id="2bw-I6-wAo"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSAGE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTJ-wh-7R2">
@@ -148,6 +147,11 @@
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwM-52-q9t">
                                                         <rect key="frame" x="0.0" y="0.0" width="369" height="75"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <integer key="value" value="0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="choiceAQuestion1Action:" destination="rDC-g1-bh3" eventType="touchUpInside" id="rbB-Bj-5wJ"/>
                                                         </connections>
@@ -796,6 +800,21 @@
                         <outlet property="firstQuestionSecondChoice" destination="Cz5-AH-aCc" id="Xjh-A0-7a6"/>
                         <outlet property="firstQuestionThirdChoice" destination="XVF-Ov-AT0" id="HpF-qw-pcn"/>
                         <outlet property="passage" destination="qTJ-wh-7R2" id="QMA-VT-pZ8"/>
+                        <outlet property="q1A1" destination="Idu-3K-sXD" id="Rh2-ZT-XaQ"/>
+                        <outlet property="q1A2" destination="csq-TZ-NZc" id="GWM-y5-oyb"/>
+                        <outlet property="q1A3" destination="9CG-AS-CwJ" id="Pqq-aW-7S2"/>
+                        <outlet property="q1A4" destination="fEn-fL-Qp3" id="ZRb-Tl-qDQ"/>
+                        <outlet property="q1A5" destination="RoK-Lv-rah" id="Hfh-9p-Opw"/>
+                        <outlet property="q2A1" destination="QpH-8I-YaL" id="7Ej-Zz-rpE"/>
+                        <outlet property="q2A2" destination="xTd-2m-z9Z" id="Qkk-uZ-qu0"/>
+                        <outlet property="q2A3" destination="Njd-Wm-eei" id="T0D-YF-gRV"/>
+                        <outlet property="q2A4" destination="BiZ-49-Jk1" id="yts-m4-DNg"/>
+                        <outlet property="q2A5" destination="uyC-y8-pIP" id="aTp-QS-ebq"/>
+                        <outlet property="q3A1" destination="hPD-A2-eUB" id="tO3-dC-ara"/>
+                        <outlet property="q3A2" destination="VHb-0O-7Nr" id="hbm-cO-1Xh"/>
+                        <outlet property="q3A3" destination="esL-Uz-12h" id="j1E-BH-yKL"/>
+                        <outlet property="q3A4" destination="c74-Lq-c4j" id="hza-uC-52B"/>
+                        <outlet property="q3A5" destination="vlj-O5-nVz" id="JuC-JI-5mp"/>
                         <outlet property="secondQuestion" destination="hdo-RV-Jkw" id="NHb-I3-zo0"/>
                         <outlet property="secondQuestionChoiceA" destination="9me-Vz-3rl" id="oHB-u7-e2d"/>
                         <outlet property="secondQuestionChoiceB" destination="HL6-8M-s2A" id="3os-aj-8Wc"/>

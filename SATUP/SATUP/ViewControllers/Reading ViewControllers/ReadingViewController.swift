@@ -53,6 +53,8 @@ class ReadingViewController: UIViewController {
             destination.readingTitle = reading.title
             destination.passageText = reading.passage
         
+            destination.correctAnswers = reading.correctAnswers
+            
             destination.question1 = reading.excercises[0]
             destination.question2 = reading.excercises[1]
             destination.question3 = reading.excercises[2]
@@ -74,7 +76,6 @@ class ReadingViewController: UIViewController {
             destination.question3Choice3 = reading.answersExcercise3[2]
             destination.question3Choice4 = reading.answersExcercise3[3]
             destination.question3Choice5 = reading.answersExcercise3[4]
-
         }
     }
 

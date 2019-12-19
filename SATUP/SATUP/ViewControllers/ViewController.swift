@@ -52,6 +52,5 @@ class ViewController: UIViewController {
             button.layer.shadowOpacity = 0.3
             button.layer.shadowOffset = CGSize(width: 0, height: 3)
 }
-    
 }
 
