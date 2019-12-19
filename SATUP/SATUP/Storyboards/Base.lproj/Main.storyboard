@@ -377,7 +377,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="shit about the app." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jc4-iL-S8w">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Info about the app" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jc4-iL-S8w">
                                 <rect key="frame" x="20" y="53" width="374" height="755"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>

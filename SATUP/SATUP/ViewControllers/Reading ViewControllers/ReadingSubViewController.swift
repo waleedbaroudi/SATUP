@@ -94,8 +94,11 @@ class ReadingSubViewController: UIViewController {
     private let choiceD : Int = 3
     private let choiceE : Int = 4
     
-    
-    
+    //Choices indicies
+    private let questionOneIndex : Int = 0
+    private let questionTwoIndex : Int = 1
+    private let questionThreeIndex : Int = 2
+
     private var submittedAnswers : [Int] = [-1, -1 ,-1]
 
     @IBAction func choiceAQuestion1Action(_ sender: Any) {
