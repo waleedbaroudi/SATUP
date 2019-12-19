@@ -304,7 +304,6 @@
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="aboutIsClicked:" destination="Lye-oB-til" eventType="touchUpInside" id="8nk-gA-DcB"/>
                                                         <segue destination="Xb1-TW-wZ9" kind="show" id="AZj-f2-Xb5"/>
                                                     </connections>
                                                 </button>
@@ -331,6 +330,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="6jq-2X-Xnl"/>
+                    <connections>
+                        <outlet property="aboutCell" destination="xKq-rG-Fcj" id="rWp-h1-4Wz"/>
+                        <outlet property="bookmarksCell" destination="gaK-Yj-dnU" id="2Oc-Uk-t8V"/>
+                        <outlet property="dismissSideMenu" destination="Ibi-h0-Eo5" id="iEN-gc-dPf"/>
+                        <outlet property="sideMenuTable" destination="vxQ-oS-k0q" id="B0S-Wa-owS"/>
+                        <outlet property="themeToggle" destination="MmR-gE-OKG" id="gdn-rR-j6r"/>
+                        <outlet property="themeToggleCell" destination="yVY-9m-3QR" id="rSb-Eb-aUG"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wKs-1L-Mco" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

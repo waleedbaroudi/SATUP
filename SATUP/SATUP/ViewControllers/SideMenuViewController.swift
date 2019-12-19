@@ -9,15 +9,23 @@
 import UIKit
 
 class SideMenuViewController: UITableViewController {
+    
+    @IBOutlet weak var dismissSideMenu: UIButton!
+    
+    @IBOutlet var sideMenuTable: UITableView!
+    
+    @IBOutlet weak var themeToggle: UISwitch!
+    
+    @IBOutlet weak var themeToggleCell: UITableViewCell!
+    @IBOutlet weak var bookmarksCell: UITableViewCell!
+    @IBOutlet weak var aboutCell: UITableViewCell!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
     }
 
-    @IBAction func aboutIsClicked(_ sender: Any) {
-
-    }
     @IBAction func dismissSideMenu(_ sender: Any) {
          dismiss(animated: true){}
     }
@@ -26,14 +34,6 @@ class SideMenuViewController: UITableViewController {
         
     }
 }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 
