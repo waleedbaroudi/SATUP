@@ -24,7 +24,15 @@ class SideMenuViewController: UITableViewController {
         super.viewDidLoad()
         
     }
-
+    @IBAction func modeToggle(_ sender: Any) {
+        if themeToggle.isOn {
+            Colors.isDark = false
+        }
+        else{
+            Colors.isDark = true
+        }
+    }
+    
     @IBAction func dismissSideMenu(_ sender: Any) {
          dismiss(animated: true){}
     }
