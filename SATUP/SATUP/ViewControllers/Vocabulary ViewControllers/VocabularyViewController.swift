@@ -34,6 +34,8 @@ extension VocabularyViewController: UITableViewDataSource{
         let vocab = vocabList[indexPath.row]
         cell.word.text = vocab.word
         cell.type.text = vocab.type
+        cell.vocab = vocab
+        cell.setButton()
         return cell
     }
     
@@ -41,7 +43,7 @@ extension VocabularyViewController: UITableViewDataSource{
 
 class VocabularyViewController: UIViewController {
     var vocabList: [Vocab] = []
-    @IBOutlet weak var vocabTableView: UITableView!
+    @IBOutlet public weak var vocabTableView: UITableView!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var toFlashCardsButton: UIBarButtonItem!
     let vocabDataSource = VocabularyDataSource()
@@ -68,10 +70,10 @@ class VocabularyViewController: UIViewController {
                 destination.type = vocab.type
                 destination.meaning = vocab.meaning
                 destination.example = vocab.example
-                if vocabDataSource.isBookmarked(vocab: vocab) {
+                if BookmarksDataSource.isBookmarked(vocab: vocab) {
                    destination.bookmarked = true
                    destination.bookmarkIcon = UIImage(systemName: "bookmark.fill")
-                }else{
+                } else {
                     destination.bookmarked = false
                     destination.bookmarkIcon = UIImage(systemName: "bookmark")
                 }
@@ -82,6 +84,11 @@ class VocabularyViewController: UIViewController {
             destination.word = vocabList[Int.random(in: 0...(vocabList.count-1))]
             destination.vocabList = vocabList
         }
+        
+    }
+    
+    func updateTable(){
+        self.vocabTableView.reloadData()
     }
 
     /*

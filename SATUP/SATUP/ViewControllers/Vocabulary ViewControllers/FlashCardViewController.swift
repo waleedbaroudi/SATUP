@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class FlashCardViewController: UIViewController {
     @IBOutlet weak var wordLabel: UILabel!
@@ -19,18 +20,22 @@ class FlashCardViewController: UIViewController {
     var word: Vocab?
     var vocabList: [Vocab] = []
     var upside: Bool = false
+    var audioPlayer = AVAudioPlayer()
     override func viewDidLoad() {
         super.viewDidLoad()
         wordLabel.text = word?.word
         upsideWordLabel.text = word?.word
         typeLabel.text = word?.type
         meaningLabel.text = word?.meaning
-
     }
     @IBAction func flip(_ sender: Any) {
         toggleVisibility()
         upside = !upside
         if(upside){
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: word?.word.lowercased(), ofType: "mp3")!))} catch {
+                    print("COULD NOT LOAD AUDIO FILE")
+            }
             word = vocabList[Int.random(in: 0...vocabList.count-1)]
             wordLabel.text = word?.word
             UIView.transition(with: card, duration: 0.3, options: .transitionFlipFromRight, animations: nil, completion: nil)
@@ -47,6 +52,7 @@ class FlashCardViewController: UIViewController {
         upsideWordLabel.isHidden = !upsideWordLabel.isHidden
         typeLabel.isHidden = !typeLabel.isHidden
         pronunciationButton.isHidden = !pronunciationButton.isHidden
+        pronunciationButton.isEnabled = !pronunciationButton.isEnabled
         meaningLabel.isHidden = !meaningLabel.isHidden
     }
     func setColors(){
@@ -55,6 +61,9 @@ class FlashCardViewController: UIViewController {
         typeLabel.textColor = Colors.tertiaryColor()
         meaningLabel.textColor = Colors.textColor()
         pronunciationButton.tintColor = Colors.secondaryColor()
+    }
+    @IBAction func audioButton(_ sender: Any) {
+        audioPlayer.play()
     }
     
 }

@@ -7,12 +7,12 @@
 //
 
 import Foundation
-protocol BookmarksDataSourceDelegate {
-    func BookmarksLoaded(BookmarksList: [Vocab])
-}
+
+
+
 class BookmarksDataSource{
-    var delegate: BookmarksDataSourceDelegate?
-    func loadBookmarks(){
+    private static var bookmarks: [Vocab] = []
+    static func loadBookmarks(){
         if let BookmarksURL = URL(string: Network.BOOKMARKED_VOCAB_URL){
             var request = URLRequest(url: BookmarksURL)
             request.httpMethod = "GET"
@@ -21,14 +21,15 @@ class BookmarksDataSource{
                 var BookmarksList: [Vocab] = []
                 do {BookmarksList = try Network.decoder.decode([Vocab].self, from: data!)} catch{}//TODO: HANDLE THIS
                 DispatchQueue.main.async {
-                    self.delegate?.BookmarksLoaded(BookmarksList: BookmarksList)
+                    bookmarks = BookmarksList
+//                    self.delegate?.bookmarksLoaded(bookmarksList: BookmarksList)
                 }
             }
             dataTask.resume()
         }
     }
     
-    func deleteBookmark(word: String){
+    static func deleteBookmark(word: String){
         if let deleteURL = URL(string: "\(Network.BOOKMARKED_VOCAB_URL)/\(word)"){
             print(deleteURL)
             var request = URLRequest(url: deleteURL)
@@ -36,13 +37,14 @@ class BookmarksDataSource{
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             let dataTask = Network.session.dataTask(with: request) { (data, response, error) in
                 print("ENTRY DELETED")
+                loadBookmarks()
             }
             
             dataTask.resume()
         }
     }
     
-    func addBookmark(vocab: Vocab){
+    static func addBookmark(vocab: Vocab){
         if let bookmarkURL = URL(string: Network.BOOKMARKED_VOCAB_URL) {
             var request = URLRequest(url: bookmarkURL)
             request.httpMethod = "POST"
@@ -51,8 +53,21 @@ class BookmarksDataSource{
             let uploadData = try! encoder.encode(vocab)
             let uploadTask = Network.session.uploadTask(with: request, from: uploadData) { (data, response, error) in
                 print("ADDED")
+                loadBookmarks()
             }
             uploadTask.resume()
         }
+    }
+    
+    static func getBookmarks() -> [Vocab]{
+        return bookmarks
+    }
+    
+    static func isBookmarked(vocab: Vocab) -> Bool {
+        for voc in bookmarks{
+            if vocab.word == voc.word{
+                return true}
+        }
+        return false
     }
 }

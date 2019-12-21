@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BGG-Ex-eiR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BGG-Ex-eiR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,32 +30,42 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xe-Oc-En3">
-                                                    <rect key="frame" x="20" y="78" width="374" height="26"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE WORD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGF-1P-D7F">
-                                                    <rect key="frame" x="20" y="46" width="374" height="30"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE WORD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGF-1P-D7F">
+                                                    <rect key="frame" x="41" y="46" width="129.5" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                                     <color key="textColor" red="1" green="0.76073193549999996" blue="0.024616790940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JbG-5l-zca">
+                                                    <rect key="frame" x="362.5" y="52.5" width="25.5" height="30"/>
+                                                    <state key="normal" image="bookmark" catalog="system">
+                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="bookMark:" destination="TrI-K2-l1k" eventType="touchUpInside" id="2cX-UC-R2U"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xe-Oc-En3">
+                                                    <rect key="frame" x="41" y="78" width="44" height="26"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="yGF-1P-D7F" firstAttribute="centerX" secondItem="7JK-Gc-H8q" secondAttribute="centerX" id="6be-gr-9gY"/>
-                                                <constraint firstItem="yGF-1P-D7F" firstAttribute="top" secondItem="7JK-Gc-H8q" secondAttribute="topMargin" constant="35" id="IIu-HZ-4xs"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="8Xe-Oc-En3" secondAttribute="bottom" constant="20" id="KyJ-HO-Nr9"/>
-                                                <constraint firstItem="8Xe-Oc-En3" firstAttribute="leading" secondItem="7JK-Gc-H8q" secondAttribute="leadingMargin" id="LeO-Ny-tLv"/>
-                                                <constraint firstItem="8Xe-Oc-En3" firstAttribute="top" secondItem="yGF-1P-D7F" secondAttribute="bottom" constant="2" id="SQ2-dv-SZs"/>
-                                                <constraint firstItem="yGF-1P-D7F" firstAttribute="leading" secondItem="7JK-Gc-H8q" secondAttribute="leadingMargin" id="Vz3-29-H2p"/>
-                                                <constraint firstItem="yGF-1P-D7F" firstAttribute="trailing" secondItem="7JK-Gc-H8q" secondAttribute="trailingMargin" id="dG3-pM-fUi"/>
-                                                <constraint firstItem="8Xe-Oc-En3" firstAttribute="trailing" secondItem="7JK-Gc-H8q" secondAttribute="trailingMargin" id="obb-LZ-6uG"/>
-                                                <constraint firstItem="8Xe-Oc-En3" firstAttribute="centerX" secondItem="yGF-1P-D7F" secondAttribute="centerX" id="wbN-Bm-ibh"/>
+                                                <constraint firstItem="8Xe-Oc-En3" firstAttribute="leading" secondItem="7JK-Gc-H8q" secondAttribute="leadingMargin" constant="21" id="2ea-db-hjF"/>
+                                                <constraint firstAttribute="bottom" secondItem="8Xe-Oc-En3" secondAttribute="bottom" constant="31" id="AgZ-MX-HBg"/>
+                                                <constraint firstItem="JbG-5l-zca" firstAttribute="centerY" secondItem="7JK-Gc-H8q" secondAttribute="centerY" id="Cee-TE-J3S"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="JbG-5l-zca" secondAttribute="trailing" constant="6" id="Drm-QA-c3H"/>
+                                                <constraint firstItem="JbG-5l-zca" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8Xe-Oc-En3" secondAttribute="trailing" constant="35" id="Dyu-YM-rhG"/>
+                                                <constraint firstItem="yGF-1P-D7F" firstAttribute="top" secondItem="7JK-Gc-H8q" secondAttribute="topMargin" constant="35" id="Xwg-mW-3r0"/>
+                                                <constraint firstItem="8Xe-Oc-En3" firstAttribute="top" secondItem="yGF-1P-D7F" secondAttribute="bottom" constant="2" id="ZJL-ZL-uxp"/>
+                                                <constraint firstItem="yGF-1P-D7F" firstAttribute="leading" secondItem="7JK-Gc-H8q" secondAttribute="leadingMargin" constant="21" id="e0h-xQ-V6s"/>
+                                                <constraint firstItem="JbG-5l-zca" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yGF-1P-D7F" secondAttribute="trailing" constant="35" id="uZ1-iO-d5z"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="bookmarkButton" destination="JbG-5l-zca" id="ghB-yW-uwZ"/>
                                             <outlet property="cellBody" destination="7JK-Gc-H8q" id="I3n-0A-HZS"/>
                                             <outlet property="type" destination="8Xe-Oc-En3" id="Tju-fk-8ej"/>
                                             <outlet property="word" destination="yGF-1P-D7F" id="nDw-Ci-4S2"/>
@@ -133,16 +143,19 @@
                                         <color key="textColor" red="0.90196078430000004" green="0.92156862750000001" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZy-l7-lnU">
-                                        <rect key="frame" x="177" y="370.5" width="28" height="31.5"/>
-                                        <state key="normal" image="speaker.3.fill" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large"/>
-                                        </state>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7J-bs-4aD">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="448"/>
                                         <connections>
                                             <action selector="flip:" destination="mJJ-AK-Q6F" eventType="touchUpInside" id="Wdl-S5-sYe"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZy-l7-lnU">
+                                        <rect key="frame" x="177" y="370.5" width="28" height="31.5"/>
+                                        <state key="normal" image="speaker.3.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="audioButton:" destination="mJJ-AK-Q6F" eventType="touchUpInside" id="aBQ-wm-cyb"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -271,6 +284,9 @@
                                         <state key="normal" image="speaker.3.fill" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large"/>
                                         </state>
+                                        <connections>
+                                            <action selector="audioPlay:" destination="5Ih-mN-8yD" eventType="touchUpInside" id="e84-Qn-gHb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" cyan="0.46000000000000002" magenta="0.029999999999999999" yellow="0.0" black="0.34000000000000002" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>

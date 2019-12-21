@@ -7,14 +7,17 @@
 //
 
 import UIKit
+import AVFoundation
+
+protocol VocabPopupDelegate{
+    func updateBookmarks()
+}
 
 class VocabPopupViewController: UIViewController {
-    var bookmarksDataSource = BookmarksDataSource()
-    
     @IBOutlet weak var bookmarksButton: UIButton!
     @IBOutlet weak var audioButton: UIButton!
     @IBOutlet weak var dismissCard: UIButton!
-    
+    var audioPlayer = AVAudioPlayer()
     override func viewDidLoad() {
         super.viewDidLoad()
         wordLabel.text = word
@@ -22,12 +25,16 @@ class VocabPopupViewController: UIViewController {
         meaningLabel.text = meaning
         exampleLabel.text = example
         bookmarkButton.setImage(bookmarkIcon, for: .normal)
-        // Do any additional setup after loading the view.
+        do{
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: word?.lowercased(), ofType: "mp3")!))} catch{print("COULD NOT LOAD AUDIO, REASON: \(error)")
+                audioPlayer.prepareToPlay()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         setColors()
     }
+    
     @IBOutlet weak var bookmarkButton: UIButton!
     @IBOutlet weak var wordLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
@@ -68,15 +75,22 @@ class VocabPopupViewController: UIViewController {
     @IBAction func bookmark(_ sender: Any) {
         if bookmarked {
             bookmarkButton.setImage(UIImage(systemName: "bookmark"), for: .normal)
-            bookmarksDataSource.deleteBookmark(word: word!)
+            BookmarksDataSource.deleteBookmark(word: word!)
+            BookmarksDataSource.loadBookmarks()
         }
         else {
             bookmarkButton.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
-            bookmarksDataSource.addBookmark(vocab: Vocab(word: word!, type: type!, example: example!, meaning: meaning!))
+            BookmarksDataSource.addBookmark(vocab: Vocab(word: word!, type: type!, example: example!, meaning: meaning!))
+            BookmarksDataSource.loadBookmarks()
         }
+        
         bookmarked = !bookmarked
     }
     
+    @IBAction func audioPlay(_ sender: Any) {
+        audioPlayer.play()
+    }
+
     
     /*
      // MARK: - Navigation
