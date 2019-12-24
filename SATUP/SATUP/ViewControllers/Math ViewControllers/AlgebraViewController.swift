@@ -13,7 +13,6 @@ extension AlgebraViewController: MathDataSourceDelegate{
         algebraList = mathList
         algebraTable.reloadData()
     }
-    
 }
 
 extension AlgebraViewController: UITableViewDataSource{
@@ -67,6 +66,7 @@ class AlgebraViewController: UIViewController {
     func setColors() {
         view.backgroundColor = Colors.primaryColor()
         algebraTable.backgroundColor = Colors.primaryColor()
+        tabBarController?.tabBar.backgroundColor = Colors.primaryColor()
         
     }
 
