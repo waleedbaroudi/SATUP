@@ -15,6 +15,7 @@ class MathItemViewController: UIViewController {
     @IBOutlet weak var exampleLabel: UILabel!
     @IBOutlet weak var exampleContent: UILabel!
     @IBOutlet weak var videoButton: UIButton!
+    @IBOutlet weak var mathItemView: UIView!
     
     var subject: String?
     var image: UIImage?
@@ -31,15 +32,13 @@ class MathItemViewController: UIViewController {
         } else {
             imageView.removeFromSuperview()
         }
-        
-        // Do any additional setup after loading the view.
+        setColors()
     }
-    
     func setColors() {
         self.view.backgroundColor = Colors.primaryColor()
-        
-        
+        descriptionLabel.textColor = Colors.textColor()
+        exampleContent.textColor = Colors.textColor()
+        mathItemView.backgroundColor = Colors.primaryColor()
     }
-
 
 }

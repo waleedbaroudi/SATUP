@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GqW-Md-ykC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GqW-Md-ykC">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -172,6 +172,7 @@
                         <outlet property="exampleContent" destination="8Vd-CW-Eya" id="Lzw-b5-DdI"/>
                         <outlet property="exampleLabel" destination="5du-jo-XlI" id="3ea-wV-pep"/>
                         <outlet property="imageView" destination="5eC-V1-KX1" id="Ltp-we-bNT"/>
+                        <outlet property="mathItemView" destination="TlK-aV-TNc" id="wql-R1-MD2"/>
                         <outlet property="subjectLabel" destination="0uk-td-VyM" id="tV9-Z7-eFo"/>
                         <outlet property="videoButton" destination="frK-SR-hIf" id="MhH-vc-XQu"/>
                     </connections>
@@ -300,6 +301,7 @@
                     <tabBarItem key="tabBarItem" title="Algebra" image="plus.slash.minus" catalog="system" id="fhe-Fq-JfA"/>
                     <connections>
                         <outlet property="algebraTable" destination="d1M-WR-glm" id="Zfe-3y-7lC"/>
+                        <outlet property="tabBarView" destination="fhe-Fq-JfA" id="t8y-02-q8u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="13Y-ci-Av9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -315,7 +317,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" red="0.32834029199999998" green="0.55157428980000001" blue="0.69419610499999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="1" green="0.76073193549999996" blue="0.024616790940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="yXE-SM-ed7" kind="relationship" relationship="viewControllers" id="OaD-hc-B4n"/>
