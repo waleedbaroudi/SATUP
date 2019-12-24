@@ -51,7 +51,8 @@ class WritingViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toInfoView"{
         let destination = segue.destination as! SectionDetailViewController
-        destination.sectionTitle = "Writing"
+            destination.sectionTitle = "Writing"
+            destination.info = infoData.getWritingInfo()
         } else {
             let cell = sender as! WritingCell
             if let indexPath = writingTableView.indexPath(for: cell){

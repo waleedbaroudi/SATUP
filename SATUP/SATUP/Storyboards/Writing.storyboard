@@ -7,6 +7,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--SectionDetails-->
+        <scene sceneID="wak-yV-43t">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SectionDetails" id="Nj1-DH-Xyl" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9OZ-mL-5YJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y6C-sg-mWo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1486" y="-1062"/>
+        </scene>
         <!--Writing View Controller-->
         <scene sceneID="exL-fc-Ftv">
             <objects>
@@ -65,7 +75,7 @@
                     <navigationItem key="navigationItem" id="5Jq-Oh-V3f">
                         <barButtonItem key="rightBarButtonItem" image="info.circle" catalog="system" style="plain" id="4Nh-oC-zLM">
                             <connections>
-                                <segue destination="EyR-fp-aqI" kind="show" identifier="toInfoView" id="9cP-zu-U0U"/>
+                                <segue destination="Nj1-DH-Xyl" kind="show" id="eAu-qz-hd6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

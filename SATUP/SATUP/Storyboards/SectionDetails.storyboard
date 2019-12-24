@@ -24,7 +24,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Su6-Cu-7gt">
-                                <rect key="frame" x="8" y="175" width="398" height="24"/>
+                                <rect key="frame" x="16" y="175" width="382" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -32,8 +32,8 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Su6-Cu-7gt" firstAttribute="leading" secondItem="VOY-v4-qZb" secondAttribute="leading" constant="8" id="EP6-Ai-4js"/>
-                            <constraint firstItem="VOY-v4-qZb" firstAttribute="trailing" secondItem="Su6-Cu-7gt" secondAttribute="trailing" constant="8" id="RBY-Hg-3oa"/>
+                            <constraint firstItem="Su6-Cu-7gt" firstAttribute="leading" secondItem="VOY-v4-qZb" secondAttribute="leading" constant="16" id="EP6-Ai-4js"/>
+                            <constraint firstItem="VOY-v4-qZb" firstAttribute="trailing" secondItem="Su6-Cu-7gt" secondAttribute="trailing" constant="16" id="RBY-Hg-3oa"/>
                             <constraint firstItem="xT5-GH-9Uq" firstAttribute="leading" secondItem="VOY-v4-qZb" secondAttribute="leading" constant="20" id="RQM-H7-mvP"/>
                             <constraint firstItem="VOY-v4-qZb" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Su6-Cu-7gt" secondAttribute="bottom" constant="650" id="Vp9-4j-Hgb"/>
                             <constraint firstItem="xT5-GH-9Uq" firstAttribute="top" secondItem="VOY-v4-qZb" secondAttribute="top" constant="26" id="YAA-Nd-NrU"/>
@@ -44,6 +44,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="4WX-SU-aF1"/>
                     <connections>
+                        <outlet property="infoLabel" destination="Su6-Cu-7gt" id="aq5-kO-X0h"/>
                         <outlet property="titleLabel" destination="xT5-GH-9Uq" id="ufZ-am-Kdt"/>
                     </connections>
                 </viewController>
