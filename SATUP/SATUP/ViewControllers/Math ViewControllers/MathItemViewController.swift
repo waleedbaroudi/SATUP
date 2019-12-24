@@ -26,7 +26,11 @@ class MathItemViewController: UIViewController {
         subjectLabel.text = subject
         descriptionLabel.text = subjectDescription
         exampleContent.text = example
-        imageView.image = image
+        if let subjectImage = image{
+        imageView.image = subjectImage
+        } else {
+            imageView.removeFromSuperview()
+        }
         
         // Do any additional setup after loading the view.
     }

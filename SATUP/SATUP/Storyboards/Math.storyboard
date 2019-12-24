@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GqW-Md-ykC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GqW-Md-ykC">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -123,6 +123,7 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
+                                            <constraint firstItem="1vZ-wy-ZBc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="0uk-td-VyM" secondAttribute="bottom" constant="25" id="2ge-2K-VvC"/>
                                             <constraint firstItem="frK-SR-hIf" firstAttribute="leading" secondItem="TlK-aV-TNc" secondAttribute="leading" constant="30" id="32U-7W-nGk"/>
                                             <constraint firstAttribute="trailing" secondItem="1vZ-wy-ZBc" secondAttribute="trailing" constant="29" id="4Cc-x8-92x"/>
                                             <constraint firstItem="5du-jo-XlI" firstAttribute="top" secondItem="1vZ-wy-ZBc" secondAttribute="bottom" constant="8.5" id="75f-lW-OnS"/>
