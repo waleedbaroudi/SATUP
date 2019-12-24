@@ -57,6 +57,7 @@ class DataAnalysisViewController: UIViewController {
                 let image = UIImage(named: "dat-Scatterplots")
                 destination.image = image
             }
+            destination.videoLink = dataAnalysis.videoLink
             destination.subject = dataAnalysis.subject
             destination.subjectDescription = dataAnalysis.description
             destination.example = dataAnalysis.example

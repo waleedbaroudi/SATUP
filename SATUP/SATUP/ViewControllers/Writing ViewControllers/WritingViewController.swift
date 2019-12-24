@@ -58,6 +58,7 @@ class WritingViewController: UIViewController {
             if let indexPath = writingTableView.indexPath(for: cell){
             let destination = segue.destination as! WritingItemViewController
                 let writing = writingList[indexPath.row]
+                destination.videoLink = writing.videoLink
                 destination.text = writing.content
                 destination.subject = writing.subject
             }

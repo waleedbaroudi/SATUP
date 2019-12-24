@@ -23,9 +23,8 @@
                                 <color key="shadowColor" red="0.49653175719999998" green="0.70136201529999997" blue="0.87064732509999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Su6-Cu-7gt">
-                                <rect key="frame" x="81" y="301" width="519" height="212"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Su6-Cu-7gt">
+                                <rect key="frame" x="16" y="175" width="382" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -33,8 +32,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="VOY-v4-qZb" firstAttribute="trailing" secondItem="Su6-Cu-7gt" secondAttribute="trailing" constant="16" id="3rO-tJ-9xl"/>
+                            <constraint firstItem="Su6-Cu-7gt" firstAttribute="top" relation="lessThanOrEqual" secondItem="xT5-GH-9Uq" secondAttribute="bottom" constant="32" id="Dss-8R-4Ma"/>
+                            <constraint firstItem="VOY-v4-qZb" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Su6-Cu-7gt" secondAttribute="bottom" constant="663" id="PlS-kp-YaP"/>
                             <constraint firstItem="xT5-GH-9Uq" firstAttribute="leading" secondItem="VOY-v4-qZb" secondAttribute="leading" constant="20" id="RQM-H7-mvP"/>
                             <constraint firstItem="xT5-GH-9Uq" firstAttribute="top" secondItem="VOY-v4-qZb" secondAttribute="top" constant="26" id="YAA-Nd-NrU"/>
+                            <constraint firstItem="Su6-Cu-7gt" firstAttribute="leading" secondItem="VOY-v4-qZb" secondAttribute="leading" constant="16" id="gPY-lt-CF8"/>
                             <constraint firstItem="VOY-v4-qZb" firstAttribute="trailing" secondItem="xT5-GH-9Uq" secondAttribute="trailing" constant="20" id="wbA-zV-YEI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VOY-v4-qZb"/>

@@ -21,6 +21,7 @@ class MathItemViewController: UIViewController {
     var image: UIImage?
     var subjectDescription: String?
     var example: String?
+    var videoLink: String?
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -33,6 +34,9 @@ class MathItemViewController: UIViewController {
             imageView.removeFromSuperview()
         }
         setColors()
+    }
+    @IBAction func videoClicked(_ sender: Any) {
+                UIApplication.shared.open(URL(string: videoLink!)! as URL, options: [:], completionHandler: nil)
     }
     func setColors() {
         self.view.backgroundColor = Colors.primaryColor()

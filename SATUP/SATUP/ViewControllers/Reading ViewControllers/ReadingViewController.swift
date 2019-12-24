@@ -56,6 +56,9 @@ class ReadingViewController: UIViewController {
             let destination = segue.destination as! ReadingSubViewController
                 if let indexPath = readingsTableView.indexPath(for: cell){
                 let reading = readingsList[indexPath.row]
+                    
+                destination.videoLink = reading.videoLink
+                    
                 destination.readingTitle = reading.title
                 destination.passageText = reading.passage
             

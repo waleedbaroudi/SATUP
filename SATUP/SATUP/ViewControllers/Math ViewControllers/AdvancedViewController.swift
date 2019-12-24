@@ -55,6 +55,7 @@ class AdvancedViewController: UIViewController {
                       let image = UIImage(named: "adv-Linear and quadratic systems")
                       destination.image = image
                   }
+            destination.videoLink = advanced.videoLink
             destination.subject = advanced.subject
             destination.subjectDescription = advanced.description
             destination.example = advanced.example

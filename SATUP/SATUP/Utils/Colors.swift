@@ -17,16 +17,16 @@ class Colors{
     private static let correctAnswer: UIColor = #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)
     
     private static let lightPrimary: UIColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-    private static let lightSecondary: UIColor = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
+    private static let lightSecondary: UIColor = #colorLiteral(red: 0.09975416213, green: 0.2912195325, blue: 0.418761313, alpha: 1)
     private static let lightTertiary: UIColor = #colorLiteral(red: 0.3525682688, green: 0.6153787971, blue: 0.7827124, alpha: 1)
-    private static let lightText: UIColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+    private static let lightText: UIColor = #colorLiteral(red: 0.190156728, green: 0.2076928318, blue: 0.228287816, alpha: 1)
     private static let lightBorder: UIColor = #colorLiteral(red: 0.2355021834, green: 0.4021787941, blue: 0.5100710392, alpha: 1)
     
     private static let darkPrimary: UIColor = #colorLiteral(red: 0.2137661278, green: 0.2610993385, blue: 0.3681392074, alpha: 1)
-    private static let darkSecondary: UIColor = #colorLiteral(red: 0.187959671, green: 0.2495875359, blue: 0.3133328557, alpha: 1)
-    private static let darkTertairy: UIColor = #colorLiteral(red: 0.3129273653, green: 0.3823279738, blue: 0.5389671326, alpha: 1)
+    private static let darkSecondary: UIColor = #colorLiteral(red: 0.0918937847, green: 0.1282866895, blue: 0.1802255809, alpha: 1)
+    private static let darkTertairy: UIColor = #colorLiteral(red: 0.4089331627, green: 0.545170784, blue: 0.7389537692, alpha: 1)
     private static let darkText: UIColor = #colorLiteral(red: 0.9009854198, green: 0.9061080813, blue: 0.8669928908, alpha: 1)
-    private static let darkBorder: UIColor = #colorLiteral(red: 0.1921568662, green: 0.007843137719, blue: 0.09019608051, alpha: 1)
+    private static let darkBorder: UIColor = #colorLiteral(red: 0.04277408868, green: 0.1231309548, blue: 0.1769297123, alpha: 1)
     
     private static let cardTextColor: UIColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     

@@ -14,11 +14,12 @@ class WritingItemViewController: UIViewController {
     @IBOutlet weak var subjectLabel: UILabel!
     @IBOutlet weak var videoButton: UIView!
     
+    var videoLink : String?
     var text: String?
     var subject: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        textLabel.text = text
         subjectLabel.text = subject
         let data = Data(text!.utf8)
         if let attString = try? NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil){
@@ -30,6 +31,10 @@ class WritingItemViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         //Setting colors
         setColors()
+    }
+    @IBAction func videoISClicked(_ sender: Any) {
+        
+        UIApplication.shared.open(URL(string: videoLink!)! as URL, options: [:], completionHandler: nil)
     }
     func setColors() {
         self.view.backgroundColor = Colors.primaryColor()
