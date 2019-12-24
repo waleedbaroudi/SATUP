@@ -75,7 +75,7 @@
                     <navigationItem key="navigationItem" id="5Jq-Oh-V3f">
                         <barButtonItem key="rightBarButtonItem" image="info.circle" catalog="system" style="plain" id="4Nh-oC-zLM">
                             <connections>
-                                <segue destination="Nj1-DH-Xyl" kind="show" id="eAu-qz-hd6"/>
+                                <segue destination="Nj1-DH-Xyl" kind="show" identifier="toInfoView" id="eAu-qz-hd6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

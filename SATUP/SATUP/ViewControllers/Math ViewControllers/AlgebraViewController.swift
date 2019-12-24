@@ -50,6 +50,11 @@ class AlgebraViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "mathToInfoView"{
+        let destination = segue.destination as! SectionDetailViewController
+            destination.sectionTitle = "Math"
+            destination.info = infoData.getMathInfo()
+        } else {
         let cell = sender as! MathCell
         if let indexPath = algebraTable.indexPath(for: cell){
             let destination = segue.destination as! MathItemViewController
@@ -62,11 +67,11 @@ class AlgebraViewController: UIViewController {
             destination.subjectDescription = algebra.description
             destination.example = algebra.example
         }
-    }
+        }}
     func setColors() {
         view.backgroundColor = Colors.primaryColor()
         algebraTable.backgroundColor = Colors.primaryColor()
-        tabBarController?.tabBar.backgroundColor = Colors.primaryColor()
+        tabBarController?.tabBar.tintColor = Colors.primaryColor()
         
     }
 
