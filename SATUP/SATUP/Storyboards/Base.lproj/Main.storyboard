@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7TX-9I-MCR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7TX-9I-MCR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -144,16 +144,20 @@
                     </view>
                     <navigationItem key="navigationItem" id="xE4-vv-lkC">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="list.dash" catalog="system" style="done" id="OvS-z3-GmB">
-                            <color key="tintColor" red="1" green="0.76073193550109863" blue="0.024616790935397148" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="tintColor" red="1" green="0.76073193549999996" blue="0.024616790940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <action selector="didTapSideMenu:" destination="BYZ-38-t0r" id="23i-QR-7Ah"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="mathBackgroundView" destination="L1a-nW-cFf" id="P9C-9y-QLv"/>
                         <outlet property="mathButton" destination="mFW-FV-eCq" id="LWv-qv-clW"/>
+                        <outlet property="readingBackgroundView" destination="vlr-D9-Uem" id="S4M-wc-PMp"/>
                         <outlet property="readingButton" destination="TkM-4M-OZf" id="eOs-ME-rZy"/>
+                        <outlet property="vocabularyBackgroundView" destination="wcC-Zr-RPo" id="Nyp-dj-HLb"/>
                         <outlet property="vocabularyButton" destination="Tga-D0-PNK" id="msK-9t-Kyl"/>
+                        <outlet property="writingBackgroundView" destination="cNg-ra-oCR" id="UBL-hj-ZiX"/>
                         <outlet property="writingButton" destination="Qx6-zh-5yY" id="s0v-Fc-8BL"/>
                     </connections>
                 </viewController>
@@ -203,7 +207,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibi-h0-Eo5">
-                                                    <rect key="frame" x="358" y="3.3333333333333321" width="28" height="21.666666666666668"/>
+                                                    <rect key="frame" x="358" y="3" width="28" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="28" id="YmU-qX-fbW"/>
                                                         <constraint firstAttribute="height" constant="28" id="kk7-NJ-8pC"/>

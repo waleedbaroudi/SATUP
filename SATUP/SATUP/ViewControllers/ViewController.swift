@@ -22,20 +22,25 @@ extension ViewController : UIViewControllerTransitioningDelegate {
 }
 
 class ViewController: UIViewController {
-    let transition = SlideAction()
+    
+    
+    @IBOutlet weak var readingBackgroundView: UIView!
+    @IBOutlet weak var writingBackgroundView: UIView!
+    @IBOutlet weak var mathBackgroundView: UIView!
+    @IBOutlet weak var vocabularyBackgroundView: UIView!
+    
     @IBOutlet weak var readingButton: UIButton!
     @IBOutlet weak var writingButton: UIButton!
     @IBOutlet weak var mathButton: UIButton!
     @IBOutlet weak var vocabularyButton: UIButton!
+
+    
+    let transition = SlideAction()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.barTintColor = Colors.borderColor()
-        view.backgroundColor = Colors.primaryColor()
-        setButtonShadow(button: readingButton)
-        setButtonShadow(button: writingButton)
-        setButtonShadow(button: mathButton)
-        setButtonShadow(button: vocabularyButton)
+        setColors()
+
     }
     @IBAction func didTapSideMenu(_ sender: UIBarButtonItem) {
         guard let sideMenuViewController = storyboard?.instantiateViewController(withIdentifier:
@@ -52,5 +57,15 @@ class ViewController: UIViewController {
             button.layer.shadowOpacity = 0.3
             button.layer.shadowOffset = CGSize(width: 0, height: 3)
 }
+    
+    func setColors()  {
+        navigationController?.navigationBar.barTintColor = Colors.borderColor()
+        view.backgroundColor = Colors.primaryColor()
+        readingBackgroundView.backgroundColor = Colors.borderColor()
+        writingBackgroundView.backgroundColor = Colors.borderColor()
+        mathBackgroundView.backgroundColor = Colors.borderColor()
+        vocabularyBackgroundView.backgroundColor = Colors.borderColor()
+    }
+    
 }
 

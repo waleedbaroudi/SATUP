@@ -41,8 +41,7 @@ class WritingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         writingDataSource.delegate = self
-        //settingColors
-        writingTableView.backgroundColor = Colors.primaryColor()
+        setColors()
             }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -62,6 +61,10 @@ class WritingViewController: UIViewController {
                 destination.subject = writing.subject
             }
         }
+    }
+    func setColors() {
+        view.backgroundColor = Colors.primaryColor()
+        writingTableView.backgroundColor = Colors.primaryColor()
     }
 
 }

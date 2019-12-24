@@ -13,13 +13,7 @@ class VocabCell: UITableViewCell {
     @IBOutlet weak var cellBody: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        //Setting colors
-        self.backgroundColor = Colors.primaryColor()
-        word.textColor = Colors.textColor()
-        type.textColor = Colors.tertiaryColor()
-        cellBody.backgroundColor = Colors.primaryColor()
-        
+        setColors()
     }
     @IBOutlet weak var word: UILabel!
     @IBOutlet weak var type: UILabel!
@@ -56,5 +50,11 @@ class VocabCell: UITableViewCell {
             }
         }
         
+    }
+    func setColors() {
+        self.backgroundColor = Colors.primaryColor()
+        word.textColor = Colors.textColor()
+        type.textColor = Colors.tertiaryColor()
+        cellBody.backgroundColor = Colors.primaryColor()
     }
 }

@@ -10,9 +10,11 @@ import UIKit
 
 class MathCell: UITableViewCell {
 
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        setColors()
     }
 
     @IBOutlet weak var subjectLabel: UILabel!
@@ -21,6 +23,11 @@ class MathCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setColors() {
+        self.backgroundColor = Colors.primaryColor()
+        subjectLabel.textColor = Colors.textColor()
     }
 
 }

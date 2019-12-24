@@ -41,7 +41,7 @@ class DataAnalysisViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         mathSource.delegate = self
-        
+        setColors()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -61,6 +61,11 @@ class DataAnalysisViewController: UIViewController {
             destination.subjectDescription = dataAnalysis.description
             destination.example = dataAnalysis.example
         }
+    }
+    
+    func setColors() {
+        self.view.backgroundColor = Colors.primaryColor()
+        DataAnalysisTable.backgroundColor = Colors.primaryColor()
     }
 
 }

@@ -15,16 +15,17 @@ class WritingCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        //Setting colors
-        cellBody.backgroundColor = Colors.primaryColor()
-        writingSelectionLabel.textColor = Colors.textColor()
+        setColors()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    func setColors() {
+        cellBody.backgroundColor = Colors.primaryColor()
+        writingSelectionLabel.textColor = Colors.textColor()
     }
 
 }

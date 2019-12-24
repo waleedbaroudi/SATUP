@@ -35,14 +35,15 @@ extension AlgebraViewController: UITableViewDataSource{
 }
 
 class AlgebraViewController: UIViewController {
-    
+
     @IBOutlet weak var algebraTable: UITableView!
+    
     var mathSource = MathDataSource()
     var algebraList: [Math] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         mathSource.delegate = self
-        // Do any additional setup after loading the view.
+        setColors()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -63,15 +64,10 @@ class AlgebraViewController: UIViewController {
             destination.example = algebra.example
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setColors() {
+        view.backgroundColor = Colors.primaryColor()
+        algebraTable.backgroundColor = Colors.primaryColor()
+        
     }
-    */
 
 }

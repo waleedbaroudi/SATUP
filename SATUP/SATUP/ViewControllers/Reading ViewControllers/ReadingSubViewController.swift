@@ -237,16 +237,9 @@ class ReadingSubViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setComponents()
-        //Setting the colors
-        scrollView.backgroundColor = Colors.primaryColor()
-        contentView.backgroundColor = Colors.primaryColor()
-        titleLabel.textColor = Colors.textColor()
-        firstQuestion.textColor = Colors.textColor()
-        secondQuestion.textColor = Colors.textColor()
-        thirdQuestion.textColor = Colors.textColor()
         
+        setColors()
         
-        //_________________________________________________
         choiceViewArray = [q1A1, q1A2, q1A3, q1A4, q1A5, q2A1, q2A2, q2A3, q2A4, q2A5, q3A1, q3A2, q3A3, q3A4, q3A5]
         loadOrResetChoices(viewList: choiceViewArray)
         
@@ -294,7 +287,7 @@ class ReadingSubViewController: UIViewController {
             view.layer.shadowRadius = 2
             view.layer.shadowOpacity = 0.2
             view.layer.shadowOffset = CGSize(width: 0, height: 2)
-            view.backgroundColor = Colors.borderColor()
+            view.backgroundColor = Colors.tertiaryColor()
         }
     }
     //Reset all other selected answers of a certain question.
@@ -309,5 +302,15 @@ class ReadingSubViewController: UIViewController {
         default:
             loadOrResetChoices(viewList: choiceViewArray)
         }
+    }
+    func setColors(){
+        self.view.backgroundColor = Colors.primaryColor()
+        scrollView.backgroundColor = Colors.primaryColor()
+        contentView.backgroundColor = Colors.primaryColor()
+        titleLabel.textColor = Colors.textColor()
+        firstQuestion.textColor = Colors.textColor()
+        secondQuestion.textColor = Colors.textColor()
+        thirdQuestion.textColor = Colors.textColor()
+        passage.textColor = Colors.textColor()
     }
 }

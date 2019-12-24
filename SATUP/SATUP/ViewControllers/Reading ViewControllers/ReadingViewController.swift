@@ -34,13 +34,12 @@ extension ReadingViewController: UITableViewDataSource{
 class ReadingViewController: UIViewController {
     let dataSource = ReadingDataSource()
     var readingsList: [Reading] = []
+    
     @IBOutlet weak var readingsTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         dataSource.delegate = self
-        //Setting colors
-        readingsTableView.backgroundColor = Colors.primaryColor()
-        
+        setColors()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -80,7 +79,12 @@ class ReadingViewController: UIViewController {
             destination.question3Choice5 = reading.answersExcercise3[4]
         }
     }
-
+    
+    func setColors() {
+        self.view.backgroundColor = Colors.primaryColor()
+        readingsTableView.backgroundColor = Colors.primaryColor()
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -90,5 +94,4 @@ class ReadingViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
