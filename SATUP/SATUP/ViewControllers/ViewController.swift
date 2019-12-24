@@ -23,7 +23,6 @@ extension ViewController : UIViewControllerTransitioningDelegate {
 
 class ViewController: UIViewController {
     
-    
     @IBOutlet weak var readingBackgroundView: UIView!
     @IBOutlet weak var writingBackgroundView: UIView!
     @IBOutlet weak var mathBackgroundView: UIView!
@@ -34,14 +33,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var mathButton: UIButton!
     @IBOutlet weak var vocabularyButton: UIButton!
 
-    
     let transition = SlideAction()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setColors()
+        
 
     }
+    override func viewWillAppear(_ animated: Bool) {
+       setColors()
+    }
+    
     @IBAction func didTapSideMenu(_ sender: UIBarButtonItem) {
         guard let sideMenuViewController = storyboard?.instantiateViewController(withIdentifier:
                 "SideMenuViewController") else { return }
@@ -59,7 +61,7 @@ class ViewController: UIViewController {
 }
     
     func setColors()  {
-        navigationController?.navigationBar.barTintColor = Colors.borderColor()
+        navigationController?.navigationBar.barTintColor = Colors.secondaryColor()
         view.backgroundColor = Colors.primaryColor()
         readingBackgroundView.backgroundColor = Colors.borderColor()
         writingBackgroundView.backgroundColor = Colors.borderColor()
