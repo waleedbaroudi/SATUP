@@ -71,7 +71,7 @@ class AlgebraViewController: UIViewController {
     func setColors() {
         view.backgroundColor = Colors.primaryColor()
         algebraTable.backgroundColor = Colors.primaryColor()
-        tabBarController?.tabBar.tintColor = Colors.primaryColor()
+    //    tabBarController?.tabBar.
         
     }
 

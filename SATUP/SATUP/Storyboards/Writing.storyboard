@@ -121,6 +121,9 @@
                                                 <state key="normal" title=" Button" image="video" catalog="system">
                                                     <color key="titleColor" red="1" green="0.76073193549999996" blue="0.024616790940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="videoISClicked:" destination="ZFP-1d-2aZ" eventType="touchUpInside" id="zCK-s2-Qho"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
