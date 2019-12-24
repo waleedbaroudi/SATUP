@@ -85,6 +85,7 @@ class ReadingSubViewController: UIViewController {
     
     @IBOutlet weak var submitButton: UIButton!
     
+    var videoLink : String?
     var correctAnswers : [Int] = []
     
     var readingTitle: String?
@@ -124,6 +125,12 @@ class ReadingSubViewController: UIViewController {
     private let questionThreeIndex : Int = 2
 
     private var submittedAnswers : [Int] = [-1, -1 ,-1]
+    
+    @IBAction func videoIsClicked(_ sender: Any) {
+        
+          UIApplication.shared.open(URL(string: videoLink!)! as URL, options: [:], completionHandler: nil)
+        
+    }
     
     @IBAction func choiceAQuestion1Action(_ sender: Any) {
         submittedAnswers[questionOneIndex] = choiceA

@@ -119,6 +119,9 @@
                                                 <state key="normal" title="VIDEO" image="video" catalog="system">
                                                     <color key="titleColor" red="1" green="0.76073193549999996" blue="0.024616790940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="videoClicked:" destination="Q7x-uX-wke" eventType="touchUpInside" id="GKN-3N-Dca"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

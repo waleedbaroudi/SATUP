@@ -63,6 +63,7 @@ class AlgebraViewController: UIViewController {
                 let image = UIImage(named: "alg-Graphing linear equations")
                 destination.image = image
             }
+            destination.videoLink = algebra.videoLink
             destination.subject = algebra.subject
             destination.subjectDescription = algebra.description
             destination.example = algebra.example
