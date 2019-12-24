@@ -13,6 +13,7 @@
 		CE0275A623A697F900131699 /* WritingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0275A523A697F900131699 /* WritingCell.swift */; };
 		CE07E1F823B2A7D300102150 /* ResourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07E1F723B2A7D300102150 /* ResourceCell.swift */; };
 		CE07E1FA23B2A84D00102150 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07E1F923B2A84D00102150 /* ResourcesViewController.swift */; };
+		CE07E1FC23B2B22E00102150 /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07E1FB23B2B22E00102150 /* BookmarksViewController.swift */; };
 		CE0B2D6D23A95E37001F8934 /* FlashCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B2D6C23A95E37001F8934 /* FlashCardViewController.swift */; };
 		CE12951323AAC11600133DB5 /* AlgebraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12951223AAC11600133DB5 /* AlgebraViewController.swift */; };
 		CE12951523AAC13500133DB5 /* MathItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12951423AAC13500133DB5 /* MathItemViewController.swift */; };
@@ -239,6 +240,7 @@
 		CE0275A523A697F900131699 /* WritingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingCell.swift; sourceTree = "<group>"; };
 		CE07E1F723B2A7D300102150 /* ResourceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceCell.swift; sourceTree = "<group>"; };
 		CE07E1F923B2A84D00102150 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
+		CE07E1FB23B2B22E00102150 /* BookmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
 		CE0B2D6C23A95E37001F8934 /* FlashCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardViewController.swift; sourceTree = "<group>"; };
 		CE12951223AAC11600133DB5 /* AlgebraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgebraViewController.swift; sourceTree = "<group>"; };
 		CE12951423AAC13500133DB5 /* MathItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathItemViewController.swift; sourceTree = "<group>"; };
@@ -765,6 +767,7 @@
 				CE859EA623A40C920070BD95 /* info.swift */,
 				CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */,
 				CE600D4D23A7B374009A0B1E /* SectionDetailViewController.swift */,
+				CE07E1FB23B2B22E00102150 /* BookmarksViewController.swift */,
 				CE07E1F923B2A84D00102150 /* ResourcesViewController.swift */,
 			);
 			path = ViewControllers;
@@ -1089,6 +1092,7 @@
 				CE0275A623A697F900131699 /* WritingCell.swift in Sources */,
 				CE859E9223A4045C0070BD95 /* SceneDelegate.swift in Sources */,
 				CE600D5823A83D02009A0B1E /* ReadingViewController.swift in Sources */,
+				CE07E1FC23B2B22E00102150 /* BookmarksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

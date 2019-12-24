@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BGG-Ex-eiR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BGG-Ex-eiR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -117,10 +117,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJc-vJ-tgM">
-                                <rect key="frame" x="20" y="251" width="374" height="448"/>
+                                <rect key="frame" x="20" y="227" width="374" height="442"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuT-eK-THn">
-                                        <rect key="frame" x="8" y="194" width="358" height="60"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="800" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuT-eK-THn">
+                                        <rect key="frame" x="8" y="194" width="358" height="54"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="45"/>
                                         <color key="textColor" red="1" green="0.76073193549999996" blue="0.024616790940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -144,13 +144,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7J-bs-4aD">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="448"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="442"/>
                                         <connections>
                                             <action selector="flip:" destination="mJJ-AK-Q6F" eventType="touchUpInside" id="Wdl-S5-sYe"/>
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZy-l7-lnU">
-                                        <rect key="frame" x="177" y="370.5" width="28" height="31.5"/>
+                                        <rect key="frame" x="177" y="367.5" width="28" height="28.5"/>
                                         <state key="normal" image="speaker.3.fill" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large"/>
                                         </state>
@@ -187,10 +187,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="TJc-vJ-tgM" firstAttribute="leading" secondItem="pEN-Cv-o0T" secondAttribute="leading" constant="20" id="1gV-vp-EI5"/>
-                            <constraint firstItem="pEN-Cv-o0T" firstAttribute="bottom" secondItem="TJc-vJ-tgM" secondAttribute="bottom" constant="163" id="W6r-7L-NdQ"/>
-                            <constraint firstItem="TJc-vJ-tgM" firstAttribute="top" secondItem="pEN-Cv-o0T" secondAttribute="top" constant="163" id="dbG-x3-b9y"/>
-                            <constraint firstItem="pEN-Cv-o0T" firstAttribute="trailing" secondItem="TJc-vJ-tgM" secondAttribute="trailing" constant="20" id="kSn-cL-oVg"/>
+                            <constraint firstItem="TJc-vJ-tgM" firstAttribute="centerX" secondItem="ZWt-wy-NPV" secondAttribute="centerX" id="0wh-OZ-Dvh"/>
+                            <constraint firstItem="TJc-vJ-tgM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pEN-Cv-o0T" secondAttribute="leading" constant="20" id="1gV-vp-EI5"/>
+                            <constraint firstItem="TJc-vJ-tgM" firstAttribute="centerY" secondItem="ZWt-wy-NPV" secondAttribute="centerY" id="GYV-6y-mTq"/>
+                            <constraint firstItem="pEN-Cv-o0T" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="TJc-vJ-tgM" secondAttribute="bottom" constant="25" id="W6r-7L-NdQ"/>
+                            <constraint firstItem="TJc-vJ-tgM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="pEN-Cv-o0T" secondAttribute="top" constant="25" id="dbG-x3-b9y"/>
+                            <constraint firstItem="pEN-Cv-o0T" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TJc-vJ-tgM" secondAttribute="trailing" constant="20" id="kSn-cL-oVg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pEN-Cv-o0T"/>
                     </view>

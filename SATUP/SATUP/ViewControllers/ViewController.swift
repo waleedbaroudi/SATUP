@@ -37,8 +37,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
+        BookmarksDataSource.loadBookmarks()
     }
 
     override func viewWillAppear(_ animated: Bool) {
