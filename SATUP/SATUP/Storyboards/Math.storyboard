@@ -119,9 +119,6 @@
                                                 <state key="normal" title="VIDEO" image="video" catalog="system">
                                                     <color key="titleColor" red="1" green="0.76073193549999996" blue="0.024616790940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
-                                                <connections>
-                                                    <action selector="videoClicked:" destination="Q7x-uX-wke" eventType="touchUpInside" id="GKN-3N-Dca"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -247,16 +244,6 @@
             </objects>
             <point key="canvasLocation" x="2082.608695652174" y="1391.5178571428571"/>
         </scene>
-        <!--SectionDetails-->
-        <scene sceneID="myt-Cy-Br9">
-            <objects>
-                <viewControllerPlaceholder storyboardName="SectionDetails" id="Tfk-MX-cMu" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="KL0-JZ-8LC"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ec-By-orb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="993" y="196"/>
-        </scene>
         <!--Algebra-->
         <scene sceneID="tZQ-q3-7Lh">
             <objects>
@@ -325,13 +312,7 @@
         <scene sceneID="rrk-bR-eCk">
             <objects>
                 <tabBarController id="GqW-Md-ykC" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="JzG-QZ-ItX">
-                        <barButtonItem key="rightBarButtonItem" image="info.circle" catalog="system" style="plain" id="U06-qe-Me4">
-                            <connections>
-                                <segue destination="Tfk-MX-cMu" kind="show" identifier="mathToInfoView" id="fdM-ck-yni"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="JzG-QZ-ItX"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Uh-Sd-2fA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -353,12 +334,11 @@
     <resources>
         <image name="chart.bar" catalog="system" width="64" height="44"/>
         <image name="function" catalog="system" width="64" height="34"/>
-        <image name="info.circle" catalog="system" width="64" height="60"/>
         <image name="plus.slash.minus" catalog="system" width="64" height="56"/>
         <image name="video" catalog="system" width="64" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="UCG-wz-51j"/>
+        <segue reference="TOI-b5-oEJ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.76073193549999996" blue="0.024616790940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>
