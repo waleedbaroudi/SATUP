@@ -11,6 +11,8 @@
 		CE0275A223A6901B00131699 /* Writing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0275A123A6901B00131699 /* Writing.swift */; };
 		CE0275A423A692DA00131699 /* WritingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0275A323A692DA00131699 /* WritingDataSource.swift */; };
 		CE0275A623A697F900131699 /* WritingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0275A523A697F900131699 /* WritingCell.swift */; };
+		CE07E1F823B2A7D300102150 /* ResourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07E1F723B2A7D300102150 /* ResourceCell.swift */; };
+		CE07E1FA23B2A84D00102150 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07E1F923B2A84D00102150 /* ResourcesViewController.swift */; };
 		CE0B2D6D23A95E37001F8934 /* FlashCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B2D6C23A95E37001F8934 /* FlashCardViewController.swift */; };
 		CE12951323AAC11600133DB5 /* AlgebraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12951223AAC11600133DB5 /* AlgebraViewController.swift */; };
 		CE12951523AAC13500133DB5 /* MathItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12951423AAC13500133DB5 /* MathItemViewController.swift */; };
@@ -235,6 +237,8 @@
 		CE0275A123A6901B00131699 /* Writing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Writing.swift; sourceTree = "<group>"; };
 		CE0275A323A692DA00131699 /* WritingDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingDataSource.swift; sourceTree = "<group>"; };
 		CE0275A523A697F900131699 /* WritingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingCell.swift; sourceTree = "<group>"; };
+		CE07E1F723B2A7D300102150 /* ResourceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceCell.swift; sourceTree = "<group>"; };
+		CE07E1F923B2A84D00102150 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
 		CE0B2D6C23A95E37001F8934 /* FlashCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardViewController.swift; sourceTree = "<group>"; };
 		CE12951223AAC11600133DB5 /* AlgebraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgebraViewController.swift; sourceTree = "<group>"; };
 		CE12951423AAC13500133DB5 /* MathItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathItemViewController.swift; sourceTree = "<group>"; };
@@ -761,6 +765,7 @@
 				CE859EA623A40C920070BD95 /* info.swift */,
 				CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */,
 				CE600D4D23A7B374009A0B1E /* SectionDetailViewController.swift */,
+				CE07E1F923B2A84D00102150 /* ResourcesViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -788,6 +793,7 @@
 				CE0275A523A697F900131699 /* WritingCell.swift */,
 				CE600D5B23A840AC009A0B1E /* ReadingCell.swift */,
 				CE12951623AAC2A000133DB5 /* MathCell.swift */,
+				CE07E1F723B2A7D300102150 /* ResourceCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1053,10 +1059,12 @@
 				CE12951723AAC2A000133DB5 /* MathCell.swift in Sources */,
 				CE600D5C23A840AC009A0B1E /* ReadingCell.swift in Sources */,
 				CE86171923A5492100095A9E /* VocabularyDataSource.swift in Sources */,
+				CE07E1FA23B2A84D00102150 /* ResourcesViewController.swift in Sources */,
 				CE859E9423A4045C0070BD95 /* ViewController.swift in Sources */,
 				CE86171D23A5960100095A9E /* VocabPopupViewController.swift in Sources */,
 				CE86171223A515C800095A9E /* Colors.swift in Sources */,
 				CE859EA723A40C920070BD95 /* info.swift in Sources */,
+				CE07E1F823B2A7D300102150 /* ResourceCell.swift in Sources */,
 				CE859EC123A464DA0070BD95 /* Reading.swift in Sources */,
 				CE859E9023A4045C0070BD95 /* AppDelegate.swift in Sources */,
 				CE12952323AAF78600133DB5 /* AdvancedViewController.swift in Sources */,
