@@ -17,16 +17,18 @@ class Colors{
     private static let correctAnswer: UIColor = #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)
     
     private static let lightPrimary: UIColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-    private static let lightSecondary: UIColor = #colorLiteral(red: 1, green: 0.7401471734, blue: 0, alpha: 1)
-    private static let lightTertiary: UIColor = #colorLiteral(red: 0.4005752802, green: 0.4351987839, blue: 0.481564641, alpha: 1)
+    private static let lightSecondary: UIColor = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
+    private static let lightTertiary: UIColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
     private static let lightText: UIColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
     private static let lightBorder: UIColor = #colorLiteral(red: 0.2355021834, green: 0.4021787941, blue: 0.5100710392, alpha: 1)
     
     private static let darkPrimary: UIColor = #colorLiteral(red: 0.06274510175, green: 0, blue: 0.1921568662, alpha: 1)
-    private static let darkSecondary: UIColor = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
-    private static let darkTertairy: UIColor = #colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1)
+    private static let darkSecondary: UIColor = #colorLiteral(red: 0.187959671, green: 0.2495875359, blue: 0.3133328557, alpha: 1)
+    private static let darkTertairy: UIColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
     private static let darkText: UIColor = #colorLiteral(red: 0.9009854198, green: 0.9061080813, blue: 0.8669928908, alpha: 1)
     private static let darkBorder: UIColor = #colorLiteral(red: 0.1921568662, green: 0.007843137719, blue: 0.09019608051, alpha: 1)
+    
+    private static let cardTextColor: UIColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     
     static func toggleDark(){
         isDark = !isDark
@@ -41,6 +43,10 @@ class Colors{
     static func answerIsCorrect() -> UIColor{
           return correctAnswer
       }
+    
+    static func cardsTextColor() -> UIColor{
+        return cardTextColor
+    }
     //Theme colors
     static func primaryColor() -> UIColor{
         if isDark {return darkPrimary}

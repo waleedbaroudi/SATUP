@@ -51,12 +51,10 @@ class VocabularyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         vocabDataSource.delegate = self
-        // Do any additional setup after loading the view.
+        setColors()
     }
     override func viewWillAppear(_ animated: Bool) {
         toFlashCardsButton.isEnabled = false
-        vocabTableView.backgroundColor = Colors.primaryColor()
-        self.view.backgroundColor = Colors.borderColor()
         vocabDataSource.loadVocabulary()
     }
     
@@ -91,14 +89,9 @@ class VocabularyViewController: UIViewController {
         self.vocabTableView.reloadData()
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setColors() {
+        vocabTableView.backgroundColor = Colors.primaryColor()
+        self.view.backgroundColor = Colors.primaryColor()
     }
-    */
 
 }

@@ -67,7 +67,7 @@ class AlgebraViewController: UIViewController {
     func setColors() {
         view.backgroundColor = Colors.primaryColor()
         algebraTable.backgroundColor = Colors.primaryColor()
-      //  tabBarView.badgeColor = Colors.primaryColor()
+        
     }
 
 }

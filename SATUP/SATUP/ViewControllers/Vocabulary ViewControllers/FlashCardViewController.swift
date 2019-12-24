@@ -27,6 +27,7 @@ class FlashCardViewController: UIViewController {
         upsideWordLabel.text = word?.word
         typeLabel.text = word?.type
         meaningLabel.text = word?.meaning
+        setColors()
     }
     @IBAction func flip(_ sender: Any) {
         toggleVisibility()
@@ -56,11 +57,10 @@ class FlashCardViewController: UIViewController {
         meaningLabel.isHidden = !meaningLabel.isHidden
     }
     func setColors(){
-        wordLabel.textColor = Colors.secondaryColor()
-        upsideWordLabel.textColor = Colors.secondaryColor()
+        self.view.backgroundColor = Colors.primaryColor()
         typeLabel.textColor = Colors.tertiaryColor()
-        meaningLabel.textColor = Colors.textColor()
-        pronunciationButton.tintColor = Colors.secondaryColor()
+        meaningLabel.textColor = Colors.cardsTextColor()
+        card.backgroundColor = Colors.secondaryColor()
     }
     @IBAction func audioButton(_ sender: Any) {
         audioPlayer.play()

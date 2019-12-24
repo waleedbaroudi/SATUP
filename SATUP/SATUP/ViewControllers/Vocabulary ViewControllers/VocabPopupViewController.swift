@@ -56,11 +56,11 @@ class VocabPopupViewController: UIViewController {
     }
     func setColors(){
         //Setting colors
-        wordLabel.textColor = Colors.secondaryColor()
+
         typeLabel.textColor = Colors.tertiaryColor()
         meaningLabel.textColor = Colors.textColor()
         card.backgroundColor = Colors.primaryColor()
-        divider.backgroundColor = Colors.borderColor()
+
         exampleLabel.textColor = Colors.textColor()
         meaningLabel.textColor = Colors.textColor()
         
@@ -69,8 +69,6 @@ class VocabPopupViewController: UIViewController {
         bookmarksButton.tintColor = Colors.textColor()
         
         divider.alpha = 0.35
-        meaningHeaderLabel.textColor = Colors.secondaryColor()
-        exampleHeaderLabel.textColor = Colors.secondaryColor()
     }
     @IBAction func bookmark(_ sender: Any) {
         if bookmarked {
