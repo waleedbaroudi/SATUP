@@ -28,14 +28,15 @@ class WritingItemViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
         //Setting colors
+        setColors()
+    }
+    func setColors() {
         self.view.backgroundColor = Colors.primaryColor()
         backView.backgroundColor = Colors.primaryColor()
         textLabel.textColor = Colors.textColor()
-        subjectLabel.textColor = Colors.secondaryColor()
-        
         videoButton.tintColor = Colors.secondaryColor()
     }
+        }
     
-}
+

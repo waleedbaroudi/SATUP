@@ -23,6 +23,7 @@ class SideMenuViewController: UITableViewController {
         super.viewDidLoad()
         
     }
+    
     override func viewWillAppear(_ animated: Bool) {
             setColors()
     }
