@@ -11,5 +11,14 @@ import UIKit
 class ResourceCell: UICollectionViewCell {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    override func awakeFromNib() {
+         super.awakeFromNib()
+         setColors()
+     }
     
+    func setColors() {
+        
+        self.backgroundColor = Colors.primaryColor()
+        nameLabel.textColor = Colors.textColor()
+    }
 }

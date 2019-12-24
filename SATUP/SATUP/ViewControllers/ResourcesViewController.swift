@@ -28,10 +28,13 @@ extension ResourcesViewController: UICollectionViewDataSource{
 }
 
 class ResourcesViewController: UIViewController {
+    @IBOutlet weak var resourcesTable: UICollectionView!
+    
     let resources : [String] = ["Grammarly", "Khan Academy", "Chegg" , "Study"]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        resourcesTable.backgroundColor = Colors.primaryColor()
+        self.view.backgroundColor = Colors.primaryColor()
         // Do any additional setup after loading the view.
     }
     

@@ -26,6 +26,7 @@ class SideMenuViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
             setColors()
+        themeToggle.isOn = !Colors.isDark
     }
     
     @IBAction func modeToggle(_ sender: Any) {
@@ -45,9 +46,12 @@ class SideMenuViewController: UITableViewController {
         
     }
     
+    @IBOutlet weak var sideMenubutton: UIView!
+    @IBOutlet weak var toggleview: UIView!
     func setColors() {
+        toggleview.backgroundColor = Colors.primaryColor()
+        sideMenubutton.backgroundColor = Colors.primaryColor()
         themeToggleCell.backgroundColor = Colors.primaryColor()
-        bookmarksCell.backgroundColor = Colors.primaryColor()
         aboutCell.backgroundColor = Colors.primaryColor()
         sideMenuTable.backgroundColor = Colors.primaryColor()
         self.view.backgroundColor = Colors.primaryColor()

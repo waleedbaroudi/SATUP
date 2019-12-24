@@ -276,6 +276,9 @@
                         <viewLayoutGuide key="safeArea" id="0P3-bv-wCD"/>
                     </view>
                     <navigationItem key="navigationItem" id="NOK-9c-XNA"/>
+                    <connections>
+                        <outlet property="resourcesTable" destination="aeU-gi-OgQ" id="qVY-Kl-SBB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iai-c1-rNH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -342,44 +345,8 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="93" id="gaK-Yj-dnU">
-                                        <rect key="frame" x="0.0" y="48" width="414" height="93"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gaK-Yj-dnU" id="aB1-lp-EpO">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookmark" translatesAutoresizingMaskIntoConstraints="NO" id="uu3-M2-AUv">
-                                                    <rect key="frame" x="8" y="8" width="32" height="32"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="32" id="0tM-f7-b28"/>
-                                                        <constraint firstAttribute="width" constant="32" id="cgt-yx-kgx"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nze-ST-SUY">
-                                                    <rect key="frame" x="20" y="11" width="374" height="26"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <state key="normal" title="       Bookmarks">
-                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    </state>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="nze-ST-SUY" firstAttribute="top" secondItem="aB1-lp-EpO" secondAttribute="topMargin" id="0Cf-WE-NJ1"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="nze-ST-SUY" secondAttribute="bottom" id="6tV-HL-Nhm"/>
-                                                <constraint firstItem="uu3-M2-AUv" firstAttribute="leading" secondItem="aB1-lp-EpO" secondAttribute="leading" constant="8" id="Dpp-Zk-s7M"/>
-                                                <constraint firstItem="uu3-M2-AUv" firstAttribute="centerY" secondItem="aB1-lp-EpO" secondAttribute="centerY" id="LgA-sv-CIH"/>
-                                                <constraint firstItem="nze-ST-SUY" firstAttribute="leading" secondItem="aB1-lp-EpO" secondAttribute="leadingMargin" id="U8E-vp-PuZ"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="nze-ST-SUY" secondAttribute="trailing" id="gXa-80-7cO"/>
-                                                <constraint firstAttribute="bottom" secondItem="uu3-M2-AUv" secondAttribute="bottom" constant="8" id="nAM-uO-ITc"/>
-                                                <constraint firstItem="uu3-M2-AUv" firstAttribute="top" secondItem="aB1-lp-EpO" secondAttribute="top" constant="8" id="poR-FZ-gBm"/>
-                                                <constraint firstAttribute="bottom" secondItem="uu3-M2-AUv" secondAttribute="bottom" constant="8" id="wjc-24-naH"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="93" id="yVY-9m-3QR">
-                                        <rect key="frame" x="0.0" y="141" width="414" height="93"/>
+                                        <rect key="frame" x="0.0" y="48" width="414" height="93"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yVY-9m-3QR" id="71A-rr-xOM">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
@@ -421,7 +388,7 @@
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="93" id="xKq-rG-Fcj">
-                                        <rect key="frame" x="0.0" y="234" width="414" height="93"/>
+                                        <rect key="frame" x="0.0" y="141" width="414" height="93"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xKq-rG-Fcj" id="K4u-xG-DmQ">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
@@ -469,11 +436,12 @@
                     <navigationItem key="navigationItem" id="6jq-2X-Xnl"/>
                     <connections>
                         <outlet property="aboutCell" destination="xKq-rG-Fcj" id="rWp-h1-4Wz"/>
-                        <outlet property="bookmarksCell" destination="gaK-Yj-dnU" id="2Oc-Uk-t8V"/>
                         <outlet property="dismissSideMenu" destination="Ibi-h0-Eo5" id="iEN-gc-dPf"/>
                         <outlet property="sideMenuTable" destination="vxQ-oS-k0q" id="B0S-Wa-owS"/>
+                        <outlet property="sideMenubutton" destination="v9o-1i-YyN" id="IYD-Y9-feN"/>
                         <outlet property="themeToggle" destination="MmR-gE-OKG" id="gdn-rR-j6r"/>
                         <outlet property="themeToggleCell" destination="yVY-9m-3QR" id="rSb-Eb-aUG"/>
+                        <outlet property="toggleview" destination="71A-rr-xOM" id="uma-oH-oaT"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wKs-1L-Mco" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -643,7 +611,6 @@
         <image name="Reading" width="133" height="150"/>
         <image name="Vocabulary" width="133" height="150"/>
         <image name="Writing" width="133" height="150"/>
-        <image name="bookmark" width="32" height="32"/>
         <image name="bookmark" catalog="system" width="56" height="64"/>
         <image name="information" width="32" height="32"/>
         <image name="list.dash" catalog="system" width="64" height="42"/>
