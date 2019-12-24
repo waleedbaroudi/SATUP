@@ -33,8 +33,6 @@ class WritingItemViewController: UIViewController {
         self.view.backgroundColor = Colors.primaryColor()
         backView.backgroundColor = Colors.primaryColor()
         textLabel.textColor = Colors.textColor()
-        subjectLabel.textColor = Colors.secondaryColor()
-        
         videoButton.tintColor = Colors.secondaryColor()
     }
     
