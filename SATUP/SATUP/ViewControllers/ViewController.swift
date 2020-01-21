@@ -22,26 +22,28 @@ extension ViewController : UIViewControllerTransitioningDelegate {
 }
 
 class ViewController: UIViewController {
+    @IBOutlet weak var readingButton: UIButton!
+    @IBOutlet weak var writingButton: UIButton!
+    @IBOutlet weak var mathButton: UIButton!
+    @IBOutlet weak var vocabButton: UIButton!
     
     @IBOutlet weak var readingBackgroundView: UIView!
     @IBOutlet weak var writingBackgroundView: UIView!
     @IBOutlet weak var mathBackgroundView: UIView!
     @IBOutlet weak var vocabularyBackgroundView: UIView!
-    
-    @IBOutlet weak var readingButton: UIButton!
-    @IBOutlet weak var writingButton: UIButton!
-    @IBOutlet weak var mathButton: UIButton!
-    @IBOutlet weak var vocabularyButton: UIButton!
-
     let transition = SlideAction()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        readingButton.designButton()
+        writingButton.designButton()
+        mathButton.designButton()
+        vocabButton.designButton()
         BookmarksDataSource.loadBookmarks()
     }
 
     override func viewWillAppear(_ animated: Bool) {
-       setColors()
+//       setColors()
     }
     
     @IBAction func didTapSideMenu(_ sender: UIBarButtonItem) {
@@ -68,6 +70,14 @@ class ViewController: UIViewController {
         mathBackgroundView.backgroundColor = Colors.borderColor()
         vocabularyBackgroundView.backgroundColor = Colors.borderColor()
     }
-    
 }
-
+extension UIButton{
+    func designButton() {
+        self.backgroundColor = #colorLiteral(red: 1, green: 0.7484453321, blue: 0, alpha: 1)
+        self.layer.cornerRadius = self.frame.height / 2
+        self.layer.shadowColor = UIColor.darkGray.cgColor
+        self.layer.shadowOpacity = 0.5
+        self.layer.shadowOffset = CGSize(width: 0, height: 0)
+        self.layer.shadowRadius = 1
+    }
+}
