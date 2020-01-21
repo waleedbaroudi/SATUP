@@ -45,6 +45,9 @@
                                         <state key="normal" title="Reading">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="W02-z5-7xw" kind="show" id="k8q-oQ-uIe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euT-o9-ZlG">
                                         <rect key="frame" x="76" y="186" width="261" height="42"/>
@@ -52,6 +55,9 @@
                                         <state key="normal" title="Math">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="oPz-uB-15U" kind="show" id="Fbr-O2-xCX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mp-x1-Uch">
                                         <rect key="frame" x="76" y="279" width="261" height="42"/>
@@ -59,6 +65,9 @@
                                         <state key="normal" title="Vocabulary">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="hDo-y2-9NP" kind="show" id="BnA-IN-Pan"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2c2-rP-xLq">
                                         <rect key="frame" x="76" y="93" width="261" height="42"/>
@@ -66,6 +75,9 @@
                                         <state key="normal" title="Writing">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="N2B-gl-z46" kind="show" id="xtE-co-JeK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
