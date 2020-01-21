@@ -688,8 +688,8 @@
 			children = (
 				CE12951223AAC11600133DB5 /* AlgebraViewController.swift */,
 				CE12952023AAF66800133DB5 /* DataAnalysisViewController.swift */,
-				CE12951423AAC13500133DB5 /* MathItemViewController.swift */,
 				CE12952223AAF78600133DB5 /* AdvancedViewController.swift */,
+				CE12951423AAC13500133DB5 /* MathItemViewController.swift */,
 			);
 			path = "Math ViewControllers";
 			sourceTree = "<group>";

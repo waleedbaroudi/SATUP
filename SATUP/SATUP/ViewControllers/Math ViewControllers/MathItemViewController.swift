@@ -37,6 +37,7 @@ class MathItemViewController: UIViewController {
     }
     @IBAction func videoClicked(_ sender: Any) {
                 UIApplication.shared.open(URL(string: videoLink!)! as URL, options: [:], completionHandler: nil)
+                print("Clicked")
     }
     func setColors() {
         self.view.backgroundColor = Colors.primaryColor()
