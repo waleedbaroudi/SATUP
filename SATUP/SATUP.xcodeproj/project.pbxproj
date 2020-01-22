@@ -203,7 +203,7 @@
 		CE12968B23AD68DE00133DB5 /* tenure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE1295D823AD68DE00133DB5 /* tenure.mp3 */; };
 		CE12968C23AD68DE00133DB5 /* supplication.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE1295D923AD68DE00133DB5 /* supplication.mp3 */; };
 		CE18F04E23B28F5F0016459B /* infoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18F04D23B28F5F0016459B /* infoData.swift */; };
-		CE3A30BF23A41D1400CC0C9F /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */; };
+		CE3A30BF23A41D1400CC0C9F /* SideMenuViewControllerOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A30BE23A41D1400CC0C9F /* SideMenuViewControllerOld.swift */; };
 		CE3A30C423A43C4700CC0C9F /* SlideAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A30C323A43C4700CC0C9F /* SlideAction.swift */; };
 		CE41E79423A8FF5A00C74155 /* Math.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE41E79323A8FF5A00C74155 /* Math.storyboard */; };
 		CE41E79623A8FF8200C74155 /* Vocab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE41E79523A8FF8200C74155 /* Vocab.storyboard */; };
@@ -215,6 +215,7 @@
 		CE600D5823A83D02009A0B1E /* ReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE600D5723A83D02009A0B1E /* ReadingViewController.swift */; };
 		CE600D5A23A83D44009A0B1E /* ReadingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE600D5923A83D44009A0B1E /* ReadingDataSource.swift */; };
 		CE600D5C23A840AC009A0B1E /* ReadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE600D5B23A840AC009A0B1E /* ReadingCell.swift */; };
+		CE605E3B23D8AB02007C583F /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE605E3A23D8AB02007C583F /* SideMenuViewController.swift */; };
 		CE859E9023A4045C0070BD95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE859E8F23A4045C0070BD95 /* AppDelegate.swift */; };
 		CE859E9223A4045C0070BD95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE859E9123A4045C0070BD95 /* SceneDelegate.swift */; };
 		CE859E9423A4045C0070BD95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE859E9323A4045C0070BD95 /* ViewController.swift */; };
@@ -430,7 +431,7 @@
 		CE1295D823AD68DE00133DB5 /* tenure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tenure.mp3; sourceTree = "<group>"; };
 		CE1295D923AD68DE00133DB5 /* supplication.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = supplication.mp3; sourceTree = "<group>"; };
 		CE18F04D23B28F5F0016459B /* infoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoData.swift; sourceTree = "<group>"; };
-		CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		CE3A30BE23A41D1400CC0C9F /* SideMenuViewControllerOld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewControllerOld.swift; sourceTree = "<group>"; };
 		CE3A30C323A43C4700CC0C9F /* SlideAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideAction.swift; sourceTree = "<group>"; };
 		CE41E79323A8FF5A00C74155 /* Math.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Math.storyboard; sourceTree = "<group>"; };
 		CE41E79523A8FF8200C74155 /* Vocab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vocab.storyboard; sourceTree = "<group>"; };
@@ -442,6 +443,7 @@
 		CE600D5723A83D02009A0B1E /* ReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingViewController.swift; sourceTree = "<group>"; };
 		CE600D5923A83D44009A0B1E /* ReadingDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingDataSource.swift; sourceTree = "<group>"; };
 		CE600D5B23A840AC009A0B1E /* ReadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingCell.swift; sourceTree = "<group>"; };
+		CE605E3A23D8AB02007C583F /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		CE859E8C23A4045C0070BD95 /* SATUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SATUP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE859E8F23A4045C0070BD95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE859E9123A4045C0070BD95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -765,8 +767,9 @@
 				CE600D5323A83AEA009A0B1E /* Math ViewControllers */,
 				CE859E9323A4045C0070BD95 /* ViewController.swift */,
 				CE859EA623A40C920070BD95 /* info.swift */,
-				CE3A30BE23A41D1400CC0C9F /* SideMenuViewController.swift */,
+				CE3A30BE23A41D1400CC0C9F /* SideMenuViewControllerOld.swift */,
 				CE600D4D23A7B374009A0B1E /* SectionDetailViewController.swift */,
+				CE605E3A23D8AB02007C583F /* SideMenuViewController.swift */,
 				CE07E1FB23B2B22E00102150 /* BookmarksViewController.swift */,
 				CE07E1F923B2A84D00102150 /* ResourcesViewController.swift */,
 			);
@@ -1087,11 +1090,12 @@
 				CE0275A223A6901B00131699 /* Writing.swift in Sources */,
 				CED6391923A96CB30061499E /* ReadingSubViewController.swift in Sources */,
 				CE600D4E23A7B374009A0B1E /* SectionDetailViewController.swift in Sources */,
-				CE3A30BF23A41D1400CC0C9F /* SideMenuViewController.swift in Sources */,
+				CE3A30BF23A41D1400CC0C9F /* SideMenuViewControllerOld.swift in Sources */,
 				CE86171423A5444400095A9E /* VocabularyViewController.swift in Sources */,
 				CE0275A623A697F900131699 /* WritingCell.swift in Sources */,
 				CE859E9223A4045C0070BD95 /* SceneDelegate.swift in Sources */,
 				CE600D5823A83D02009A0B1E /* ReadingViewController.swift in Sources */,
+				CE605E3B23D8AB02007C583F /* SideMenuViewController.swift in Sources */,
 				CE07E1FC23B2B22E00102150 /* BookmarksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

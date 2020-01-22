@@ -2,32 +2,30 @@
 //  SideMenuViewController.swift
 //  SATUP
 //
-//  Created by user on 22.01.2020.
-//  Copyright © 2020 wab. All rights reserved.
+//  Created by user on 13.12.2019.
+//  Copyright © 2019 wab. All rights reserved.
 //
 
 import UIKit
 
-class SideMenuViewController: UITableViewController {
-
+class SideMenuViewControllerOld: UITableViewController {
+    
+    @IBOutlet weak var dismissSideMenu: UIButton!
+    
     @IBOutlet var sideMenuTable: UITableView!
     
     @IBOutlet weak var themeToggle: UISwitch!
     @IBOutlet weak var themeToggleCell: UITableViewCell!
     @IBOutlet weak var bookmarksCell: UITableViewCell!
     @IBOutlet weak var aboutCell: UITableViewCell!
-    @IBOutlet weak var resourcesCell: UITableViewCell!
-    
-    @IBOutlet weak var bookmarksLabel: UILabel!
-    @IBOutlet weak var aboutLabel: UILabel!
-    @IBOutlet weak var resourcesLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
+    
     override func viewWillAppear(_ animated: Bool) {
-        setColors()
+            setColors()
         themeToggle.isOn = !Colors.isDark
     }
     
@@ -40,18 +38,25 @@ class SideMenuViewController: UITableViewController {
         }
     }
     
-    func setColors() {
-        bookmarksLabel.textColor = Colors.textColor()
-        aboutLabel.textColor = Colors.textColor()
-        resourcesLabel.textColor = Colors.textColor()
+    @IBAction func dismissSideMenu(_ sender: Any) {
+         dismiss(animated: true){}
+    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        dismiss(animated: true){}
         
+    }
+    
+    @IBOutlet weak var sideMenubutton: UIView!
+    @IBOutlet weak var toggleview: UIView!
+    func setColors() {
+        toggleview.backgroundColor = Colors.primaryColor()
+        sideMenubutton.backgroundColor = Colors.primaryColor()
         themeToggleCell.backgroundColor = Colors.primaryColor()
         aboutCell.backgroundColor = Colors.primaryColor()
-        bookmarksCell.backgroundColor = Colors.primaryColor()
-        resourcesCell.backgroundColor = Colors.primaryColor()
         sideMenuTable.backgroundColor = Colors.primaryColor()
-        
         self.view.backgroundColor = Colors.primaryColor()
     }
-
 }
+
+
+

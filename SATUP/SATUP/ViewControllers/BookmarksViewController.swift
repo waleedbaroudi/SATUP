@@ -27,12 +27,12 @@ extension BookmarksViewController: UITableViewDataSource{
          return cell
     }
     
-    
 }
 
 class BookmarksViewController: UIViewController {
     
     @IBOutlet weak var tv: UITableView!
+    
     var bookmarks: [Vocab] = []
     override func viewDidLoad() {
         super.viewDidLoad()
